@@ -1,0 +1,75 @@
+# Jaemin Cosmology / 재민 우주론
+
+이 프로젝트는 `The Brain as a Higher-Dimensional Interface: A Formal Framework for Consciousness, Intuition, Intelligence, and Subjective Time` 논문의 Typst 원고입니다.
+
+본문은 한국어로 작성되었고, 논문 제목과 핵심 수학 표기는 영문 원제와 표준 수식을 유지합니다. 이 문서는 경험적으로 검증된 과학 이론이 아니라, 뇌-상위차원 인터페이스, 의식, 잠재의식, 직관, 지능, AGI 효율성 격차, 내부 시간에 관한 사변적 수학 프레임워크를 형식화한 것입니다.
+
+## 파일 구성
+
+```text
+jaemin-cosmology/
+  README.md
+  README.ko.md
+  paper/
+    ko/
+      main-ko.typ
+      main-ko.pdf        # 로컬 빌드 산출물 또는 릴리스 asset
+  references/
+    references.bib
+  docs/
+    codex-release-workflow.ko.md
+  legacy/
+    latex/
+      main.tex
+  scripts/
+```
+
+`paper/ko/main-ko.typ`가 주 원고입니다. 기존 LaTeX 원고는 `legacy/latex/main.tex`에 보존되어 있습니다. 영어 첫 화면은 `README.md`이고, 이 파일은 한국어 안내문입니다.
+
+## 필요 도구
+
+- Typst CLI 0.14.2 이상
+- 한글 폰트: `Noto Sans CJK KR`, `NanumGothic`, 또는 `Malgun Gothic`
+
+현재 로컬 환경에서는 `typst 0.14.2`로 컴파일을 확인했습니다. 이 PC에는 `Noto Sans CJK KR`가 사용자 폰트로 설치되어 있어 기본 폰트 경고 없이 PDF 생성이 됩니다.
+
+## 컴파일 방법
+
+권장 명령:
+
+```bash
+make build
+```
+
+Typst를 직접 실행하려면:
+
+```bash
+typst compile --root . paper/ko/main-ko.typ paper/ko/main-ko.pdf
+```
+
+자동 재컴파일이 필요하면:
+
+```bash
+make watch
+```
+
+## 내용 요약
+
+이 논문은 현실과 인지 과정의 관련 정보 상태공간을 `n > 3`인 유효 고차원 정보 다양체 `(M^n, g)`로 모델링하고, 인간 의식을 `C = P(X)` 형태의 삼차원 투영으로 정리합니다. 최신 구조에서는 시간 가속을 출발점으로 두되, 핵심 명제를 "뇌는 상위차원 정보 제약 구조와 3차원 의식 사이의 인터페이스"로 재정렬했습니다.
+
+잠재의식은 `S = Q_c(N_b,F)`인 고차원 표현으로 정의됩니다. 여기서 `N_b = pi_b(X)`는 신경 상태, `F = pi_F(X)`는 고차원 정보 제약 구조, `c in [0,1]`는 결합 강도, `eta >= 1`은 계산 효율 증폭 계수입니다. 직관은 `cal(I) = G(S)`인 압축 신호로 정의됩니다.
+
+이 프레임워크는 직관이 불확실성을 줄일 수는 있지만 완전한 예측을 제공하지 않는다는 점을 정보이론식으로 표현합니다. 또한 지능 차이를 신경 연결 복잡도, 고차원 결합 강도, 계산 효율 증폭의 결합으로 모델링하고, AGI 문제를 불가능성이 아니라 효율성 격차로 해석합니다. v1.0에서는 초록을 압축하고, 범위와 비목표 섹션을 추가했으며, AGI를 기능적 일반지능으로 정의해 의식 문제와 분리했습니다. 또한 불필요한 `beta_eff` 보조식을 제거하고, 후보 예측을 관측 변수와 비교 대상 중심으로 정리했습니다.
+
+## 참고한 대화 자료
+
+작성 방향을 보강하기 위해 사용자가 제공한 ChatGPT 공유 대화 `https://chatgpt.com/share/6a1d26cc-59b4-83a3-8b5b-3ea846b42936`를 개념 자료로 참고했습니다. 이 링크는 학술 참고문헌으로 인용하지 않고, 논문 구조와 핵심 명제 정리에 사용했습니다.
+
+## 주의
+
+이 문서는 검증된 물리 이론이나 경험적으로 확인된 과학 이론이 아닙니다. `references/references.bib`의 placeholder 항목은 v1.0 정리 과정에서 DOI, 출판사 페이지, WorldCat/Google Books/전문 아카이브 등 온라인 출처를 확인해 실제 metadata로 교체했습니다. 학술지나 제출처별 스타일 요구가 있으면 그 형식에 맞춰 재정렬하되, 가짜 DOI, 가짜 페이지, 확인되지 않은 출판 정보는 넣지 않습니다.
+
+공개 범위와 비목표는 다음 문서에 분리해 정리했습니다.
+
+- [범위와 비목표](docs/scope-and-nongoals.ko.md)
+- [Scope and Non-Goals](docs/scope-and-nongoals.en.md)

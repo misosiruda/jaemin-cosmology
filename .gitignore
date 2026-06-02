@@ -1,0 +1,16 @@
+.DS_Store
+Thumbs.db
+
+.vscode/
+.idea/
+
+tmp/
+.cache/
+
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+
+paper/ko/main-ko.pdf

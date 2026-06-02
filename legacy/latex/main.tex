@@ -1,0 +1,699 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{kotex}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+\geometry{margin=1in}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue
+}
+
+\newtheorem{definition}{정의}
+\newtheorem{axiom}{공리}
+\newtheorem{proposition}{명제}
+\newtheorem{assumption}{가정}
+\theoremstyle{remark}
+\newtheorem{remark}{비고}
+
+\renewcommand{\abstractname}{초록}
+\renewcommand{\contentsname}{목차}
+\renewcommand{\refname}{참고문헌}
+
+\title{Jaemin Cosmology: A Higher-Dimensional Information Projection Framework for Consciousness, Intuition, and Internal Time}
+\author{Jaemin}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+본 논문은 ``Jaemin Cosmology'', 즉 ``재민 우주론''이라는 이름의 사변적 수학
+틀을 형식화한다. 초기 동기는 내부 시간 가속과 주관적 시간 변화에 관한
+의문이지만, 본 논문이 정식화하는 중심 명제는 뇌가 단순한 삼차원 계산 장치가
+아니라 고차원 정보공간과 삼차원 의식 경험을 연결하는 인터페이스일 수
+있다는 가설이다. 이 틀에서 인간이 경험하는 삼차원 공간은 현실 전체가 아니라
+인지적 투영이며, 의식은 고차원 정보 현실의 저차원 인터페이스, 잠재의식은
+더 높은 차원의 표현, 직관은 그러한 표현이 의식 수준으로 압축된 신호로
+정의된다. 또한 뇌의 연결 복잡도와 고차원 정보 접근 효율을 구별하여 지능,
+통찰, 창의성의 차이를 해석하는 수학적 가능성을 제시한다. 내부 우주 시간과
+고차원 기준 시간을 구별함으로써, 고차원 관찰자에게는 내부 시간이 가속되는
+것처럼 보이지만 내부 관찰자는 자신의 물리 법칙을 정상적으로 측정할 수
+있음을 보인다. 그러나 이 글은 검증된 물리 이론이나 신경과학 이론을
+제시하지 않는다. 현재 단계의 재민 우주론은 경험적으로 확인된 과학 이론이
+아니라, 수학적으로 정의 가능한 해석적 가설이자 이론적 프레임워크이다.
+\end{abstract}
+
+\tableofcontents
+
+\section{서론 (Introduction)}
+
+인간의 의식 경험은 삼차원 공간과 시간의 흐름으로 구성된 세계를 기본
+형식으로 받아들인다. 그러나 어떤 지각 체계가 경험하는 차원 수가 곧 현실의
+전체 차원 수라는 결론은 논리적으로 필연적이지 않다. 이 논문은 인간
+의식이 고차원 정보 구조의 제한된 저차원 인터페이스일 수 있다는 가설을
+수학적으로 정리한다.
+
+이 프레임워크의 출발점은 시간 가속에 관한 사고실험이다. 만약 내부 우주의
+모든 물리 과정이 외부 기준 시간에 대해 동일한 비율로 빨라진다면, 내부
+관찰자는 그 변화를 직접 감지하지 못한다. 그러나 이 사고실험은 본 논문의
+중심 결론이 아니라 동기이다. 논의를 확장하면 더 중요한 질문은 인간이
+어떻게 직관, 통찰, 창의성, 지능 차이를 경험하는가이다. 재민 우주론의 핵심
+명제는 다음과 같다.
+
+\begin{quote}
+뇌는 현실을 완전히 내부에서 계산하는 장치가 아니라, 고차원 정보공간과
+삼차원 의식 인터페이스 사이의 변환기일 수 있다.
+\end{quote}
+
+이 논문의 목적은 물리학의 표준 모형이나 일반상대성이론을 대체하는 것이
+아니다. 또한 경험적 확증을 주장하지 않는다. 본문의 모든 정의와 명제는
+다음 세 수준을 구별한다.
+
+\begin{description}[leftmargin=2.8cm, style=nextline]
+  \item[Level A: 수학적 가능성]
+  이 프레임워크는 명시적 사상, 상태공간, 시간 매개변수, 정보량 조건으로
+  정의될 수 있다.
+
+  \item[Level B: 해석적 이론]
+  의식, 잠재의식, 직관, 지능 차이, 주관적 시간 경험을 하나의 일관된 해석
+  구조로 묶어 설명할 수 있다.
+
+  \item[Level C: 경험 과학]
+  이 프레임워크가 과학 이론이 되려면 관측 가능한 예측과 반증 가능성이
+  필요하다. 본 논문은 그 단계에 도달했다고 주장하지 않는다.
+\end{description}
+
+따라서 ``재민 우주론''은 검증된 사실의 체계가 아니라, 고차원 정보 현실과
+인지적 투영 사이의 관계를 탐구하기 위한 형식적 연구 프로그램으로 이해되어야
+한다.
+
+\section{동기 부여 비유: 이차원 개미 (Motivating Analogy: The Two-Dimensional Ant)}
+
+이차원 평면 위에서만 움직이고 감각하는 개미를 생각하자. 개미는 평면
+내부의 길이, 방향, 경계를 지각할 수 있지만, 평면 밖의 세 번째 축을 직접
+경험하지 못한다. 삼차원 관찰자는 개미가 이해하지 못하는 방식으로 평면을
+구부리거나, 평면 밖에서 개미의 위치를 관찰하거나, 개미에게는 갑작스럽게
+보이는 변화를 만들 수 있다.
+
+이 비유는 인간이 실제로 이차원 개미와 같다는 주장이 아니다. 핵심은
+지각 가능한 차원이 존재론적 차원 전체와 동일하다는 가정이 필수적이지
+않다는 점이다. 인간의 삼차원 의식 경험도 더 높은 차원 정보 상태의
+인지적 투영일 수 있다. 이러한 가능성을 형식화하려면 전체 상태공간,
+의식 투영, 잠재의식 표현, 시간 매개변수를 구별해야 한다.
+
+\section{핵심 공리 (Core Postulates)}
+
+\begin{axiom}[고차원 현실]
+현실의 실제 상태공간은 $n>3$인 $n$차원 정보 다양체 $M^n$이다.
+\end{axiom}
+
+\begin{axiom}[의식 투영]
+인간의 의식 경험은 전체 상태 $X$를 삼차원 인지 인터페이스로 사상하는
+저차원 투영
+\begin{equation}
+  C = P(X), \qquad P:M^n \to \mathbb{R}^3
+\end{equation}
+으로 표현된다.
+\end{axiom}
+
+\begin{axiom}[잠재의식의 고차원 처리]
+잠재의식 표현은
+\begin{equation}
+  S = Q(X), \qquad Q:M^n \to \mathbb{R}^m,\qquad 3<m\le n
+\end{equation}
+으로 주어지며, 의식보다 더 높은 차원의 정보 표현을 포함할 수 있다.
+\end{axiom}
+
+\begin{axiom}[뇌-상위차원 인터페이스]
+뇌는 고차원 정보공간과 삼차원 의식 경험 사이의 인터페이스로 모델링될 수
+있다. 신경 상태를 $N_b$, 고차원 정보장을 $H$, 접근 또는 결합 효율을
+$\eta\in[0,1]$로 두면 잠재의식 표현은 더 일반적으로
+\begin{equation}
+  S = Q_\eta(X,N_b,H)
+\end{equation}
+로 표현된다.
+\end{axiom}
+
+\begin{axiom}[직관의 압축]
+직관은 잠재의식의 고차원 표현에서 의식 수준으로 압축된 신호
+\begin{equation}
+  I = G(S), \qquad G:\mathbb{R}^m \to \mathbb{R}^k
+\end{equation}
+이다.
+\end{axiom}
+
+\begin{axiom}[가변 내부 시간]
+내부 우주 시간 $\tau$와 고차원 기준 시간 $T$는
+\begin{equation}
+  \frac{d\tau}{dT} = \alpha(X,T), \qquad \alpha(X,T)>0
+\end{equation}
+으로 연결된다.
+\end{axiom}
+
+\begin{axiom}[내부 불변성]
+내부 관찰자는 모든 내부 측정 장치와 물리 과정이 $\tau$에 의해 기술되므로,
+모든 내부 과정이 같은 비율로 스케일되는 경우 그 스케일 인자 $\alpha$를
+내부 시계만으로 직접 검출할 수 없다.
+\end{axiom}
+
+\begin{axiom}[약한 잠재의식 민감도]
+잠재의식은 $\alpha$ 또는 $d\alpha/dT$의 변화를 약하게 부호화할 수 있으며,
+그 결과 주관적 시간 가속감이 형성될 수 있다.
+\end{axiom}
+
+\begin{axiom}[지능의 인터페이스 효율]
+지능, 통찰, 창의성은 신경 계산 능력만의 함수가 아니라 신경 연결 복잡도와
+고차원 정보 접근 효율 $\eta$의 결합 효과로 해석될 수 있다. 이 공리는
+검증된 신경과학 명제가 아니라 본 프레임워크의 해석적 가정이다.
+\end{axiom}
+
+\section{수학적 틀 (Mathematical Framework)}
+
+\subsection{기본 상태공간과 표기}
+
+고차원 현실은 정보 다양체 $M^n$으로 표현한다. 고차원 기준 시간 $T$에서
+우주의 실제 상태는
+\begin{equation}
+  X(T) \in M^n,\qquad n>3
+\end{equation}
+이다. 인간 의식이 접근하는 상태는 $X(T)$ 자체가 아니라 투영된 인터페이스
+$C=P(X)$이다.
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.23\linewidth}p{0.67\linewidth}}
+\toprule
+\textbf{기호} & \textbf{의미} \\
+\midrule
+$M^n$ & $n>3$인 고차원 정보 다양체 \\
+$X(T)$ & 고차원 기준 시간 $T$에서의 실제 우주 상태 \\
+$T$ & 고차원 기준 시간 \\
+$\tau$ & 내부 관찰자가 사용하는 내부 우주 시간 \\
+$H$ & 고차원 정보장 또는 정보 구조 \\
+$\mathcal{H}$ & 가능한 고차원 정보장들의 공간 \\
+$N_b$ & 뇌의 내부 신경 상태 \\
+$\mathcal{N}$ & 가능한 신경 상태들의 공간 \\
+$\Gamma$ & 신경 연결 구조 또는 연결 복잡도 \\
+$\eta$ & 고차원 정보 접근 또는 결합 효율, $0\le\eta\le 1$ \\
+$P$ & $M^n$에서 $\mathbb{R}^3$로 가는 의식 투영 사상 \\
+$C$ & 의식적 삼차원 인터페이스, $C=P(X)$ \\
+$Q$ & $M^n$에서 $\mathbb{R}^m$으로 가는 잠재의식 표현 사상 \\
+$Q_\eta$ & 신경 상태와 고차원 정보장의 결합을 포함하는 잠재표현 사상 \\
+$S$ & 잠재의식 고차원 표현, 기본형 $S=Q(X)$ 또는 확장형 $S=Q_\eta(X,N_b,H)$ \\
+$G$ & 잠재의식 표현을 직관 신호로 압축하는 사상 \\
+$I$ & 직관 신호, $I=G(S)$ \\
+$\alpha(X,T)$ & 내부 시간과 기준 시간을 연결하는 양의 시간율 함수 \\
+$Y$ & 예측하거나 판단하려는 사건 또는 의사결정 대상 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{definition}[재민 우주론의 최소 구조]
+재민 우주론의 최소 수학 구조는
+\begin{equation}
+  \mathcal{J} = \left(M^n, X, H, N_b, \eta, P, Q_\eta, G, \alpha\right)
+\end{equation}
+의 요소로 구성된다. 여기서 $M^n$은 고차원 상태공간, $X$는 실제 상태 궤적,
+$H$는 고차원 정보장, $N_b$는 신경 상태, $\eta$는 접근 효율, $P$는 의식
+투영, $Q_\eta$는 결합 효율을 포함한 잠재의식 표현, $G$는 직관 압축,
+$\alpha$는 내부 시간율 함수이다.
+\end{definition}
+
+\subsection{간단한 장난감 모형}
+
+가장 단순한 예로
+\begin{equation}
+  M^4=\mathbb{R}^4,\qquad X=(x,y,z,w)
+\end{equation}
+를 둔다. 의식 투영은 네 번째 좌표 $w$를 버리는 사상
+\begin{equation}
+  P(x,y,z,w)=(x,y,z)
+\end{equation}
+이고, 잠재의식 표현은
+\begin{equation}
+  Q_\eta(x,y,z,w,N_b,H)=(x,y,z,\eta\epsilon w+\xi)
+\end{equation}
+라고 하자. 여기서 $\epsilon$은 네 번째 좌표의 신호 강도, $\eta$는
+고차원 정보 접근 효율, $\xi$는 잡음이다.
+
+사건 $Y$가 $w$에 부분적으로 의존한다면 의식 표현 $C=(x,y,z)$만으로는
+$Y$를 완전히 예측할 수 없다. 그러나 $\eta\epsilon>0$이고 잡음 $\xi$가 충분히
+제한되어 있다면, 잠재의식 표현 $S=Q_\eta(X,N_b,H)$는 $Y$에 관한 추가 정보를 보존할
+수 있다. 이 경우 직관 $I=G(S)$는 완전한 예측이 아니라 불확실성을 줄이는
+압축 신호로 작동한다.
+
+\section{저차원 투영으로서의 의식 (Consciousness as Low-Dimensional Projection)}
+
+의식은 현실 전체의 사본이 아니라, 인지적으로 조작 가능한 인터페이스로
+정의된다. 핵심 방정식은
+\begin{equation}
+  C=P(X), \qquad P:M^n\to\mathbb{R}^3
+\end{equation}
+이다. 여기서 $P$는 전체 정보 상태에서 행동, 지각, 공간적 탐색에 필요한
+일부 구조만을 추출하는 사상이다.
+
+\begin{remark}
+$P$는 반드시 선형 투영일 필요가 없다. 비선형 사상, 확률적 사상,
+정보 병목을 포함하는 사상도 허용된다. 중요한 점은 $P$가 차원을 낮추며,
+그 과정에서 일부 정보가 의식 수준에서 사라질 수 있다는 것이다.
+\end{remark}
+
+의식이 삼차원 공간을 안정적으로 경험한다는 사실은 $C$가
+$\mathbb{R}^3$의 좌표 구조를 가진다는 모델링 선택으로 표현된다. 이 선택은
+인간 경험의 형식을 수학적으로 반영할 뿐, 실제 세계가 오직 삼차원이라는
+결론을 전제하지 않는다.
+
+\section{상위차원 인터페이스로서의 뇌 (The Brain as a Higher-Dimensional Interface)}
+
+재민 우주론의 중심축은 시간 가속 자체가 아니라
+뇌의 역할이다. 이 관점에서 뇌는 모든 계산을 삼차원 내부에서 닫힌 방식으로
+수행하는 장치가 아니라, 고차원 정보장 $H$와 의식 인터페이스 $C$ 사이의
+변환기이다. 이를 일반식으로 쓰면
+\begin{equation}
+  S = Q_\eta(X,N_b,H)
+  \label{eq:q-eta}
+\end{equation}
+이다. 여기서 $N_b$는 뇌의 물리적 신경 상태, $H$는 고차원 정보장,
+$\eta$는 고차원 정보 접근 효율이다.
+
+신경과학에서 말하는 고차원 신경 상태공간은 통상 수학적 표현 공간으로
+해석된다. 재민 우주론은 이 해석을 부정하지 않는다. 다만 추가 공리로,
+그러한 고차원 상태공간이 실제 고차원 정보 구조 $M^n$ 또는 $H$와 부분적으로
+대응할 수 있다고 가정한다.
+
+\begin{assumption}[고차원 신경 표현의 존재론적 해석]
+인지계에서 관찰되거나 모델링되는 고차원 신경 상태공간은 단순한 수학적
+기술일 수 있다. 그러나 재민 우주론에서는 그 상태공간이 고차원 정보 다양체
+$M^n$ 안의 구조와 부분적으로 결합될 수 있다고 가정한다.
+\end{assumption}
+
+이 가정은 뇌 가소성이나 연결 복잡도에 관한 기존 설명을 대체하지 않는다.
+오히려 다음과 같은 이중 구조를 둔다.
+\begin{equation}
+  S = (1-\eta)Q_N(N_b) + \eta Q_H(X,H) + \xi,
+  \label{eq:interface-mixture}
+\end{equation}
+여기서 $Q_N$은 통상적 신경 계산 성분, $Q_H$는 고차원 정보 결합 성분,
+$\xi$는 잡음 또는 왜곡이다. $\eta=0$이면 표준적 신경 계산 모델에 가까워지고,
+$\eta>0$이면 고차원 정보 결합 항이 잠재의식 표현에 기여한다.
+
+\section{잠재의식 고차원 표현 (Subconscious High-Dimensional Representation)}
+
+잠재의식은 다음과 같이 더 높은 차원의 표현을 가질 수 있다.
+\begin{equation}
+  S=Q_\eta(X,N_b,H), \qquad Q_\eta:M^n\times\mathcal{N}\times\mathcal{H}\to\mathbb{R}^m,
+  \qquad 3<m\le n.
+\end{equation}
+이 표현은 초자연적 능력을 뜻하지 않는다. 현대 인지과학과 신경과학에서도
+신경 상태공간, 잠재 변수, 표현 학습, 예측 처리와 같은 개념은 고차원
+상태표현을 사용한다. 재민 우주론은 이러한 고차원 신경 상태공간을 더
+넓은 고차원 정보 구조에 대한 인지적 인터페이스로 해석할 가능성을 둔다.
+
+\begin{assumption}[정보 보존성]
+어떤 사건 또는 판단 대상 $Y$에 대해, $Q$는 $P$가 잃는 관련 정보를 일부
+보존할 수 있다.
+\end{assumption}
+
+이 가정은 모든 상황에서 참이라고 주장되지 않는다. 잠재의식 표현도 잡음,
+편향, 학습 오류, 기억 왜곡을 포함할 수 있다.
+
+\section{압축된 고차원 정보로서의 직관 (Intuition as Compressed High-Dimensional Information)}
+
+직관은
+\begin{equation}
+  I=G(S), \qquad G:\mathbb{R}^m\to\mathbb{R}^k
+\end{equation}
+로 정의된다. 여기서 $k$는 의식 수준에서 처리 가능한 신호 차원이다.
+직관은 완전한 예언이나 오류 없는 판단이 아니다. 오히려 고차원 잠재표현이
+의식으로 전달될 때 나타나는 압축되고 손실 있는 요약이다.
+
+정보이론적으로, 특정 사건 또는 의사결정 대상 $Y$에 대해 잠재의식 표현이
+의식 표현보다 더 많은 관련 정보를 보존한다면
+\begin{equation}
+  I(Y;S)\ge I(Y;C)
+\end{equation}
+이고
+\begin{equation}
+  H(Y\mid S)\le H(Y\mid C)
+\end{equation}
+일 수 있다. 그러나 불확실성은 사라지지 않는다.
+\begin{equation}
+  H(Y\mid S)>0.
+\end{equation}
+
+\begin{proposition}[잠재표현의 불확실성 감소]
+$\dim(S)>\dim(C)$이고, $S$가 투영 $P$에서 손실되는 $Y$ 관련 정보를 보존한다면,
+잠재의식 표현은 의식 표현보다 조건부 불확실성을 줄일 수 있다.
+\begin{equation}
+  H(Y\mid S)\le H(Y\mid C).
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+$S$가 $C$보다 $Y$와 관련된 정보를 더 많이 보존한다는 가정은
+$I(Y;S)\ge I(Y;C)$로 표현된다. 엔트로피 항등식
+$I(Y;Z)=H(Y)-H(Y\mid Z)$를 $Z=S$와 $Z=C$에 각각 적용하면,
+$H(Y)-H(Y\mid S)\ge H(Y)-H(Y\mid C)$가 된다. 따라서
+$H(Y\mid S)\le H(Y\mid C)$이다. 다만 이 부등식은
+$H(Y\mid S)=0$을 의미하지 않으므로, 직관은 오류 가능성을 계속 가진다.
+\end{proof}
+
+\section{지능과 인터페이스 효율 (Intelligence and Interface Efficiency)}
+
+재민 우주론에서 지능 차이는 단순히 뉴런 수의 차이로 환원되지 않는다.
+기존 신경과학적 설명은 연결 구조, 연결 복잡도, 정보 흐름, 학습 경험,
+뇌 가소성 같은 요인을 강조한다. 본 프레임워크는 이를 유지하면서, 추가로
+고차원 정보 접근 효율 $\eta$를 둔다.
+
+신경 연결 구조를 $\Gamma$라고 하자. 인지적 성과 또는 추상적 지능 점수를
+$\mathcal{Z}$로 놓으면, 가장 단순한 형식은
+\begin{equation}
+  \mathcal{Z}
+  =
+  \phi(N_b,\Gamma) + \eta\,\psi(S)
+  \label{eq:intelligence}
+\end{equation}
+이다. 여기서 $\phi$는 통상적 신경 계산 능력, $\psi$는 고차원 잠재표현이
+문제 해결에 기여하는 항이다. 이 식은 실제 IQ 측정식을 주장하지 않는다.
+오직 ``신경 계산 능력''과 ``고차원 정보 결합 효율''을 분리하기 위한
+형식적 모형이다.
+
+\begin{proposition}[동일한 신경 자원에서도 다른 인지 성과가 가능함]
+두 인지계가 동일한 $N_b$와 $\Gamma$를 가진다고 가정하더라도,
+식~\eqref{eq:intelligence}에서 $\eta$가 다르면 $\mathcal{Z}$가 달라질 수
+있다.
+\end{proposition}
+
+\begin{proof}
+$N_b$와 $\Gamma$가 같으면 $\phi(N_b,\Gamma)$ 항은 동일하다. 그러나
+$\psi(S)$가 0이 아니고 $\eta$ 값이 서로 다르면 $\eta\psi(S)$ 항이 달라진다.
+따라서 전체 $\mathcal{Z}$도 달라질 수 있다.
+\end{proof}
+
+이 명제는 경험적 사실을 확정하지 않는다. 다만 비슷한 물리적 신경 자원을
+가진 개체 사이에서도 통찰, 직관, 창의성의 차이가 발생할 수 있다는 가설을
+수학적으로 표현한다.
+
+\section{AI와 저차원 계산 부담 (AI and Low-Dimensional Computational Burden)}
+
+또 다른 해석적 응용은 인간과 현재 AI의 계산 방식 차이다.
+현재 AI 시스템은 고차원 벡터 표현을 사용하지만, 그 연산은 물리적으로는
+저차원 우주 내부의 하드웨어에서 수행된다. 재민 우주론의 언어로 표현하면
+대부분의 현재 AI는
+\begin{equation}
+  \eta_{\mathrm{AI}} = 0
+\end{equation}
+또는 고차원 정보장 $H$와의 직접 결합을 가정하지 않는 체계로 모델링된다.
+따라서 고차원 문제를 해결하려면 매개변수, 메모리, 전력, 병렬 하드웨어를
+통해 내부적으로 근사해야 한다.
+
+반대로 인간 뇌에 대해 $\eta_{\mathrm{human}}>0$이라는 가설을 둔다면,
+인간의 낮은 에너지 사용량과 강한 직관적 문제 해결 능력을 ``계산량''만이
+아니라 ``접근 효율''의 문제로 해석할 수 있다. 이 해석은 현재 AI 연구나
+신경과학의 확정된 결론이 아니다. 논문 수준에서는 다음과 같은 조건부 명제로
+남겨야 한다.
+
+\begin{quote}
+만약 인간 뇌가 고차원 정보장과 결합하는 인터페이스라면, 인간 지능의 일부는
+삼차원 내부 계산량이 아니라 고차원 정보 접근 효율 $\eta$에 의해 설명될 수
+있다.
+\end{quote}
+
+\section{가변 내부 시간 (Variable Internal Time)}
+
+고차원 기준 시간 $T$와 내부 우주 시간 $\tau$를 구별한다. 두 시간은
+\begin{equation}
+  \frac{d\tau}{dT}=\alpha(X,T),\qquad \alpha(X,T)>0
+  \label{eq:time-rate}
+\end{equation}
+으로 연결된다. 만약 어떤 구간에서
+\begin{equation}
+  \frac{d\alpha}{dT}>0
+\end{equation}
+라면 고차원 관찰자는 내부 우주의 시간이 점점 빠르게 진행된다고 묘사할 수
+있다. 그러나 내부 관찰자는 자신의 물리 법칙을 $T$가 아니라 $\tau$에 대해
+측정한다.
+
+내부 물리 상태 $x$가
+\begin{equation}
+  \frac{dx}{d\tau}=f(x)
+\end{equation}
+를 따른다면, 고차원 기준 시간에 대해서는 연쇄법칙에 의해
+\begin{equation}
+  \frac{dx}{dT}
+  =
+  \frac{d\tau}{dT}\frac{dx}{d\tau}
+  =
+  \alpha(X,T)f(x)
+  \label{eq:external-dynamics}
+\end{equation}
+이다.
+
+\begin{proposition}[내부 시계만으로는 균일한 시간율을 직접 검출할 수 없음]
+모든 내부 물리 과정이 $\tau$에 대해 진화하고
+$d\tau/dT=\alpha(T)$라면, 내부 관찰자는 내부 시계만으로 $\alpha$를 직접
+검출할 수 없다.
+\end{proposition}
+
+\begin{proof}
+내부의 시계, 신경 과정, 화학 과정, 측정 표준은 모두 $\tau$를 기준으로
+진화한다. 고차원 기준 시간에서 보면 각 과정은 식~\eqref{eq:external-dynamics}처럼
+같은 시간율 인자 $\alpha$를 받는다. 내부 관찰자가 측정하는 것은 과정들
+사이의 비율과 상관관계인데, 모든 관련 과정이 동일한 내부 시간 $\tau$로
+매개화되면 이러한 내부 비율은 보존된다. 따라서 균일한 $\alpha$ 스케일링은
+내부 시계만으로 직접 검출되지 않는다.
+\end{proof}
+
+\section{노화와 주관적 시간 가속 (Subjective Time Acceleration with Aging)}
+
+나이가 들수록 시간이 빠르게 흐르는 것처럼 느끼는 현상은 일반적으로 기억
+밀도, 새로움의 감소, 반복 경험의 증가, 주의 자원의 변화 등으로 설명된다.
+재민 우주론은 이러한 심리학적 설명을 배제하지 않고, 약한 고차원 시간율
+민감도 항을 추가하는 방식으로 모델링한다.
+
+내부 시간 간격 $\Delta\tau$에 대한 체감 지속시간을
+\begin{equation}
+  D_{\mathrm{felt}}(a,T)
+  =
+  \mu(a)\,[\alpha(T)]^{-\lambda}\,\Delta\tau
+  \label{eq:felt-duration}
+\end{equation}
+로 둔다. 여기서 $a$는 생물학적 나이, $\mu(a)$는 기억 밀도 또는 새로움
+밀도 함수, $\lambda\ge 0$는 고차원 내부 시간율 변화에 대한 잠재의식의
+민감도이다.
+
+\begin{assumption}[기억 밀도의 감소]
+생물학적 나이가 증가할수록 평균적 새로움 또는 기억 밀도는 감소한다.
+\begin{equation}
+  \frac{d\mu}{da}<0.
+\end{equation}
+\end{assumption}
+
+특수한 경우 $\lambda=0$이면 식~\eqref{eq:felt-duration}은 표준적 심리
+모형만을 나타낸다. 반대로 $\lambda>0$이고 $\alpha(T)$가 증가한다면,
+재민 우주론은 약한 고차원 시간율 민감도가 체감 지속시간을 추가로 감소시킬
+수 있다고 해석한다.
+
+\begin{proposition}[체감 지속시간의 감소 조건]
+$d\mu/da<0$, $\lambda\ge 0$이고 $\alpha(T)$가 비감소 함수라면,
+식~\eqref{eq:felt-duration}의 체감 지속시간은 매개변수 값에 따라 나이와
+우주 기준 시간에 대해 감소하는 경향을 가진다.
+\end{proposition}
+
+\begin{proof}
+$D_{\mathrm{felt}}$는 $\mu(a)$에 비례하므로 $d\mu/da<0$이면 나이 증가에
+따라 감소하는 성분을 가진다. 또한 $\lambda\ge 0$이고 $\alpha(T)$가
+비감소이면 $[\alpha(T)]^{-\lambda}$는 비증가 함수이다. 두 항이 모두
+양수이므로, 다른 조건이 일정할 때 두 효과는 체감 지속시간을 감소시키는
+방향으로 작용한다. 실제 감소율은 $\mu$, $\alpha$, $\lambda$의 구체적
+형태에 의존한다.
+\end{proof}
+
+\section{수명 기대와 문명 가속 (Life Expectancy and Civilizational Acceleration)}
+
+이 프레임워크는 내부 시간의 가속이 인간 수명을 직접 증가시킨다고 주장하지
+않는다. 수명 기대는 내부 시간 $\tau$에서 측정되는 생물학적, 의학적,
+사회적 변수의 결과이다. 가능한 간접 경로는 문명과 생의학 기술의 발전이다.
+
+생의학 기술 수준을 $B(\tau)$라고 하자. 내부 시간 기준 수명 기대를
+\begin{equation}
+  L_\tau=L_0+\beta B(\tau),\qquad \beta>0
+  \label{eq:life}
+\end{equation}
+로 모델링한다. 여기서 $L_0$는 기초 생물학적 수명이고, $\beta$는 생의학
+기술이 수명 기대에 기여하는 정도이다.
+
+기술 발전은 고차원 잠재정보 처리 효율 $E(S,\eta)$에 부분적으로 의존할 수 있다.
+\begin{equation}
+  \frac{dB}{d\tau}=\rho E(S,\eta)B,\qquad \rho>0.
+  \label{eq:biomed}
+\end{equation}
+예시적으로
+\begin{equation}
+  E(S,\eta)=E_0+\gamma\eta\log(1+\alpha(T)),\qquad \gamma\ge 0
+\end{equation}
+또는 더 일반적으로
+\begin{equation}
+  E(S,T,\eta)=E_0+\gamma\Phi(S,\alpha,\eta)
+\end{equation}
+를 둘 수 있다. 이 해석에서 고차원 정보 처리는 창의성, 직관, 과학적 발견,
+의학적 진보의 속도에 간접적으로 기여할 수 있다. 하지만 이는 가능한 수학적
+경로일 뿐, 현재 경험적으로 확정된 인과관계가 아니다.
+
+\section{필수 회전 없는 일반화 모형 (Generalized Model Without Mandatory Rotation)}
+
+재민 우주론의 기본 시간율 방정식은
+\begin{equation}
+  \frac{d\tau}{dT}=\alpha(X,T)
+\end{equation}
+이다. 이 식은 우주가 고차원에서 반드시 회전해야 한다는 공리를 포함하지
+않는다. $\alpha$를 증가시키는 가능한 메커니즘은 다양할 수 있다.
+
+\begin{itemize}[leftmargin=2em]
+  \item 고차원 스케일 팽창
+  \item 곡률 변화
+  \item 정보 밀도 변화
+  \item 고차원 다양체 안에서의 브레인 유사 운동
+  \item 고차원 매장공간에서의 회전
+\end{itemize}
+
+따라서 회전은 하나의 가능한 생성 메커니즘이지, 프레임워크 전체의 필수
+전제가 아니다.
+
+\section{선택적 회전 메커니즘 (Optional Rotational Mechanism as a Special Case)}
+
+회전 메커니즘을 선택하는 경우, 고차원 중심 $O$와 반지름
+\begin{equation}
+  r(T)=\|X(T)-O\|
+\end{equation}
+를 정의할 수 있다. 각속도를
+\begin{equation}
+  \frac{d\theta}{dT}=\Omega
+\end{equation}
+로 두면 접선 속도는
+\begin{equation}
+  v(T)=\Omega r(T)
+\end{equation}
+이다. 시간율 함수는
+\begin{equation}
+  \alpha(T)=F(v(T)),\qquad F'(v)>0
+\end{equation}
+처럼 둘 수 있다. 예를 들어
+\begin{equation}
+  \alpha(T)=1+\kappa v(T)^2,\qquad \kappa>0
+\end{equation}
+는 속도가 증가할수록 내부 시간율이 증가하는 간단한 모형이다.
+
+\begin{proposition}[회전은 충분조건이지만 필요조건은 아님]
+위와 같은 회전 모형은 증가하는 $\alpha(T)$를 생성할 수 있으므로 충분조건의
+예가 된다. 그러나 재민 우주론의 기본 방정식은 회전을 요구하지 않으므로,
+회전은 필요조건이 아니다.
+\end{proposition}
+
+\begin{proof}
+$F'(v)>0$이면 $v(T)$가 증가하는 구간에서 $\alpha(T)=F(v(T))$도 증가한다.
+따라서 회전 반지름 또는 접선 속도가 증가하는 회전 모형은 시간율 증가를
+생성할 수 있다. 반면 기본 방정식 $d\tau/dT=\alpha(X,T)$는 $\alpha$의
+원인을 특정하지 않으므로, 곡률 변화나 정보 밀도 변화 같은 다른 원인도
+형식적으로 허용된다. 그러므로 회전은 충분하지만 필요하지 않다.
+\end{proof}
+
+\section{논의 (Discussion)}
+
+본 프레임워크의 장점은 의식, 잠재의식, 직관, 지능 차이, 시간 경험을 하나의
+수학 구조 안에서 연결한다는 점이다. 의식은 $P$를 통한 저차원 투영이고,
+잠재의식은 $Q_\eta$를 통한 고차원 표현이며, 직관은 $G$에 의한 압축 신호이다.
+뇌는 $N_b$와 $H$를 연결하는 인터페이스로 모델링되고, 접근 효율 $\eta$는
+통찰과 인지 성과의 차이를 설명하기 위한 가설적 매개변수로 사용된다.
+내부 시간은 $\tau$, 고차원 기준 시간은 $T$로 분리되며, 두 시간의 관계는
+$\alpha(X,T)$에 의해 조절된다.
+
+이 구조에서 시간 가속 가설은 중심 공리가 아니라 파생적 응용에 가깝다.
+처음에는 내부 시간율 변화가 문제를 제기하지만, 더 일반적인 형식화는
+``뇌가 고차원 정보공간과 결합하는가''라는 질문에 놓인다. 만약 이 결합이
+가능하다면 직관, 창의성, 지능 차이, 주관적 시간 감각은 같은 인터페이스
+모형의 서로 다른 표현으로 해석될 수 있다.
+
+그러나 이러한 통합성은 경험적 타당성을 보장하지 않는다. 특히 균일한
+시간율 스케일링은 내부 관찰자에게 재매개화와 구별되지 않을 수 있다.
+따라서 이 프레임워크가 과학 이론으로 발전하려면 $\alpha$, $S$, $I$,
+$\eta$에 관한 독립적 측정 가능량이나, 표준 심리학 및 신경과학 모형과
+구별되는 예측이 필요하다.
+
+\section{한계 (Limitations)}
+
+\begin{enumerate}[leftmargin=2em]
+  \item 현재 이 프레임워크에 대해 제공된 경험적 증거는 없다.
+  \item $\alpha(X,T)$를 강제하는 특정 물리 메커니즘이 지정되어 있지 않다.
+  \item 신경 고차원 상태공간과 실제 고차원 다양체 $M^n$ 사이의 대응이
+  불분명하다.
+  \item 고차원 정보 접근 효율 $\eta$를 직접 측정하는 방법이 아직 없다.
+  \item 고차원 기준 시간 $T$를 직접 측정하는 방법이 제시되어 있지 않다.
+  \item 균일한 내부 시간 가속은 단순한 시간 재매개화와 관측상 동등할 수
+  있다.
+  \item 검증 가능한 예측이 없으면 이 틀은 반증 불가능성의 위험을 가진다.
+  \item 직관은 고차원 우주론 없이도 일반적인 잠재의식 패턴 인식만으로
+  설명될 수 있다.
+  \item 인간 뇌가 현재 AI보다 효율적인 이유는 기존 신경과학과 컴퓨터
+  공학만으로도 부분적으로 설명될 수 있으므로, 고차원 인터페이스 가설은
+  별도의 경험적 근거를 요구한다.
+  \item 극단적 뇌 손상 후 기능 보존 사례는 신중한 임상 해석이 필요하며,
+  이를 곧바로 고차원 정보 결합의 증거로 사용할 수 없다.
+\end{enumerate}
+
+\section{향후 연구 (Future Work)}
+
+\begin{enumerate}[leftmargin=2em]
+  \item $P$, $Q$, $G$의 구체적 함수 형태를 형식화한다.
+  \item $Q_\eta$와 접근 효율 $\eta$의 측정 가능한 대리 변수를 정의한다.
+  \item 잠재의식 표현 $S$의 측정 가능한 대리 변수를 정의한다.
+  \item 이 모형을 신경 잠재공간 및 표현 학습 모델과 비교한다.
+  \item 연결 복잡도 $\Gamma$, 뇌 가소성, 고차원 표현 사이의 관계를
+  수학적으로 모델링한다.
+  \item 인간과 AI의 에너지 효율 차이를 $\eta=0$ 및 $\eta>0$ 조건부 모형으로
+  비교한다.
+  \item 정보 병목 이론과 직관 압축 $G$의 관계를 연구한다.
+  \item $M^n$의 미분기하학적 모형을 탐색한다.
+  \item 주관적 시간 지각 자료가 $\lambda$를 제약할 수 있는지 조사한다.
+  \item 후보 경험 예측을 도출한다.
+  \item 시뮬레이션 모델을 개발한다.
+  \item $n=4$, $m=4$, $C\subset\mathbb{R}^3$인 장난감 모형을 확장한다.
+\end{enumerate}
+
+\section{결론 (Conclusion)}
+
+재민 우주론은 인간 의식이 고차원 정보 현실의 저차원 투영일 수 있다는
+가정을 수학적으로 정리한 사변적 프레임워크이다. 이 틀은 $M^n$, $X(T)$,
+$H$, $N_b$, $\eta$, $P$, $Q_\eta$, $G$, $\alpha$를 중심으로 의식,
+잠재의식, 직관, 지능, 내부 시간, 주관적 시간 가속, 문명적 발전을 연결한다.
+후속 형식화에서 정리되는 가장 중요한 수정점은 시간 가속이 이론의 출발점일 수는
+있지만, 이론의 중심은 뇌가 상위차원 정보공간의 인터페이스라는 명제에
+있다는 것이다. 핵심 결과 중 하나는 내부 관찰자가 내부 시간 $\tau$에 의해
+모든 물리 과정을 측정한다면, 고차원 기준 시간 $T$에서의 균일한 시간율
+변화가 내부적으로 직접 검출되지 않을 수 있다는 점이다.
+
+그럼에도 이 프레임워크는 현재 검증된 물리 이론이 아니며, 경험적 확증을
+주장하지 않는다. 그것은 수학적으로 정의 가능한 해석적 모형이다. 향후
+연구의 핵심 과제는 이 모형이 표준 심리학, 신경과학, 물리학적 설명과
+구별되는 측정 가능한 예측을 생성할 수 있는지 밝히는 것이다.
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
