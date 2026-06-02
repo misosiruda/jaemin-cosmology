@@ -43,6 +43,7 @@ jaemin-cosmology/
     one-page-summary-en.md
     one-page-summary-ko.md
     reference-audit.md
+    release-checklist-v0.1.0-ko.md
     release-notes/
       v0.1.0-ko.md
     scope-and-nongoals.en.md
@@ -110,6 +111,7 @@ See [docs/reference-audit.md](docs/reference-audit.md).
 - Korean FAQ: [docs/faq-ko.md](docs/faq-ko.md)
 - AI assistance note: [docs/ai-assistance-note.md](docs/ai-assistance-note.md)
 - Release notes: [docs/release-notes/v0.1.0-ko.md](docs/release-notes/v0.1.0-ko.md)
+- Release checklist: [docs/release-checklist-v0.1.0-ko.md](docs/release-checklist-v0.1.0-ko.md)
 
 ## Citation and License
 
@@ -118,6 +120,7 @@ See [docs/reference-audit.md](docs/reference-audit.md).
 - License note: [docs/license-note.md](docs/license-note.md)
 - AI assistance note: [docs/ai-assistance-note.md](docs/ai-assistance-note.md)
 - Reference audit: [docs/reference-audit.md](docs/reference-audit.md)
+- Release checklist: [docs/release-checklist-v0.1.0-ko.md](docs/release-checklist-v0.1.0-ko.md)
 - Changelog: [CHANGELOG.md](CHANGELOG.md)
 - Korean README: [README.ko.md](README.ko.md)
 

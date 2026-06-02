@@ -34,7 +34,7 @@ jaemin-cosmology/
 PR 00 범위에서는 `.gitignore`가 추가되었다. PR 01 범위에서는 원고와 참고문헌이 공개용 구조로 이동했고, README가 영어/한국어로 분리되었으며, Typst bibliography 경로가 새 구조에 맞게 갱신되었다.
 PR 02 범위에서는 `scripts/build.sh`와 `Makefile`이 추가되었고, README 양쪽의 빌드 명령이 새 경로 기준으로 갱신되었다. Typst 원고가 `paper/ko/` 아래에 있고 bibliography가 `references/` 아래에 있으므로 빌드 명령은 `--root .`를 사용해야 한다. PR 03 범위에서는 공개 범위와 비목표 문서가 한국어/영어로 추가되고 README 양쪽에 연결되었다.
 
-초기 커밋과 GitHub push는 완료되었다. PR 04 범위에서는 `CITATION.cff`, `LICENSE`, `docs/license-note.md`, `.zenodo.json`, `CHANGELOG.md`가 추가되었고 README 양쪽에 citation/license/changelog 링크가 연결되었다. PR 05 범위에서는 한국어 원고의 자동 날짜가 `Working Paper v0.1.0` 및 `2026-06-02`로 고정되었다. PR 06 범위에서는 `docs/reference-audit.md`가 추가되었고 모든 BibTeX entry가 수동 검증 필요 상태로 정리되었다. PR 07 범위에서는 README 영어/한국어 landing page 구조를 정리하고, 참고문헌 metadata가 아직 manual verification pending임을 양쪽 README에 명시했다. PR 08-10 범위에서는 영어/한국어 초록, 1페이지 요약, FAQ 문서가 추가되고 README 양쪽에 연결되었다. PR 11 범위에서는 직접 ChatGPT 공유 링크를 제거하고 `docs/ai-assistance-note.md`로 AI 사용 고지를 분리했다. PR 12 범위에서는 `.github/workflows/typst.yml` CI 빌드 workflow를 추가했다. PR 13 범위에서는 `docs/release-notes/v0.1.0-ko.md`를 추가하고 `CHANGELOG.md`에 `v0.1.0-ko` 섹션을 정리했다. PR 13.5 범위에서는 참고문헌 metadata를 검증해 `docs/reference-audit.md`를 verified 18개, partially verified 1개, unresolved 0개 상태로 갱신했고, `references.bib`의 URL 3개를 검증된 metadata URL로 정정했다. PR 14 범위에서는 `.zenodo.json`을 Zenodo metadata source of truth로 두고 `CITATION.cff`와 version을 `0.1.0-ko`로 정합화했으며, ORCID/affiliation은 비워 두고 `riemann1854`를 1868 Abhandlungen article record로 엄밀화했다. 다음 실제 작업의 출발점은 **PR 15 - v0.1.0 Korean Release Prep**이다.
+초기 커밋과 GitHub push는 완료되었다. PR 04 범위에서는 `CITATION.cff`, `LICENSE`, `docs/license-note.md`, `.zenodo.json`, `CHANGELOG.md`가 추가되었고 README 양쪽에 citation/license/changelog 링크가 연결되었다. PR 05 범위에서는 한국어 원고의 자동 날짜가 `Working Paper v0.1.0` 및 `2026-06-02`로 고정되었다. PR 06 범위에서는 `docs/reference-audit.md`가 추가되었고 모든 BibTeX entry가 수동 검증 필요 상태로 정리되었다. PR 07 범위에서는 README 영어/한국어 landing page 구조를 정리하고, 참고문헌 metadata가 아직 manual verification pending임을 양쪽 README에 명시했다. PR 08-10 범위에서는 영어/한국어 초록, 1페이지 요약, FAQ 문서가 추가되고 README 양쪽에 연결되었다. PR 11 범위에서는 직접 ChatGPT 공유 링크를 제거하고 `docs/ai-assistance-note.md`로 AI 사용 고지를 분리했다. PR 12 범위에서는 `.github/workflows/typst.yml` CI 빌드 workflow를 추가했다. PR 13 범위에서는 `docs/release-notes/v0.1.0-ko.md`를 추가하고 `CHANGELOG.md`에 `v0.1.0-ko` 섹션을 정리했다. PR 13.5 범위에서는 참고문헌 metadata를 검증해 `docs/reference-audit.md`를 verified 18개, partially verified 1개, unresolved 0개 상태로 갱신했고, `references.bib`의 URL 3개를 검증된 metadata URL로 정정했다. PR 14 범위에서는 `.zenodo.json`을 Zenodo metadata source of truth로 두고 `CITATION.cff`와 version을 `0.1.0-ko`로 정합화했으며, ORCID/affiliation은 비워 두고 `riemann1854`를 1868 Abhandlungen article record로 엄밀화했다. PR 15 범위에서는 `docs/release-checklist-v0.1.0-ko.md`를 추가하고 release notes, README 양쪽, CHANGELOG, 운영 문서를 릴리스 직전 상태로 정리했다. 다음 실제 작업은 **수동 작업 E - Git tag 생성, GitHub Release 작성, PDF asset 첨부**이다.
 
 ## 2. 모든 단계의 공통 원칙
 
@@ -94,7 +94,7 @@ GitHub repo:
 https://github.com/misosiruda/jaemin-cosmology
 ```
 
-다음 단계인 PR 14 전에 사용자가 정해야 할 값은 다음과 같다.
+수동 작업 E 전에 최종 확인할 값은 다음과 같다.
 
 | 항목 | 현재 후보 |
 | --- | --- |
@@ -147,7 +147,7 @@ jaemin-cosmology
 27. PR 23-24
 ```
 
-현재 당장 목표는 PR 15 릴리스 직전 최종 정리로 넘어가는 것이다. ORCID와 affiliation은 사용자가 검증된 값을 제공하지 않으면 비워 둔다.
+현재 당장 목표는 수동 작업 E로 넘어가는 것이다. `docs/release-checklist-v0.1.0-ko.md`를 따라 Git tag와 GitHub Release를 만들고 `paper/ko/main-ko.pdf`를 asset으로 첨부한다.
 
 ## 7. PR 단계별 작업 요약
 
@@ -576,11 +576,12 @@ docs/ai-assistance-note.md에서 일반적인 방식으로 AI 사용을 고지�
 - `CHANGELOG.md`의 `v0.1.0-ko` section 확정
 - release notes가 GitHub Release에 붙여넣기 가능하게 준비
 - README 양쪽의 핵심 링크 확인
+- `docs/release-checklist-v0.1.0-ko.md`에 수동 릴리스 절차를 정리
 
 완료 시 사용자에게 줄 명령:
 
 ```bash
-git tag -a v0.1.0-ko -m "Korean working paper release v0.1.0"
+git tag -a v0.1.0-ko -m "Korean working paper release v0.1.0-ko"
 ```
 
 GitHub Release title:
@@ -818,7 +819,7 @@ reviewer guide focus:
 | PR 13 | `docs/release-notes/v0.1.0-ko.md` 존재 |
 | PR 13.5 | `docs/reference-audit.md`가 verified/partially verified/unresolved 상태로 갱신됨 |
 | PR 14 | Zenodo metadata와 DOI placeholder 정합성 확인, `riemann1854` 엄밀화 |
-| PR 15 | release checklist와 최종 링크 정리 완료 |
+| PR 15 | `docs/release-checklist-v0.1.0-ko.md` 존재, release checklist와 최종 링크 정리 완료 |
 | PR 16 | 실제 DOI가 README, CITATION, release notes에 반영됨 |
 | PR 17 | `paper/en/main-en.typ`, `paper/en/translation-notes.md` scaffold 존재 |
 | PR 18-22 | 영어 원고 TODO가 단계별로 채워짐 |
@@ -842,8 +843,9 @@ Codex는 다음 상황에서 임의로 진행하지 말고 사용자에게 물�
 
 현재 상태에서는 아래 순서가 가장 안전하다.
 
-1. PR 15 릴리스 직전 최종 정리로 넘어간다.
-2. ORCID와 affiliation은 사용자가 검증된 값을 제공하지 않는 한 비워 둔다.
-3. `riemann1854`는 1868 Abhandlungen article record를 main citation으로 사용하며, 1854 강연과 1867 별쇄본 DOI는 note에 보존한다.
+1. 수동 작업 E로 넘어간다.
+2. `docs/release-checklist-v0.1.0-ko.md`를 따라 tag를 생성하고 GitHub Release를 만든다.
+3. `paper/ko/main-ko.pdf`를 release asset으로 첨부한다.
+4. Zenodo DOI가 발급되면 DOI와 DOI URL을 제공하고 PR 16을 진행한다.
 
-이 문서를 갱신한 현재 작업에서는 PR 14 Zenodo metadata 정합성, `riemann1854` BibTeX entry, README 양쪽, CHANGELOG, 릴리스 노트, 운영 문서를 변경했다. 원고 본문, PDF, LaTeX 원고는 변경하지 않았다.
+이 문서를 갱신한 현재 작업에서는 PR 15 릴리스 체크리스트, README 양쪽, CHANGELOG, 릴리스 노트, 운영 문서를 변경했다. 원고 본문, 참고문헌, PDF, LaTeX 원고는 변경하지 않았다.

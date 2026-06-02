@@ -39,6 +39,7 @@ jaemin-cosmology/
     one-page-summary-en.md
     one-page-summary-ko.md
     reference-audit.md
+    release-checklist-v0.1.0-ko.md
     release-notes/
       v0.1.0-ko.md
     scope-and-nongoals.en.md
@@ -99,7 +100,7 @@ GitHub Actions는 pull request와 `main` push에서 한국어 Typst 원고를 �
 
 ## 주의
 
-이 문서는 검증된 물리 이론이나 경험적으로 확인된 과학 이론이 아닙니다. `references/references.bib`의 metadata는 PR 13.5에서 DOI registry, arXiv, 출판사, WorldCat, Google Books 등 확인 가능한 출처 기준으로 점검했습니다. 학술지나 제출처별 스타일 요구가 있으면 그 형식에 맞춰 재정렬하되, 가짜 DOI, 가짜 페이지, 확인되지 않은 출판 정보는 넣지 않습니다.
+이 문서는 검증된 물리 이론이나 경험적으로 확인된 과학 이론이 아닙니다. `references/references.bib`의 metadata는 PR 14까지 DOI registry, arXiv, 출판사, WorldCat, Google Books, EuDML, ETH e-rara 등 확인 가능한 출처 기준으로 점검했습니다. 학술지나 제출처별 스타일 요구가 있으면 그 형식에 맞춰 재정렬하되, 가짜 DOI, 가짜 페이지, 확인되지 않은 출판 정보는 넣지 않습니다.
 
 공개 범위와 비목표는 다음 문서에 분리해 정리했습니다.
 
@@ -122,6 +123,7 @@ GitHub Actions는 pull request와 `main` push에서 한국어 Typst 원고를 �
 - 한국어 FAQ: [docs/faq-ko.md](docs/faq-ko.md)
 - AI 사용 고지: [docs/ai-assistance-note.md](docs/ai-assistance-note.md)
 - 릴리스 노트: [docs/release-notes/v0.1.0-ko.md](docs/release-notes/v0.1.0-ko.md)
+- 릴리스 체크리스트: [docs/release-checklist-v0.1.0-ko.md](docs/release-checklist-v0.1.0-ko.md)
 
 ## 인용과 라이선스
 
@@ -130,6 +132,7 @@ GitHub Actions는 pull request와 `main` push에서 한국어 Typst 원고를 �
 - 라이선스 설명: [docs/license-note.md](docs/license-note.md)
 - AI 사용 고지: [docs/ai-assistance-note.md](docs/ai-assistance-note.md)
 - 참고문헌 감사 문서: [docs/reference-audit.md](docs/reference-audit.md)
+- 릴리스 체크리스트: [docs/release-checklist-v0.1.0-ko.md](docs/release-checklist-v0.1.0-ko.md)
 - 변경 기록: [CHANGELOG.md](CHANGELOG.md)
 - 영어 README: [README.md](README.md)
 
