@@ -1,0 +1,13 @@
+# License
+
+Copyright (c) 2026 Jaemin Seo.
+
+The manuscript, documentation, and public explanatory materials in this repository are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+You may share and adapt those manuscript and documentation materials under the terms of CC BY 4.0, including attribution to Jaemin Seo and a link to the license:
+
+https://creativecommons.org/licenses/by/4.0/
+
+Build scripts and automation files in this repository are not released under MIT or another permissive software license. They are provided only to reproduce and maintain this repository. Reuse of those scripts outside this repository requires prior permission from Jaemin Seo unless a later file explicitly grants a separate script license.
+
+No DOI is included in this file. A DOI should be added only after an actual DOI is assigned by Zenodo or another archival service.

@@ -10,10 +10,17 @@ The manuscript is currently written in Korean. See [README.ko.md](README.ko.md) 
 
 This project is a speculative formal framework and working-paper manuscript. It is not an empirically confirmed theory of physics, neuroscience, or consciousness.
 
+Author: Jaemin Seo
+
 ## Repository Structure
 
 ```text
 jaemin-cosmology/
+  .zenodo.json
+  CHANGELOG.md
+  CITATION.cff
+  LICENSE
+  Makefile
   README.md
   README.ko.md
   paper/
@@ -24,10 +31,15 @@ jaemin-cosmology/
     references.bib
   docs/
     codex-release-workflow.ko.md
+    license-note.md
+    reference-audit.md
+    scope-and-nongoals.en.md
+    scope-and-nongoals.ko.md
   legacy/
     latex/
       main.tex
   scripts/
+    build.sh
 ```
 
 ## Build
@@ -65,3 +77,13 @@ For a fuller statement, see:
 
 - [Scope and Non-Goals (English)](docs/scope-and-nongoals.en.md)
 - [범위와 비목표 (Korean)](docs/scope-and-nongoals.ko.md)
+
+## Citation and License
+
+- Citation metadata: [CITATION.cff](CITATION.cff)
+- License: [LICENSE](LICENSE)
+- License note: [docs/license-note.md](docs/license-note.md)
+- Reference audit: [docs/reference-audit.md](docs/reference-audit.md)
+- Changelog: [CHANGELOG.md](CHANGELOG.md)
+
+No DOI has been assigned yet. A DOI will be added only after release through Zenodo or another archival service.

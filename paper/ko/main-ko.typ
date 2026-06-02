@@ -1,6 +1,6 @@
 #set document(
   title: [The Brain as a Higher-Dimensional Interface: A Formal Framework for Consciousness, Intuition, Intelligence, and Subjective Time],
-  author: "Jaemin",
+  author: "Jaemin Seo",
 )
 #set page(paper: "a4", margin: 1in)
 #set text(
@@ -12,7 +12,8 @@
 #set heading(numbering: "1.")
 #set math.equation(numbering: "(1)")
 
-#let today = datetime.today().display("[year]-[month]-[day]")
+#let paper-version = "Working Paper v0.1.0"
+#let release-date = "2026-06-02"
 
 #let definition-counter = counter("definition")
 #let axiom-counter = counter("axiom")
@@ -62,10 +63,13 @@
   Toward Jaemin Cosmology as a Higher-Dimensional Information Projection Model
 
   #v(0.8em)
-  Jaemin
+  Jaemin Seo
 
   #v(0.35em)
-  #today
+  #paper-version
+
+  #v(0.25em)
+  #release-date
 ]
 
 #v(1em)

@@ -4,10 +4,17 @@
 
 본문은 한국어로 작성되었고, 논문 제목과 핵심 수학 표기는 영문 원제와 표준 수식을 유지합니다. 이 문서는 경험적으로 검증된 과학 이론이 아니라, 뇌-상위차원 인터페이스, 의식, 잠재의식, 직관, 지능, AGI 효율성 격차, 내부 시간에 관한 사변적 수학 프레임워크를 형식화한 것입니다.
 
+저자: Jaemin Seo
+
 ## 파일 구성
 
 ```text
 jaemin-cosmology/
+  .zenodo.json
+  CHANGELOG.md
+  CITATION.cff
+  LICENSE
+  Makefile
   README.md
   README.ko.md
   paper/
@@ -18,10 +25,15 @@ jaemin-cosmology/
     references.bib
   docs/
     codex-release-workflow.ko.md
+    license-note.md
+    reference-audit.md
+    scope-and-nongoals.en.md
+    scope-and-nongoals.ko.md
   legacy/
     latex/
       main.tex
   scripts/
+    build.sh
 ```
 
 `paper/ko/main-ko.typ`가 주 원고입니다. 기존 LaTeX 원고는 `legacy/latex/main.tex`에 보존되어 있습니다. 영어 첫 화면은 `README.md`이고, 이 파일은 한국어 안내문입니다.
@@ -73,3 +85,13 @@ make watch
 
 - [범위와 비목표](docs/scope-and-nongoals.ko.md)
 - [Scope and Non-Goals](docs/scope-and-nongoals.en.md)
+
+## 인용과 라이선스
+
+- 인용 메타데이터: [CITATION.cff](CITATION.cff)
+- 라이선스: [LICENSE](LICENSE)
+- 라이선스 설명: [docs/license-note.md](docs/license-note.md)
+- 참고문헌 감사 문서: [docs/reference-audit.md](docs/reference-audit.md)
+- 변경 기록: [CHANGELOG.md](CHANGELOG.md)
+
+아직 DOI는 발급되지 않았습니다. DOI는 Zenodo 또는 다른 보존 서비스에서 실제 발급된 뒤에만 추가합니다.

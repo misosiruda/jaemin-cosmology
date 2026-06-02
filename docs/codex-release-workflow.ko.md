@@ -34,7 +34,7 @@ jaemin-cosmology/
 PR 00 범위에서는 `.gitignore`가 추가되었다. PR 01 범위에서는 원고와 참고문헌이 공개용 구조로 이동했고, README가 영어/한국어로 분리되었으며, Typst bibliography 경로가 새 구조에 맞게 갱신되었다.
 PR 02 범위에서는 `scripts/build.sh`와 `Makefile`이 추가되었고, README 양쪽의 빌드 명령이 새 경로 기준으로 갱신되었다. Typst 원고가 `paper/ko/` 아래에 있고 bibliography가 `references/` 아래에 있으므로 빌드 명령은 `--root .`를 사용해야 한다. PR 03 범위에서는 공개 범위와 비목표 문서가 한국어/영어로 추가되고 README 양쪽에 연결되었다.
 
-초기 커밋과 GitHub push는 완료되었다. 다음 실제 작업의 출발점은 **PR 04 - Citation, License, and Metadata**이며, 진행 전에 저자명, 라이선스, 버전, 릴리스 날짜를 확정해야 한다.
+초기 커밋과 GitHub push는 완료되었다. PR 04 범위에서는 `CITATION.cff`, `LICENSE`, `docs/license-note.md`, `.zenodo.json`, `CHANGELOG.md`가 추가되었고 README 양쪽에 citation/license/changelog 링크가 연결되었다. PR 05 범위에서는 한국어 원고의 자동 날짜가 `Working Paper v0.1.0` 및 `2026-06-02`로 고정되었다. PR 06 범위에서는 `docs/reference-audit.md`가 추가되었고 모든 BibTeX entry가 수동 검증 필요 상태로 정리되었다. 다음 실제 작업의 출발점은 **수동 작업 C - Reference 실제 검증** 또는 **PR 07 - README Bilingual Split**이다.
 
 ## 2. 모든 단계의 공통 원칙
 
@@ -98,12 +98,12 @@ https://github.com/misosiruda/jaemin-cosmology
 
 | 항목 | 현재 후보 |
 | --- | --- |
-| Author name | `Jaemin` |
+| Author name | `Jaemin Seo` |
 | Repository URL | `https://github.com/misosiruda/jaemin-cosmology` |
-| Text license | `CC BY 4.0` 권장 |
-| Scripts license | 필요 시 `MIT` |
+| Text license | `CC BY 4.0` |
+| Scripts license | MIT 사용 안 함. 저장소 밖 재사용은 Jaemin Seo의 사전 허락 필요 |
 | Version | `0.1.0` |
-| Release date | 실제 릴리스 날짜 |
+| Release date | `2026-06-02` |
 
 권장 repo 이름:
 
@@ -284,9 +284,9 @@ Typst가 환경에 없으면 실패 사실을 명시하고, 설치/폰트 문제
 
 | 항목 | 권장값 |
 | --- | --- |
-| Author name | `Jaemin` 또는 사용자 실명/필명 |
+| Author name | `Jaemin Seo` |
 | License | 원고/문서: `CC BY 4.0` |
-| Scripts license | 필요 시 `MIT` |
+| Scripts license | MIT 사용 안 함. 저장소 밖 재사용은 저자 사전 허락 필요 |
 | Version | `0.1.0` |
 | Release date | 실제 릴리스 날짜 |
 
@@ -512,7 +512,7 @@ docs/ai-assistance-note.md에서 일반적인 방식으로 AI 사용을 고지�
 
 | 항목 | 선택 |
 | --- | --- |
-| 공개 이름 | `Jaemin` / 실명 / 필명 |
+| 공개 이름 | `Jaemin Seo` |
 | ORCID | 있으면 입력 |
 | Affiliation | 있으면 입력, 없으면 비움 |
 | License | `CC BY 4.0` 권장 |
@@ -802,7 +802,7 @@ Codex는 다음 상황에서 임의로 진행하지 말고 사용자에게 물�
 
 현재 상태에서는 아래 순서가 가장 안전하다.
 
-1. PR 04를 진행하기 전에 저자명, 라이선스, 버전, 릴리스 날짜를 확정한다.
-2. PR 04에서 citation, license, Zenodo metadata, changelog를 추가한다.
+1. 사용자는 PR 06 이후 참고문헌 metadata를 직접 검증한다.
+2. 참고문헌 검증을 당장 미루는 경우 PR 07에서 README bilingual 구조를 더 정리한다.
 
 이 문서를 갱신한 현재 작업에서는 원고, README, 참고문헌, PDF, LaTeX 원고를 변경하지 않았다.
