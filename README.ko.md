@@ -39,6 +39,8 @@ jaemin-cosmology/
     one-page-summary-en.md
     one-page-summary-ko.md
     reference-audit.md
+    release-notes/
+      v0.1.0-ko.md
     scope-and-nongoals.en.md
     scope-and-nongoals.ko.md
   legacy/
@@ -119,6 +121,7 @@ GitHub Actions는 pull request와 `main` push에서 한국어 Typst 원고를 �
 - 영문 FAQ: [docs/faq-en.md](docs/faq-en.md)
 - 한국어 FAQ: [docs/faq-ko.md](docs/faq-ko.md)
 - AI 사용 고지: [docs/ai-assistance-note.md](docs/ai-assistance-note.md)
+- 릴리스 노트: [docs/release-notes/v0.1.0-ko.md](docs/release-notes/v0.1.0-ko.md)
 
 ## 인용과 라이선스
 

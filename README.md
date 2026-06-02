@@ -43,6 +43,8 @@ jaemin-cosmology/
     one-page-summary-en.md
     one-page-summary-ko.md
     reference-audit.md
+    release-notes/
+      v0.1.0-ko.md
     scope-and-nongoals.en.md
     scope-and-nongoals.ko.md
   legacy/
@@ -107,6 +109,7 @@ See [docs/reference-audit.md](docs/reference-audit.md).
 - English FAQ: [docs/faq-en.md](docs/faq-en.md)
 - Korean FAQ: [docs/faq-ko.md](docs/faq-ko.md)
 - AI assistance note: [docs/ai-assistance-note.md](docs/ai-assistance-note.md)
+- Release notes: [docs/release-notes/v0.1.0-ko.md](docs/release-notes/v0.1.0-ko.md)
 
 ## Citation and License
 
