@@ -31,8 +31,10 @@ jaemin-cosmology/
 
 현재 `C:\Project\jaemin_space\jaemin-cosmology`는 로컬 Git 저장소로 초기화되었고 기본 브랜치는 `main`이다. GitHub Private repository `https://github.com/misosiruda/jaemin-cosmology`가 생성되었으며 `origin` remote로 연결되어 있다.
 
-PR 00 범위에서는 `.gitignore`가 추가되었다. PR 01 범위에서는 원고와 참고문헌이 공개용 구조로 이동했고, README가 영어/한국어로 분리되었으며, Typst bibliography 경로가 새 구조에 맞게 갱신되었다. 따라서 다음 실제 작업의 출발점은 **초기 커밋/푸시 여부 결정** 또는 **PR 02 - Reproducible Typst Build**이다.
+PR 00 범위에서는 `.gitignore`가 추가되었다. PR 01 범위에서는 원고와 참고문헌이 공개용 구조로 이동했고, README가 영어/한국어로 분리되었으며, Typst bibliography 경로가 새 구조에 맞게 갱신되었다.
 PR 02 범위에서는 `scripts/build.sh`와 `Makefile`이 추가되었고, README 양쪽의 빌드 명령이 새 경로 기준으로 갱신되었다. Typst 원고가 `paper/ko/` 아래에 있고 bibliography가 `references/` 아래에 있으므로 빌드 명령은 `--root .`를 사용해야 한다. PR 03 범위에서는 공개 범위와 비목표 문서가 한국어/영어로 추가되고 README 양쪽에 연결되었다.
+
+초기 커밋과 GitHub push는 완료되었다. 다음 실제 작업의 출발점은 **PR 04 - Citation, License, and Metadata**이며, 진행 전에 저자명, 라이선스, 버전, 릴리스 날짜를 확정해야 한다.
 
 ## 2. 모든 단계의 공통 원칙
 
@@ -84,17 +86,24 @@ Codex는 이 요청을 받으면 다음 순서로 판단한다.
 
 ## 5. 현재 즉시 필요한 수동 판단
 
-현재 폴더는 로컬 Git 저장소로 초기화되었고 GitHub `origin` remote도 연결되어 있다. 다음 중 하나를 사용자가 정해야 한다.
+현재 폴더는 로컬 Git 저장소로 초기화되었고 GitHub `origin` remote도 연결되어 있다. 초기 커밋과 push도 완료되었다.
 
-1. 현재 상태를 초기 커밋으로 저장하고 GitHub에 push한다.
+GitHub repo:
 
-```bash
-git add README.md README.ko.md paper/ko/main-ko.typ references/references.bib legacy/latex/main.tex docs/codex-release-workflow.ko.md .gitignore scripts/build.sh Makefile
-git commit -m "Initial import of Korean Typst manuscript"
-git push -u origin main
+```text
+https://github.com/misosiruda/jaemin-cosmology
 ```
 
-2. commit/push 없이 로컬 정리 작업을 먼저 계속한다.
+다음 단계인 PR 04 전에 사용자가 정해야 할 값은 다음과 같다.
+
+| 항목 | 현재 후보 |
+| --- | --- |
+| Author name | `Jaemin` |
+| Repository URL | `https://github.com/misosiruda/jaemin-cosmology` |
+| Text license | `CC BY 4.0` 권장 |
+| Scripts license | 필요 시 `MIT` |
+| Version | `0.1.0` |
+| Release date | 실제 릴리스 날짜 |
 
 권장 repo 이름:
 
@@ -793,7 +802,7 @@ Codex는 다음 상황에서 임의로 진행하지 말고 사용자에게 물�
 
 현재 상태에서는 아래 순서가 가장 안전하다.
 
-1. 초기 커밋/푸시를 지금 할지, 로컬 정리를 더 진행한 뒤 할지 사용자에게 확인한다.
-2. PR 04를 진행하기 전에 저자명, 라이선스, 버전, 릴리스 날짜를 확정한다.
+1. PR 04를 진행하기 전에 저자명, 라이선스, 버전, 릴리스 날짜를 확정한다.
+2. PR 04에서 citation, license, Zenodo metadata, changelog를 추가한다.
 
 이 문서를 갱신한 현재 작업에서는 원고, README, 참고문헌, PDF, LaTeX 원고를 변경하지 않았다.
