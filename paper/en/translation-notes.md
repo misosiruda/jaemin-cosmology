@@ -2,12 +2,18 @@
 
 ## Translation Status
 
-- Status: scaffold only.
+- Status: partial English draft.
 - Source manuscript: `paper/ko/main-ko.typ`.
 - Source release: Korean working-paper release `v0.1.0-ko`.
 - English scaffold: `paper/en/main-en.typ`.
-- Full English translation: not started.
+- Full English translation: still pending.
 - This scaffold is not yet the authoritative English translation.
+
+## PR 18 Status
+
+- Frontmatter, abstract, scope/non-goals, limitations, and conclusion drafted.
+- Full translation still pending.
+- Claim-strength rules remain active.
 
 ## DOI Reference
 

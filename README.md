@@ -12,7 +12,7 @@ The manuscript is currently written in Korean. See [README.ko.md](README.ko.md) 
 
 This repository contains a Korean working-paper manuscript. The project proposes a speculative formal framework for modeling consciousness, intuition, cognitive efficiency, AGI efficiency gaps, and subjective time through the hypothesis of a higher-dimensional information interface. It is not an empirically confirmed scientific theory.
 
-The authoritative released manuscript remains the Korean working-paper release `v0.1.0-ko`. An English translation scaffold now exists under `paper/en/`, but it is not yet a full English version and should not be cited as the authoritative English translation.
+The authoritative released manuscript remains the Korean working-paper release `v0.1.0-ko`. An English draft scaffold exists under `paper/en/` and now contains initial frontmatter, abstract, scope/non-goals, limitations, and conclusion sections, but it is not yet a full English version and should not be cited as the authoritative English translation.
 
 Author: Jaemin Seo
 
