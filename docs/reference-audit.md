@@ -17,8 +17,8 @@ Verification pass: `2026-06-02`, for `v0.1.0-ko` release preparation.
 | Metric | Count |
 | --- | --- |
 | Total entries | 19 |
-| Verified entries | 18 |
-| Partially verified entries | 1 |
+| Verified entries | 19 |
+| Partially verified entries | 0 |
 | Unresolved entries | 0 |
 | Entries with DOI | 13 |
 | Entries without DOI | 6 |
@@ -49,7 +49,7 @@ Entries without URL, intentionally left blank because DOI metadata is present.
 | `friston2010` | verified | yes | yes | Nature Reviews Neuroscience volume, pages, date, and DOI verified. |
 | `abbott1884` | verified | no | yes | WorldCat confirms the 1884 Seeley & Co., London record. URL normalized to OCLC. |
 | `einstein1916` | verified | yes | no | Annalen der Physik volume, issue, pages, year, and DOI verified. |
-| `riemann1854` | partially verified | no | yes | 1854 lecture and 1867 posthumous publication verified; BibTeX type remains simplified. |
+| `riemann1854` | verified | no | yes | Main record uses the 1868 Abhandlungen article; 1854 lecture and 1867 separate printing are preserved in `note`. |
 | `kahneman2011` | verified | no | yes | Macmillan/Farrar, Straus and Giroux page confirms ISBN, imprint, and 2011 date. |
 | `bergson1889` | verified | no | yes | Google Books confirms F. Alcan, 1889, 182 pages. |
 | `hebb1949` | verified | no | yes | WorldCat confirms D. O. Hebb, Wiley, New York, 1949. URL changed from PDF to WorldCat. |
@@ -104,11 +104,11 @@ Entries without URL, intentionally left blank because DOI metadata is present.
 
 `riemann1854`
 
-- TCD hosts the text.
-- Rare-book metadata confirms the 1854 lecture and 1867 posthumous publication context.
-- Source `https://www.maths.tcd.ie/pub/HistMath/People/Riemann/Geom/`
-- Source `https://www.sophiararebooks.com/pages/books/6438/bernhard-riemann/uber-die-hypothesen-welche-der-geometrie-zu-grunde-liegen`
-- Status remains `partially verified` because `@book` simplifies a nuanced lecture/offprint/publication record.
+- EuDML confirms the 1868 article record in `Abhandlungen der Königlichen Gesellschaft der Wissenschaften in Göttingen`, volume 13, pages 133--152.
+- ETH e-rara confirms a separate 1867 Göttingen printing by Dieterichsche Buchhandlung with DOI `10.3931/e-rara-49481`.
+- The main BibTeX entry intentionally uses the 1868 EuDML article record. The 1867 ETH e-rara DOI is kept in `note` rather than the main `doi` field because it identifies the separate printing.
+- Source `http://eudml.org/doc/135760`
+- Source `https://www.e-rara.ch/zut/doi/10.3931/e-rara-49481`
 
 `kahneman2011`
 
@@ -147,7 +147,7 @@ arXiv entries
 
 ## Remaining Notes
 
-- `riemann1854` remains partially verified because the current BibTeX type and publisher fields simplify a historically nuanced lecture/offprint/publication record.
+- `riemann1854` uses the 1868 Abhandlungen article as the main citation while preserving the 1854 lecture and 1867 separate printing in `note`.
 - Published-version DOIs listed by arXiv for `chang2019informationclosure`, `lin2023topologygeometry`, and `kurshan2023heterogeneousagi` were not substituted into `references.bib`.
 - The arXiv entries remain scoped as arXiv preprint records for this release.
 - No repository DOI has been assigned yet.

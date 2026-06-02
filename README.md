@@ -96,7 +96,7 @@ For a fuller statement, see:
 
 ## Reference Metadata Status
 
-Bibliographic metadata completed the PR 13.5 verification pass for `v0.1.0-ko` release preparation. The audit records 18 verified entries, 1 partially verified entry, and 0 unresolved entries. `riemann1854` remains partially verified because the historical lecture, posthumous publication, and offprint metadata are more nuanced than the simplified BibTeX record.
+Bibliographic metadata completed the PR 14 consistency pass for `v0.1.0-ko` release preparation. The audit records 19 verified entries, 0 partially verified entries, and 0 unresolved entries. `riemann1854` keeps the existing citation key but now uses the 1868 Abhandlungen article as the main bibliographic record.
 
 See [docs/reference-audit.md](docs/reference-audit.md).
 

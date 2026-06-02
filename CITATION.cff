@@ -5,7 +5,7 @@ type: manuscript
 authors:
   - family-names: "Seo"
     given-names: "Jaemin"
-version: "0.1.0"
+version: "0.1.0-ko"
 date-released: "2026-06-02"
 license: "CC-BY-4.0"
 url: "https://github.com/misosiruda/jaemin-cosmology"

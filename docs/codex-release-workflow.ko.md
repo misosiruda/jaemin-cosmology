@@ -34,7 +34,7 @@ jaemin-cosmology/
 PR 00 범위에서는 `.gitignore`가 추가되었다. PR 01 범위에서는 원고와 참고문헌이 공개용 구조로 이동했고, README가 영어/한국어로 분리되었으며, Typst bibliography 경로가 새 구조에 맞게 갱신되었다.
 PR 02 범위에서는 `scripts/build.sh`와 `Makefile`이 추가되었고, README 양쪽의 빌드 명령이 새 경로 기준으로 갱신되었다. Typst 원고가 `paper/ko/` 아래에 있고 bibliography가 `references/` 아래에 있으므로 빌드 명령은 `--root .`를 사용해야 한다. PR 03 범위에서는 공개 범위와 비목표 문서가 한국어/영어로 추가되고 README 양쪽에 연결되었다.
 
-초기 커밋과 GitHub push는 완료되었다. PR 04 범위에서는 `CITATION.cff`, `LICENSE`, `docs/license-note.md`, `.zenodo.json`, `CHANGELOG.md`가 추가되었고 README 양쪽에 citation/license/changelog 링크가 연결되었다. PR 05 범위에서는 한국어 원고의 자동 날짜가 `Working Paper v0.1.0` 및 `2026-06-02`로 고정되었다. PR 06 범위에서는 `docs/reference-audit.md`가 추가되었고 모든 BibTeX entry가 수동 검증 필요 상태로 정리되었다. PR 07 범위에서는 README 영어/한국어 landing page 구조를 정리하고, 참고문헌 metadata가 아직 manual verification pending임을 양쪽 README에 명시했다. PR 08-10 범위에서는 영어/한국어 초록, 1페이지 요약, FAQ 문서가 추가되고 README 양쪽에 연결되었다. PR 11 범위에서는 직접 ChatGPT 공유 링크를 제거하고 `docs/ai-assistance-note.md`로 AI 사용 고지를 분리했다. PR 12 범위에서는 `.github/workflows/typst.yml` CI 빌드 workflow를 추가했다. PR 13 범위에서는 `docs/release-notes/v0.1.0-ko.md`를 추가하고 `CHANGELOG.md`에 `v0.1.0-ko` 섹션을 정리했다. PR 13.5 범위에서는 참고문헌 metadata를 검증해 `docs/reference-audit.md`를 verified 18개, partially verified 1개, unresolved 0개 상태로 갱신했고, `references.bib`의 URL 3개를 검증된 metadata URL로 정정했다. 다음 실제 작업의 출발점은 **PR 14 - Zenodo Preparation**이다.
+초기 커밋과 GitHub push는 완료되었다. PR 04 범위에서는 `CITATION.cff`, `LICENSE`, `docs/license-note.md`, `.zenodo.json`, `CHANGELOG.md`가 추가되었고 README 양쪽에 citation/license/changelog 링크가 연결되었다. PR 05 범위에서는 한국어 원고의 자동 날짜가 `Working Paper v0.1.0` 및 `2026-06-02`로 고정되었다. PR 06 범위에서는 `docs/reference-audit.md`가 추가되었고 모든 BibTeX entry가 수동 검증 필요 상태로 정리되었다. PR 07 범위에서는 README 영어/한국어 landing page 구조를 정리하고, 참고문헌 metadata가 아직 manual verification pending임을 양쪽 README에 명시했다. PR 08-10 범위에서는 영어/한국어 초록, 1페이지 요약, FAQ 문서가 추가되고 README 양쪽에 연결되었다. PR 11 범위에서는 직접 ChatGPT 공유 링크를 제거하고 `docs/ai-assistance-note.md`로 AI 사용 고지를 분리했다. PR 12 범위에서는 `.github/workflows/typst.yml` CI 빌드 workflow를 추가했다. PR 13 범위에서는 `docs/release-notes/v0.1.0-ko.md`를 추가하고 `CHANGELOG.md`에 `v0.1.0-ko` 섹션을 정리했다. PR 13.5 범위에서는 참고문헌 metadata를 검증해 `docs/reference-audit.md`를 verified 18개, partially verified 1개, unresolved 0개 상태로 갱신했고, `references.bib`의 URL 3개를 검증된 metadata URL로 정정했다. PR 14 범위에서는 `.zenodo.json`을 Zenodo metadata source of truth로 두고 `CITATION.cff`와 version을 `0.1.0-ko`로 정합화했으며, ORCID/affiliation은 비워 두고 `riemann1854`를 1868 Abhandlungen article record로 엄밀화했다. 다음 실제 작업의 출발점은 **PR 15 - v0.1.0 Korean Release Prep**이다.
 
 ## 2. 모든 단계의 공통 원칙
 
@@ -78,7 +78,7 @@ Codex는 이 요청을 받으면 다음 순서로 판단한다.
 | --- | --- | --- | --- | --- |
 | A | 시작 전 | GitHub repository 생성, 공개/비공개 결정, remote URL 확정 | 로컬 `git init`, `.gitignore` 작성, 파일 상태 점검 | GitHub 계정과 공개 범위는 사용자 권한/판단 필요 |
 | B | PR 02 후 | 로컬에서 Typst 빌드 확인 | 빌드 명령 실행 시도, 실패 로그 분석 | 한글 폰트와 Typst 설치 상태가 환경 의존 |
-| C | PR 06 후 / PR 13.5 | 참고문헌 검증 결과 확인, 필요 시 `riemann1854`의 더 엄밀한 역사적 citation 형식 결정 | DOI registry, arXiv, 출판사, WorldCat, Google Books 기준 metadata 검증과 audit 문서 갱신 | 역사적 출판 형태와 최종 인용 스타일은 저자 판단이 필요할 수 있음 |
+| C | PR 06 후 / PR 13.5-14 | 참고문헌 검증 결과 확인 | DOI registry, arXiv, 출판사, WorldCat, Google Books, EuDML, ETH e-rara 기준 metadata 검증과 audit 문서 갱신 | 최종 인용 스타일은 제출처 요구에 따라 다시 조정될 수 있음 |
 | D | PR 12 후 | GitHub Actions 웹 UI에서 실행 결과 확인 | workflow 파일 작성, 로컬 경로 점검, 로그 기반 수정 | CI 실행 결과는 GitHub 웹/권한에 의존 |
 | E | PR 15 후 | Git tag 생성, GitHub Release 작성, PDF asset 첨부 | 릴리스 노트 작성, 태그 명령 제시 | 릴리스는 사용자 계정 권한과 공개 결정 필요 |
 | F | PR 15 후 | Zenodo 연동, DOI 발급 | Zenodo metadata 정리, DOI 자리표시자 관리 | DOI는 Zenodo 발급 후에만 알 수 있음 |
@@ -104,7 +104,7 @@ https://github.com/misosiruda/jaemin-cosmology
 | Scripts license | MIT 사용 안 함. 저장소 밖 재사용은 Jaemin Seo의 사전 허락 필요 |
 | ORCID | 제공 전까지 비움 |
 | Affiliation | 제공 전까지 비움 |
-| Version | `0.1.0` |
+| Version | `0.1.0-ko` |
 | Release date | `2026-06-02` |
 
 권장 repo 이름:
@@ -147,7 +147,7 @@ jaemin-cosmology
 27. PR 23-24
 ```
 
-현재 당장 목표는 PR 14 Zenodo metadata 정합성 확인으로 넘어가는 것이다. ORCID와 affiliation은 사용자가 검증된 값을 제공하지 않으면 비워 둔다.
+현재 당장 목표는 PR 15 릴리스 직전 최종 정리로 넘어가는 것이다. ORCID와 affiliation은 사용자가 검증된 값을 제공하지 않으면 비워 둔다.
 
 ## 7. PR 단계별 작업 요약
 
@@ -522,8 +522,8 @@ docs/ai-assistance-note.md에서 일반적인 방식으로 AI 사용을 고지�
 
 현재 결과:
 
-- verified: 18
-- partially verified: 1 (`riemann1854`)
+- verified: 19
+- partially verified: 0
 - unresolved: 0
 - DOI 공란 유지: `abbott1884`, `riemann1854`, `kahneman2011`, `bergson1889`, `hebb1949`, `sporns2011`
 - URL 공란 유지: `shannon1948`, `einstein1916`
@@ -555,6 +555,16 @@ docs/ai-assistance-note.md에서 일반적인 방식으로 AI 사용을 고지�
 - `.zenodo.json`, `CITATION.cff`, README, release notes 정합성 확인
 - DOI badge는 placeholder만 두고 fake DOI는 넣지 않는다.
 - keyword에 consciousness, intuition, cognitive efficiency, AGI, subjective time, higher-dimensional information interface, speculative formal framework를 포함한다.
+
+현재 결과:
+
+- `.zenodo.json`을 Zenodo metadata source of truth로 둔다.
+- `.zenodo.json` creator는 `{"name": "Seo, Jaemin"}`만 사용한다.
+- `CITATION.cff` author는 `Seo, Jaemin`만 사용한다.
+- ORCID, affiliation, `Independent Researcher`는 추가하지 않았다.
+- `.zenodo.json` version과 `CITATION.cff` version은 release tag에 맞춰 `0.1.0-ko`로 정합화했다.
+- repository DOI, DOI badge, Zenodo DOI는 아직 추가하지 않았다.
+- `riemann1854`는 key를 유지하고, 1868 Abhandlungen article record를 main citation으로 사용한다.
 
 ### PR 15 - v0.1.0 Korean Release Prep
 
@@ -807,7 +817,7 @@ reviewer guide focus:
 | PR 12 | `.github/workflows/typst.yml` 존재 |
 | PR 13 | `docs/release-notes/v0.1.0-ko.md` 존재 |
 | PR 13.5 | `docs/reference-audit.md`가 verified/partially verified/unresolved 상태로 갱신됨 |
-| PR 14 | Zenodo metadata와 DOI placeholder 정합성 확인 |
+| PR 14 | Zenodo metadata와 DOI placeholder 정합성 확인, `riemann1854` 엄밀화 |
 | PR 15 | release checklist와 최종 링크 정리 완료 |
 | PR 16 | 실제 DOI가 README, CITATION, release notes에 반영됨 |
 | PR 17 | `paper/en/main-en.typ`, `paper/en/translation-notes.md` scaffold 존재 |
@@ -832,8 +842,8 @@ Codex는 다음 상황에서 임의로 진행하지 말고 사용자에게 물�
 
 현재 상태에서는 아래 순서가 가장 안전하다.
 
-1. PR 14 Zenodo metadata 정합성 확인으로 넘어간다.
+1. PR 15 릴리스 직전 최종 정리로 넘어간다.
 2. ORCID와 affiliation은 사용자가 검증된 값을 제공하지 않는 한 비워 둔다.
-3. `riemann1854`는 현재 partially verified이므로, Zenodo 전 최종 citation 스타일에서 더 엄밀한 역사적 출판 형식이 필요한지만 판단한다.
+3. `riemann1854`는 1868 Abhandlungen article record를 main citation으로 사용하며, 1854 강연과 1867 별쇄본 DOI는 note에 보존한다.
 
-이 문서를 갱신한 현재 작업에서는 PR 13.5 참고문헌 검증 상태, README 양쪽, CHANGELOG, 릴리스 노트, 운영 문서를 변경했다. 원고 본문, PDF, LaTeX 원고는 변경하지 않았다.
+이 문서를 갱신한 현재 작업에서는 PR 14 Zenodo metadata 정합성, `riemann1854` BibTeX entry, README 양쪽, CHANGELOG, 릴리스 노트, 운영 문서를 변경했다. 원고 본문, PDF, LaTeX 원고는 변경하지 않았다.

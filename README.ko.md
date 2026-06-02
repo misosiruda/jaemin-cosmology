@@ -108,7 +108,7 @@ GitHub Actions는 pull request와 `main` push에서 한국어 Typst 원고를 �
 
 ## 참고문헌 Metadata 상태
 
-참고문헌 metadata는 `v0.1.0-ko` 릴리스 준비를 위한 PR 13.5 검증을 완료했습니다. 감사 문서는 verified 18개, partially verified 1개, unresolved 0개로 정리되어 있습니다. `riemann1854`는 강연, 사후 출판, 오프프린트 metadata가 단순 BibTeX record보다 복잡해 partially verified로 남겼습니다.
+참고문헌 metadata는 `v0.1.0-ko` 릴리스 준비를 위한 PR 14 정합성 확인을 완료했습니다. 감사 문서는 verified 19개, partially verified 0개, unresolved 0개로 정리되어 있습니다. `riemann1854`는 기존 citation key를 유지하되 1868년 Abhandlungen article을 main bibliographic record로 사용하도록 정리했습니다.
 
 [docs/reference-audit.md](docs/reference-audit.md)를 참고하세요.
 

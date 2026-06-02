@@ -5,6 +5,8 @@ All notable repository and manuscript release changes will be documented in this
 ## Unreleased
 
 - Verified bibliography metadata for v0.1.0-ko release preparation.
+- Completed Zenodo metadata consistency check for v0.1.0-ko release preparation.
+- Revised `riemann1854` to use the 1868 Abhandlungen article record while preserving the 1854 lecture and 1867 printing note.
 
 ## v0.1.0-ko - 2026-06-02
 
@@ -28,7 +30,7 @@ Known status:
 - This is a speculative formal framework and working-paper manuscript.
 - It is not an empirically confirmed theory of physics, neuroscience, or consciousness.
 - No DOI has been assigned yet.
-- Bibliographic metadata completed the PR 13.5 verification pass; `riemann1854` remains partially verified because of historically nuanced publication details.
+- Bibliographic metadata completed the PR 14 consistency pass; all 19 entries are verified in `docs/reference-audit.md`.
 
 Repository preparation changes included:
 
@@ -39,6 +41,7 @@ Repository preparation changes included:
 - Fixed Korean manuscript frontmatter to stable working-paper version and release date metadata.
 - Added a reference audit document for manual bibliography verification.
 - Verified bibliography metadata for `v0.1.0-ko` release preparation.
+- Completed Zenodo metadata consistency check and aligned metadata versions to `0.1.0-ko`.
 - Added English and Korean abstract documents.
 - Added English and Korean one-page summary documents.
 - Added English and Korean public FAQ documents.
