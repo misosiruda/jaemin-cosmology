@@ -2,7 +2,9 @@
 
 이 프로젝트는 `The Brain as a Higher-Dimensional Interface: A Formal Framework for Consciousness, Intuition, Intelligence, and Subjective Time` 논문의 Typst 원고입니다.
 
-본문은 한국어로 작성되었고, 논문 제목과 핵심 수학 표기는 영문 원제와 표준 수식을 유지합니다. 이 문서는 경험적으로 검증된 과학 이론이 아니라, 뇌-상위차원 인터페이스, 의식, 잠재의식, 직관, 지능, AGI 효율성 격차, 내부 시간에 관한 사변적 수학 프레임워크를 형식화한 것입니다.
+이 저장소는 한국어 working paper 원고를 포함합니다. 이 프로젝트는 상위차원 정보 인터페이스 가설을 통해 의식, 직관, 인지 효율성, AGI 효율성 격차, 주관적 시간을 형식화하려는 사변적 수학 프레임워크입니다. 이는 경험적으로 검증된 과학 이론이 아닙니다.
+
+본문은 한국어로 작성되었고, 논문 제목과 핵심 수학 표기는 영문 원제와 표준 수식을 유지합니다.
 
 저자: Jaemin Seo
 
@@ -86,6 +88,12 @@ make watch
 - [범위와 비목표](docs/scope-and-nongoals.ko.md)
 - [Scope and Non-Goals](docs/scope-and-nongoals.en.md)
 
+## 참고문헌 Metadata 상태
+
+참고문헌 metadata는 현재 감사 중입니다. 현재 audit 문서는 항목들을 수동 검증 필요 상태로 표시합니다. DOI, 저자명, 출판연도, 학술지/출판사 정보, 권/호/페이지, URL, arXiv ID, ISBN은 수동 검증이 완료되기 전까지 최종값으로 취급하지 않습니다.
+
+[docs/reference-audit.md](docs/reference-audit.md)를 참고하세요.
+
 ## 인용과 라이선스
 
 - 인용 메타데이터: [CITATION.cff](CITATION.cff)
@@ -93,5 +101,6 @@ make watch
 - 라이선스 설명: [docs/license-note.md](docs/license-note.md)
 - 참고문헌 감사 문서: [docs/reference-audit.md](docs/reference-audit.md)
 - 변경 기록: [CHANGELOG.md](CHANGELOG.md)
+- 영어 README: [README.md](README.md)
 
 아직 DOI는 발급되지 않았습니다. DOI는 Zenodo 또는 다른 보존 서비스에서 실제 발급된 뒤에만 추가합니다.

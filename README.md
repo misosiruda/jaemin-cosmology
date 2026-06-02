@@ -8,7 +8,7 @@ The manuscript is currently written in Korean. See [README.ko.md](README.ko.md) 
 
 ## Status
 
-This project is a speculative formal framework and working-paper manuscript. It is not an empirically confirmed theory of physics, neuroscience, or consciousness.
+This repository contains a Korean working-paper manuscript. The project proposes a speculative formal framework for modeling consciousness, intuition, cognitive efficiency, AGI efficiency gaps, and subjective time through the hypothesis of a higher-dimensional information interface. It is not an empirically confirmed scientific theory.
 
 Author: Jaemin Seo
 
@@ -78,6 +78,12 @@ For a fuller statement, see:
 - [Scope and Non-Goals (English)](docs/scope-and-nongoals.en.md)
 - [범위와 비목표 (Korean)](docs/scope-and-nongoals.ko.md)
 
+## Reference Metadata Status
+
+Bibliographic metadata is currently under audit. The current audit file marks entries as requiring manual verification. DOI, author names, publication years, journal or publisher metadata, volume/issue/page ranges, URLs, arXiv IDs, and ISBNs should not be treated as final until the manual verification pass is complete.
+
+See [docs/reference-audit.md](docs/reference-audit.md).
+
 ## Citation and License
 
 - Citation metadata: [CITATION.cff](CITATION.cff)
@@ -85,5 +91,6 @@ For a fuller statement, see:
 - License note: [docs/license-note.md](docs/license-note.md)
 - Reference audit: [docs/reference-audit.md](docs/reference-audit.md)
 - Changelog: [CHANGELOG.md](CHANGELOG.md)
+- Korean README: [README.ko.md](README.ko.md)
 
 No DOI has been assigned yet. A DOI will be added only after release through Zenodo or another archival service.
