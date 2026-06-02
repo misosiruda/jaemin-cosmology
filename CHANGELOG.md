@@ -10,6 +10,9 @@ All notable repository and manuscript release changes will be documented in this
 - Added citation, license, Zenodo metadata, and repository changelog scaffolding.
 - Fixed Korean manuscript frontmatter to stable working-paper version and release date metadata.
 - Added a reference audit document for manual bibliography verification.
+- Added English and Korean abstract documents.
+- Added English and Korean one-page summary documents.
+- Added English and Korean public FAQ documents.
 
 ## v0.1.0-ko - Planned
 

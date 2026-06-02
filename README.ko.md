@@ -27,7 +27,13 @@ jaemin-cosmology/
     references.bib
   docs/
     codex-release-workflow.ko.md
+    abstract-en.md
+    abstract-ko.md
+    faq-en.md
+    faq-ko.md
     license-note.md
+    one-page-summary-en.md
+    one-page-summary-ko.md
     reference-audit.md
     scope-and-nongoals.en.md
     scope-and-nongoals.ko.md
@@ -93,6 +99,15 @@ make watch
 참고문헌 metadata는 현재 감사 중입니다. 현재 audit 문서는 항목들을 수동 검증 필요 상태로 표시합니다. DOI, 저자명, 출판연도, 학술지/출판사 정보, 권/호/페이지, URL, arXiv ID, ISBN은 수동 검증이 완료되기 전까지 최종값으로 취급하지 않습니다.
 
 [docs/reference-audit.md](docs/reference-audit.md)를 참고하세요.
+
+## 공개 요약 문서
+
+- 영문 초록: [docs/abstract-en.md](docs/abstract-en.md)
+- 한국어 초록: [docs/abstract-ko.md](docs/abstract-ko.md)
+- 영문 1페이지 요약: [docs/one-page-summary-en.md](docs/one-page-summary-en.md)
+- 한국어 1페이지 요약: [docs/one-page-summary-ko.md](docs/one-page-summary-ko.md)
+- 영문 FAQ: [docs/faq-en.md](docs/faq-en.md)
+- 한국어 FAQ: [docs/faq-ko.md](docs/faq-ko.md)
 
 ## 인용과 라이선스
 

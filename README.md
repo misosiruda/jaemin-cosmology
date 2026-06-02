@@ -31,7 +31,13 @@ jaemin-cosmology/
     references.bib
   docs/
     codex-release-workflow.ko.md
+    abstract-en.md
+    abstract-ko.md
+    faq-en.md
+    faq-ko.md
     license-note.md
+    one-page-summary-en.md
+    one-page-summary-ko.md
     reference-audit.md
     scope-and-nongoals.en.md
     scope-and-nongoals.ko.md
@@ -83,6 +89,15 @@ For a fuller statement, see:
 Bibliographic metadata is currently under audit. The current audit file marks entries as requiring manual verification. DOI, author names, publication years, journal or publisher metadata, volume/issue/page ranges, URLs, arXiv IDs, and ISBNs should not be treated as final until the manual verification pass is complete.
 
 See [docs/reference-audit.md](docs/reference-audit.md).
+
+## Public Summaries
+
+- English abstract: [docs/abstract-en.md](docs/abstract-en.md)
+- Korean abstract: [docs/abstract-ko.md](docs/abstract-ko.md)
+- English one-page summary: [docs/one-page-summary-en.md](docs/one-page-summary-en.md)
+- Korean one-page summary: [docs/one-page-summary-ko.md](docs/one-page-summary-ko.md)
+- English FAQ: [docs/faq-en.md](docs/faq-en.md)
+- Korean FAQ: [docs/faq-ko.md](docs/faq-ko.md)
 
 ## Citation and License
 
