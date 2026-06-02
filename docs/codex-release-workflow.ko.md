@@ -147,7 +147,7 @@ jaemin-cosmology
 27. PR 23-24
 ```
 
-현재 당장 목표는 수동 작업 E로 넘어가는 것이다. `docs/release-checklist-v0.1.0-ko.md`를 따라 Git tag와 GitHub Release를 만들고 `paper/ko/main-ko.pdf`를 asset으로 첨부한다.
+현재 당장 목표는 수동 작업 E로 넘어가는 것이다. 먼저 Zenodo GitHub integration이 `misosiruda/jaemin-cosmology`에 대해 ON인지 확인한 뒤, `docs/release-checklist-v0.1.0-ko.md`를 따라 Git tag와 GitHub Release를 만들고 `paper/ko/main-ko.pdf`를 asset으로 첨부한다.
 
 ## 7. PR 단계별 작업 요약
 
@@ -592,7 +592,7 @@ v0.1.0-ko — Korean Working Paper Release
 
 수동 작업 E:
 
-사용자가 GitHub Release를 만들고 `paper/ko/main-ko.pdf`를 asset으로 첨부한다.
+사용자가 Zenodo GitHub integration이 ON인지 먼저 확인한 뒤 GitHub Release를 만들고 `paper/ko/main-ko.pdf` 또는 `jaemin-cosmology-v0.1.0-ko.pdf`를 asset으로 첨부한다.
 
 수동 작업 F:
 
@@ -843,9 +843,9 @@ Codex는 다음 상황에서 임의로 진행하지 말고 사용자에게 물�
 
 현재 상태에서는 아래 순서가 가장 안전하다.
 
-1. 수동 작업 E로 넘어간다.
-2. `docs/release-checklist-v0.1.0-ko.md`를 따라 tag를 생성하고 GitHub Release를 만든다.
-3. `paper/ko/main-ko.pdf`를 release asset으로 첨부한다.
+1. Zenodo GitHub integration이 ON인지 먼저 확인한다.
+2. `docs/release-checklist-v0.1.0-ko.md`를 따라 tag를 생성하고 GitHub Release draft를 만든다.
+3. PDF asset을 첨부한 뒤 GitHub Release를 publish한다.
 4. Zenodo DOI가 발급되면 DOI와 DOI URL을 제공하고 PR 16을 진행한다.
 
 이 문서를 갱신한 현재 작업에서는 PR 15 릴리스 체크리스트, README 양쪽, CHANGELOG, 릴리스 노트, 운영 문서를 변경했다. 원고 본문, 참고문헌, PDF, LaTeX 원고는 변경하지 않았다.
