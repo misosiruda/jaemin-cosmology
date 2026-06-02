@@ -17,6 +17,9 @@ Author: Jaemin Seo
 ```text
 jaemin-cosmology/
   .zenodo.json
+  .github/
+    workflows/
+      typst.yml
   CHANGELOG.md
   CITATION.cff
   LICENSE
@@ -35,6 +38,7 @@ jaemin-cosmology/
     abstract-ko.md
     faq-en.md
     faq-ko.md
+    ai-assistance-note.md
     license-note.md
     one-page-summary-en.md
     one-page-summary-ko.md
@@ -75,6 +79,10 @@ Watch mode:
 make watch
 ```
 
+## Continuous Integration
+
+GitHub Actions builds the Korean Typst manuscript on pull requests and pushes to `main`. The generated PDF is uploaded as a workflow artifact and is not tracked in Git.
+
 ## Caution
 
 The manuscript should be read as a speculative formal framework and hypothesis space. It does not claim empirical confirmation and does not claim to replace standard physics or neuroscience.
@@ -98,12 +106,14 @@ See [docs/reference-audit.md](docs/reference-audit.md).
 - Korean one-page summary: [docs/one-page-summary-ko.md](docs/one-page-summary-ko.md)
 - English FAQ: [docs/faq-en.md](docs/faq-en.md)
 - Korean FAQ: [docs/faq-ko.md](docs/faq-ko.md)
+- AI assistance note: [docs/ai-assistance-note.md](docs/ai-assistance-note.md)
 
 ## Citation and License
 
 - Citation metadata: [CITATION.cff](CITATION.cff)
 - License: [LICENSE](LICENSE)
 - License note: [docs/license-note.md](docs/license-note.md)
+- AI assistance note: [docs/ai-assistance-note.md](docs/ai-assistance-note.md)
 - Reference audit: [docs/reference-audit.md](docs/reference-audit.md)
 - Changelog: [CHANGELOG.md](CHANGELOG.md)
 - Korean README: [README.ko.md](README.ko.md)

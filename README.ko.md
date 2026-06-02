@@ -13,6 +13,9 @@
 ```text
 jaemin-cosmology/
   .zenodo.json
+  .github/
+    workflows/
+      typst.yml
   CHANGELOG.md
   CITATION.cff
   LICENSE
@@ -31,6 +34,7 @@ jaemin-cosmology/
     abstract-ko.md
     faq-en.md
     faq-ko.md
+    ai-assistance-note.md
     license-note.md
     one-page-summary-en.md
     one-page-summary-ko.md
@@ -73,6 +77,10 @@ typst compile --root . paper/ko/main-ko.typ paper/ko/main-ko.pdf
 make watch
 ```
 
+## CI 빌드
+
+GitHub Actions는 pull request와 `main` push에서 한국어 Typst 원고를 빌드합니다. 생성된 PDF는 workflow artifact로 업로드되며 Git에는 추적하지 않습니다.
+
 ## 내용 요약
 
 이 논문은 현실과 인지 과정의 관련 정보 상태공간을 `n > 3`인 유효 고차원 정보 다양체 `(M^n, g)`로 모델링하고, 인간 의식을 `C = P(X)` 형태의 삼차원 투영으로 정리합니다. 최신 구조에서는 시간 가속을 출발점으로 두되, 핵심 명제를 "뇌는 상위차원 정보 제약 구조와 3차원 의식 사이의 인터페이스"로 재정렬했습니다.
@@ -81,9 +89,11 @@ make watch
 
 이 프레임워크는 직관이 불확실성을 줄일 수는 있지만 완전한 예측을 제공하지 않는다는 점을 정보이론식으로 표현합니다. 또한 지능 차이를 신경 연결 복잡도, 고차원 결합 강도, 계산 효율 증폭의 결합으로 모델링하고, AGI 문제를 불가능성이 아니라 효율성 격차로 해석합니다. v1.0에서는 초록을 압축하고, 범위와 비목표 섹션을 추가했으며, AGI를 기능적 일반지능으로 정의해 의식 문제와 분리했습니다. 또한 불필요한 `beta_eff` 보조식을 제거하고, 후보 예측을 관측 변수와 비교 대상 중심으로 정리했습니다.
 
-## 참고한 대화 자료
+## AI 사용 고지
 
-작성 방향을 보강하기 위해 사용자가 제공한 ChatGPT 공유 대화 `https://chatgpt.com/share/6a1d26cc-59b4-83a3-8b5b-3ea846b42936`를 개념 자료로 참고했습니다. 이 링크는 학술 참고문헌으로 인용하지 않고, 논문 구조와 핵심 명제 정리에 사용했습니다.
+이 원고와 저장소를 준비하는 과정에서 AI 도구가 개념 정리, 구조 편집, 문장 다듬기, 저장소 준비에 사용되었습니다. 모든 주장, 수식, 인용, 해석, 공개 결정은 저자가 검토하고 책임집니다. AI 대화는 독립적인 학술 출처로 취급하지 않습니다.
+
+자세한 내용은 [docs/ai-assistance-note.md](docs/ai-assistance-note.md)를 참고하세요.
 
 ## 주의
 
@@ -108,12 +118,14 @@ make watch
 - 한국어 1페이지 요약: [docs/one-page-summary-ko.md](docs/one-page-summary-ko.md)
 - 영문 FAQ: [docs/faq-en.md](docs/faq-en.md)
 - 한국어 FAQ: [docs/faq-ko.md](docs/faq-ko.md)
+- AI 사용 고지: [docs/ai-assistance-note.md](docs/ai-assistance-note.md)
 
 ## 인용과 라이선스
 
 - 인용 메타데이터: [CITATION.cff](CITATION.cff)
 - 라이선스: [LICENSE](LICENSE)
 - 라이선스 설명: [docs/license-note.md](docs/license-note.md)
+- AI 사용 고지: [docs/ai-assistance-note.md](docs/ai-assistance-note.md)
 - 참고문헌 감사 문서: [docs/reference-audit.md](docs/reference-audit.md)
 - 변경 기록: [CHANGELOG.md](CHANGELOG.md)
 - 영어 README: [README.md](README.md)

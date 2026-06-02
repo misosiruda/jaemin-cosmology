@@ -13,6 +13,8 @@ All notable repository and manuscript release changes will be documented in this
 - Added English and Korean abstract documents.
 - Added English and Korean one-page summary documents.
 - Added English and Korean public FAQ documents.
+- Added AI assistance disclosure and removed the public ChatGPT share link from the README.
+- Added GitHub Actions Typst build workflow.
 
 ## v0.1.0-ko - Planned
 

@@ -1,0 +1,30 @@
+name: Build Typst PDF
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install Korean fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk
+
+      - name: Install Typst
+        uses: typst-community/setup-typst@v4
+
+      - name: Build Korean paper
+        run: typst compile --root . paper/ko/main-ko.typ paper/ko/main-ko.pdf
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: jaemin-cosmology-ko-pdf
+          path: paper/ko/main-ko.pdf
