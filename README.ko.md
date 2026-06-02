@@ -99,7 +99,7 @@ GitHub Actions는 pull request와 `main` push에서 한국어 Typst 원고를 �
 
 ## 주의
 
-이 문서는 검증된 물리 이론이나 경험적으로 확인된 과학 이론이 아닙니다. `references/references.bib`의 placeholder 항목은 v1.0 정리 과정에서 DOI, 출판사 페이지, WorldCat/Google Books/전문 아카이브 등 온라인 출처를 확인해 실제 metadata로 교체했습니다. 학술지나 제출처별 스타일 요구가 있으면 그 형식에 맞춰 재정렬하되, 가짜 DOI, 가짜 페이지, 확인되지 않은 출판 정보는 넣지 않습니다.
+이 문서는 검증된 물리 이론이나 경험적으로 확인된 과학 이론이 아닙니다. `references/references.bib`의 metadata는 PR 13.5에서 DOI registry, arXiv, 출판사, WorldCat, Google Books 등 확인 가능한 출처 기준으로 점검했습니다. 학술지나 제출처별 스타일 요구가 있으면 그 형식에 맞춰 재정렬하되, 가짜 DOI, 가짜 페이지, 확인되지 않은 출판 정보는 넣지 않습니다.
 
 공개 범위와 비목표는 다음 문서에 분리해 정리했습니다.
 
@@ -108,7 +108,7 @@ GitHub Actions는 pull request와 `main` push에서 한국어 Typst 원고를 �
 
 ## 참고문헌 Metadata 상태
 
-참고문헌 metadata는 현재 감사 중입니다. 현재 audit 문서는 항목들을 수동 검증 필요 상태로 표시합니다. DOI, 저자명, 출판연도, 학술지/출판사 정보, 권/호/페이지, URL, arXiv ID, ISBN은 수동 검증이 완료되기 전까지 최종값으로 취급하지 않습니다.
+참고문헌 metadata는 `v0.1.0-ko` 릴리스 준비를 위한 PR 13.5 검증을 완료했습니다. 감사 문서는 verified 18개, partially verified 1개, unresolved 0개로 정리되어 있습니다. `riemann1854`는 강연, 사후 출판, 오프프린트 metadata가 단순 BibTeX record보다 복잡해 partially verified로 남겼습니다.
 
 [docs/reference-audit.md](docs/reference-audit.md)를 참고하세요.
 

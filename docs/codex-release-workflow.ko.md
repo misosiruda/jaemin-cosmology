@@ -34,7 +34,7 @@ jaemin-cosmology/
 PR 00 범위에서는 `.gitignore`가 추가되었다. PR 01 범위에서는 원고와 참고문헌이 공개용 구조로 이동했고, README가 영어/한국어로 분리되었으며, Typst bibliography 경로가 새 구조에 맞게 갱신되었다.
 PR 02 범위에서는 `scripts/build.sh`와 `Makefile`이 추가되었고, README 양쪽의 빌드 명령이 새 경로 기준으로 갱신되었다. Typst 원고가 `paper/ko/` 아래에 있고 bibliography가 `references/` 아래에 있으므로 빌드 명령은 `--root .`를 사용해야 한다. PR 03 범위에서는 공개 범위와 비목표 문서가 한국어/영어로 추가되고 README 양쪽에 연결되었다.
 
-초기 커밋과 GitHub push는 완료되었다. PR 04 범위에서는 `CITATION.cff`, `LICENSE`, `docs/license-note.md`, `.zenodo.json`, `CHANGELOG.md`가 추가되었고 README 양쪽에 citation/license/changelog 링크가 연결되었다. PR 05 범위에서는 한국어 원고의 자동 날짜가 `Working Paper v0.1.0` 및 `2026-06-02`로 고정되었다. PR 06 범위에서는 `docs/reference-audit.md`가 추가되었고 모든 BibTeX entry가 수동 검증 필요 상태로 정리되었다. PR 07 범위에서는 README 영어/한국어 landing page 구조를 정리하고, 참고문헌 metadata가 아직 manual verification pending임을 양쪽 README에 명시했다. PR 08-10 범위에서는 영어/한국어 초록, 1페이지 요약, FAQ 문서가 추가되고 README 양쪽에 연결되었다. PR 11 범위에서는 직접 ChatGPT 공유 링크를 제거하고 `docs/ai-assistance-note.md`로 AI 사용 고지를 분리했다. PR 12 범위에서는 `.github/workflows/typst.yml` CI 빌드 workflow를 추가했다. PR 13 범위에서는 `docs/release-notes/v0.1.0-ko.md`를 추가하고 `CHANGELOG.md`에 `v0.1.0-ko` 섹션을 정리했다. 다음 실제 작업의 출발점은 **수동 작업 C - Reference 실제 검증** 또는 **PR 14 - Zenodo Preparation**이다.
+초기 커밋과 GitHub push는 완료되었다. PR 04 범위에서는 `CITATION.cff`, `LICENSE`, `docs/license-note.md`, `.zenodo.json`, `CHANGELOG.md`가 추가되었고 README 양쪽에 citation/license/changelog 링크가 연결되었다. PR 05 범위에서는 한국어 원고의 자동 날짜가 `Working Paper v0.1.0` 및 `2026-06-02`로 고정되었다. PR 06 범위에서는 `docs/reference-audit.md`가 추가되었고 모든 BibTeX entry가 수동 검증 필요 상태로 정리되었다. PR 07 범위에서는 README 영어/한국어 landing page 구조를 정리하고, 참고문헌 metadata가 아직 manual verification pending임을 양쪽 README에 명시했다. PR 08-10 범위에서는 영어/한국어 초록, 1페이지 요약, FAQ 문서가 추가되고 README 양쪽에 연결되었다. PR 11 범위에서는 직접 ChatGPT 공유 링크를 제거하고 `docs/ai-assistance-note.md`로 AI 사용 고지를 분리했다. PR 12 범위에서는 `.github/workflows/typst.yml` CI 빌드 workflow를 추가했다. PR 13 범위에서는 `docs/release-notes/v0.1.0-ko.md`를 추가하고 `CHANGELOG.md`에 `v0.1.0-ko` 섹션을 정리했다. PR 13.5 범위에서는 참고문헌 metadata를 검증해 `docs/reference-audit.md`를 verified 18개, partially verified 1개, unresolved 0개 상태로 갱신했고, `references.bib`의 URL 3개를 검증된 metadata URL로 정정했다. 다음 실제 작업의 출발점은 **PR 14 - Zenodo Preparation**이다.
 
 ## 2. 모든 단계의 공통 원칙
 
@@ -78,7 +78,7 @@ Codex는 이 요청을 받으면 다음 순서로 판단한다.
 | --- | --- | --- | --- | --- |
 | A | 시작 전 | GitHub repository 생성, 공개/비공개 결정, remote URL 확정 | 로컬 `git init`, `.gitignore` 작성, 파일 상태 점검 | GitHub 계정과 공개 범위는 사용자 권한/판단 필요 |
 | B | PR 02 후 | 로컬에서 Typst 빌드 확인 | 빌드 명령 실행 시도, 실패 로그 분석 | 한글 폰트와 Typst 설치 상태가 환경 의존 |
-| C | PR 06 후 | 참고문헌 DOI/저자/연도/출판 정보 실제 검증 | BibTeX 파싱, 감사 문서 작성, 의심 항목 표시 | 출판 메타데이터는 최종 사람이 확인해야 함 |
+| C | PR 06 후 / PR 13.5 | 참고문헌 검증 결과 확인, 필요 시 `riemann1854`의 더 엄밀한 역사적 citation 형식 결정 | DOI registry, arXiv, 출판사, WorldCat, Google Books 기준 metadata 검증과 audit 문서 갱신 | 역사적 출판 형태와 최종 인용 스타일은 저자 판단이 필요할 수 있음 |
 | D | PR 12 후 | GitHub Actions 웹 UI에서 실행 결과 확인 | workflow 파일 작성, 로컬 경로 점검, 로그 기반 수정 | CI 실행 결과는 GitHub 웹/권한에 의존 |
 | E | PR 15 후 | Git tag 생성, GitHub Release 작성, PDF asset 첨부 | 릴리스 노트 작성, 태그 명령 제시 | 릴리스는 사용자 계정 권한과 공개 결정 필요 |
 | F | PR 15 후 | Zenodo 연동, DOI 발급 | Zenodo metadata 정리, DOI 자리표시자 관리 | DOI는 Zenodo 발급 후에만 알 수 있음 |
@@ -94,7 +94,7 @@ GitHub repo:
 https://github.com/misosiruda/jaemin-cosmology
 ```
 
-다음 단계인 PR 04 전에 사용자가 정해야 할 값은 다음과 같다.
+다음 단계인 PR 14 전에 사용자가 정해야 할 값은 다음과 같다.
 
 | 항목 | 현재 후보 |
 | --- | --- |
@@ -102,6 +102,8 @@ https://github.com/misosiruda/jaemin-cosmology
 | Repository URL | `https://github.com/misosiruda/jaemin-cosmology` |
 | Text license | `CC BY 4.0` |
 | Scripts license | MIT 사용 안 함. 저장소 밖 재사용은 Jaemin Seo의 사전 허락 필요 |
+| ORCID | 제공 전까지 비움 |
+| Affiliation | 제공 전까지 비움 |
 | Version | `0.1.0` |
 | Release date | `2026-06-02` |
 
@@ -134,17 +136,18 @@ jaemin-cosmology
 16. PR 12
 17. 수동 작업 D
 18. PR 13
-19. PR 14
-20. PR 15
-21. 수동 작업 E
-22. 수동 작업 F
-23. PR 16
-24. PR 17-22
-25. 수동 작업 G
-26. PR 23-24
+19. PR 13.5
+20. PR 14
+21. PR 15
+22. 수동 작업 E
+23. 수동 작업 F
+24. PR 16
+25. PR 17-22
+26. 수동 작업 G
+27. PR 23-24
 ```
 
-당장 목표는 `수동 작업 A -> PR 00 -> PR 01 -> PR 02`까지만 진행해도 충분하다. 빌드가 안정된 뒤 공개 문서, 인용 메타데이터, Zenodo 준비로 넘어간다.
+현재 당장 목표는 PR 14 Zenodo metadata 정합성 확인으로 넘어가는 것이다. ORCID와 affiliation은 사용자가 검증된 값을 제공하지 않으면 비워 둔다.
 
 ## 7. PR 단계별 작업 요약
 
@@ -504,6 +507,32 @@ docs/ai-assistance-note.md에서 일반적인 방식으로 AI 사용을 고지�
 
 - DOI는 아직 넣지 않는다.
 
+### PR 13.5 - Reference Metadata Verification
+
+목표: PR 14 Zenodo 준비 전에 참고문헌 metadata를 실제 출처 기준으로 검증한다.
+
+할 일:
+
+- `references/references.bib`를 확인하되, 원고 본문은 변경하지 않는다.
+- DOI registry, arXiv, 출판사, WorldCat, Google Books 등 신뢰 가능한 metadata 출처로 DOI, 저자, 연도, 출판사, 권/호/페이지, URL, arXiv ID, ISBN을 확인한다.
+- 확인되지 않은 DOI, ISBN, URL, page, publisher, journal, arXiv, year metadata를 만들지 않는다.
+- `docs/reference-audit.md` 상태를 `verified`, `partially verified`, `unresolved`로 갱신한다.
+- 부분 검증 또는 미해결 항목은 불확실성을 note에 남긴다.
+- `CHANGELOG.md`의 `Unreleased` 아래에 `Verified bibliography metadata for v0.1.0-ko release preparation.`를 남긴다.
+
+현재 결과:
+
+- verified: 18
+- partially verified: 1 (`riemann1854`)
+- unresolved: 0
+- DOI 공란 유지: `abbott1884`, `riemann1854`, `kahneman2011`, `bergson1889`, `hebb1949`, `sporns2011`
+- URL 공란 유지: `shannon1948`, `einstein1916`
+
+주의:
+
+- arXiv entry에 related journal DOI가 있더라도, 현재 BibTeX가 arXiv preprint entry이면 임의로 published journal entry로 전환하지 않는다.
+- `CITATION.cff`와 `.zenodo.json`에는 author name만 사용한다. ORCID와 affiliation은 사용자가 검증된 값을 제공하기 전까지 비워 둔다.
+
 ### PR 14 - Zenodo Preparation
 
 목표: Zenodo 업로드 직전 metadata 정리.
@@ -513,8 +542,8 @@ docs/ai-assistance-note.md에서 일반적인 방식으로 AI 사용을 고지�
 | 항목 | 선택 |
 | --- | --- |
 | 공개 이름 | `Jaemin Seo` |
-| ORCID | 있으면 입력 |
-| Affiliation | 있으면 입력, 없으면 비움 |
+| ORCID | 제공 전까지 비움 |
+| Affiliation | 제공 전까지 비움 |
 | License | `CC BY 4.0` 권장 |
 | Upload type | `Publication` |
 | Publication type | `Working paper` |
@@ -777,6 +806,7 @@ reviewer guide focus:
 | PR 11 | `docs/ai-assistance-note.md` 존재 |
 | PR 12 | `.github/workflows/typst.yml` 존재 |
 | PR 13 | `docs/release-notes/v0.1.0-ko.md` 존재 |
+| PR 13.5 | `docs/reference-audit.md`가 verified/partially verified/unresolved 상태로 갱신됨 |
 | PR 14 | Zenodo metadata와 DOI placeholder 정합성 확인 |
 | PR 15 | release checklist와 최종 링크 정리 완료 |
 | PR 16 | 실제 DOI가 README, CITATION, release notes에 반영됨 |
@@ -802,7 +832,8 @@ Codex는 다음 상황에서 임의로 진행하지 말고 사용자에게 물�
 
 현재 상태에서는 아래 순서가 가장 안전하다.
 
-1. 참고문헌 metadata 검증은 PR 14 또는 PR 15 이전에는 반드시 완료한다.
-2. PR 14 진행 전 ORCID와 affiliation을 넣을지 확인한다. 없으면 비워 둔다.
+1. PR 14 Zenodo metadata 정합성 확인으로 넘어간다.
+2. ORCID와 affiliation은 사용자가 검증된 값을 제공하지 않는 한 비워 둔다.
+3. `riemann1854`는 현재 partially verified이므로, Zenodo 전 최종 citation 스타일에서 더 엄밀한 역사적 출판 형식이 필요한지만 판단한다.
 
-이 문서를 갱신한 현재 작업에서는 PR 13 릴리스 노트, README 양쪽, CHANGELOG, 운영 문서를 변경했다. 원고, 참고문헌, PDF, LaTeX 원고는 변경하지 않았다.
+이 문서를 갱신한 현재 작업에서는 PR 13.5 참고문헌 검증 상태, README 양쪽, CHANGELOG, 릴리스 노트, 운영 문서를 변경했다. 원고 본문, PDF, LaTeX 원고는 변경하지 않았다.

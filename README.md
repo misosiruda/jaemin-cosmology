@@ -96,7 +96,7 @@ For a fuller statement, see:
 
 ## Reference Metadata Status
 
-Bibliographic metadata is currently under audit. The current audit file marks entries as requiring manual verification. DOI, author names, publication years, journal or publisher metadata, volume/issue/page ranges, URLs, arXiv IDs, and ISBNs should not be treated as final until the manual verification pass is complete.
+Bibliographic metadata completed the PR 13.5 verification pass for `v0.1.0-ko` release preparation. The audit records 18 verified entries, 1 partially verified entry, and 0 unresolved entries. `riemann1854` remains partially verified because the historical lecture, posthumous publication, and offprint metadata are more nuanced than the simplified BibTeX record.
 
 See [docs/reference-audit.md](docs/reference-audit.md).
 

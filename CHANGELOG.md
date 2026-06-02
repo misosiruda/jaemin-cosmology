@@ -4,7 +4,7 @@ All notable repository and manuscript release changes will be documented in this
 
 ## Unreleased
 
-No post-release changes yet.
+- Verified bibliography metadata for v0.1.0-ko release preparation.
 
 ## v0.1.0-ko - 2026-06-02
 
@@ -28,7 +28,7 @@ Known status:
 - This is a speculative formal framework and working-paper manuscript.
 - It is not an empirically confirmed theory of physics, neuroscience, or consciousness.
 - No DOI has been assigned yet.
-- Bibliographic metadata remains under manual verification.
+- Bibliographic metadata completed the PR 13.5 verification pass; `riemann1854` remains partially verified because of historically nuanced publication details.
 
 Repository preparation changes included:
 
@@ -38,6 +38,7 @@ Repository preparation changes included:
 - Added citation, license, Zenodo metadata, and repository changelog scaffolding.
 - Fixed Korean manuscript frontmatter to stable working-paper version and release date metadata.
 - Added a reference audit document for manual bibliography verification.
+- Verified bibliography metadata for `v0.1.0-ko` release preparation.
 - Added English and Korean abstract documents.
 - Added English and Korean one-page summary documents.
 - Added English and Korean public FAQ documents.
