@@ -7,6 +7,7 @@ All notable repository and manuscript release changes will be documented in this
 - Added Zenodo DOI badge and citation guidance after v0.1.0-ko release.
 - Added English translation scaffold and translation notes without starting the full translation.
 - Drafted English frontmatter, abstract, scope/non-goals, limitations, and conclusion.
+- Drafted English core mathematical framework sections.
 
 ## v0.1.0-ko - 2026-06-02
 

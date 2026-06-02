@@ -15,6 +15,31 @@
 - Full translation still pending.
 - Claim-strength rules remain active.
 
+## PR 19 Status
+
+- Core mathematical framework sections drafted.
+- Filled sections: Core Hypothesis; Motivating Analogy; Mathematical Setup; Core Postulates; Consciousness and Subconscious Representation; Intuition and Information Theory; Toy Model; Identifiability Problem.
+- Full translation still pending.
+- Sections outside PR 19 remain TODO unless previously drafted in PR 18.
+- Claim-strength rules remain active.
+
+## PR 19 Terminology and Notation Decisions
+
+- `cal(F)` is used for the higher-dimensional informational constraint structure, following the Korean source notation.
+- `cal(I)` is used for the intuition signal, following the Korean source notation and avoiding conflict with mutual information notation `I(Y;S)`.
+- `C = P(X)` is retained for conscious projection.
+- `S = Q_c(N_b, cal(F))` is retained for subconscious or non-conscious representation.
+- `Q_c` retains the subscript `c` to mark coupling strength.
+- `N_b` is retained for the internal neural brain state.
+- `G` is retained as the map that compresses subconscious representation into the intuition signal.
+- The English abstract was aligned with the formal source notation by using `cal(F)` rather than plain `F`.
+
+## PR 19 Author-Review Questions
+
+- Confirm that the English draft should consistently use `cal(F)` in formal sections rather than simplifying it to `F`.
+- Confirm that `cal(I)` is visually acceptable in the rendered English PDF as the intuition signal.
+- Confirm whether future English sections should include formal bibliography citations, or keep citations deferred until the full translation pass.
+
 ## DOI Reference
 
 The authoritative released manuscript remains the Korean working-paper release `v0.1.0-ko`.
@@ -55,11 +80,18 @@ The authoritative released manuscript remains the Korean working-paper release `
 | Korean term | Translation decision |
 | --- | --- |
 | 상위차원 | higher-dimensional informational constraint structure |
+| 상위차원 정보 제약 구조 | higher-dimensional informational constraint structure |
+| 상위차원 정보 인터페이스 | higher-dimensional information interface |
+| 고차원 정보 다양체 | higher-dimensional information manifold |
 | 의식 | conscious experience |
+| 의식 투영 | conscious projection |
 | 잠재의식 | subconscious representation or non-conscious representation |
 | 직관 | intuition as compressed access to latent structure |
 | 결합 강도 | coupling strength |
 | 계산 효율 증폭 | computational-efficiency amplification |
+| 정보 압축 | information compression |
+| 불확실성 감소 | uncertainty reduction |
+| 식별가능성 문제 | identifiability problem |
 | AGI 효율성 격차 | AGI efficiency gap |
 | 주관적 시간 | subjective time or internal time |
 
