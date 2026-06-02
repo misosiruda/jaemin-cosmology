@@ -5,6 +5,7 @@ All notable repository and manuscript release changes will be documented in this
 ## Unreleased
 
 - Added Zenodo DOI badge and citation guidance after v0.1.0-ko release.
+- Added English translation scaffold and translation notes without starting the full translation.
 
 ## v0.1.0-ko - 2026-06-02
 

@@ -12,6 +12,8 @@ The manuscript is currently written in Korean. See [README.ko.md](README.ko.md) 
 
 This repository contains a Korean working-paper manuscript. The project proposes a speculative formal framework for modeling consciousness, intuition, cognitive efficiency, AGI efficiency gaps, and subjective time through the hypothesis of a higher-dimensional information interface. It is not an empirically confirmed scientific theory.
 
+The authoritative released manuscript remains the Korean working-paper release `v0.1.0-ko`. An English translation scaffold now exists under `paper/en/`, but it is not yet a full English version and should not be cited as the authoritative English translation.
+
 Author: Jaemin Seo
 
 ## Repository Structure
@@ -29,6 +31,9 @@ jaemin-cosmology/
   README.md
   README.ko.md
   paper/
+    en/
+      main-en.typ        # English translation scaffold
+      translation-notes.md
     ko/
       main-ko.typ
       main-ko.pdf        # generated locally or attached as a release asset
@@ -71,10 +76,24 @@ Recommended build command:
 make build
 ```
 
+The default `build` target builds the Korean manuscript. Optional English scaffold targets are also available:
+
+```bash
+make build-en
+make watch-en
+make build-all
+```
+
 Direct Typst command:
 
 ```bash
 typst compile --root . paper/ko/main-ko.typ paper/ko/main-ko.pdf
+```
+
+Direct English scaffold command:
+
+```bash
+typst compile --root . paper/en/main-en.typ paper/en/main-en.pdf
 ```
 
 The `--root .` option is required because the bibliography is stored outside the `paper/ko/` source directory.
@@ -84,6 +103,8 @@ Watch mode:
 ```bash
 make watch
 ```
+
+Translation notes for future English work are in [paper/en/translation-notes.md](paper/en/translation-notes.md).
 
 ## Continuous Integration
 
@@ -112,6 +133,7 @@ See [docs/reference-audit.md](docs/reference-audit.md).
 - Korean one-page summary: [docs/one-page-summary-ko.md](docs/one-page-summary-ko.md)
 - English FAQ: [docs/faq-en.md](docs/faq-en.md)
 - Korean FAQ: [docs/faq-ko.md](docs/faq-ko.md)
+- English translation scaffold notes: [paper/en/translation-notes.md](paper/en/translation-notes.md)
 - AI assistance note: [docs/ai-assistance-note.md](docs/ai-assistance-note.md)
 - Release notes: [docs/release-notes/v0.1.0-ko.md](docs/release-notes/v0.1.0-ko.md)
 - Release checklist: [docs/release-checklist-v0.1.0-ko.md](docs/release-checklist-v0.1.0-ko.md)
