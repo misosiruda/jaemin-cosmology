@@ -17,7 +17,15 @@ This checklist is for the manual GitHub Release and Zenodo archival steps for `v
 | Creator | `Seo, Jaemin` |
 | ORCID | omitted until verified |
 | Affiliation | omitted until verified |
-| Zenodo DOI | to be added after Zenodo issues it |
+| Zenodo DOI | `10.5281/zenodo.20506269` |
+
+## PR 16 DOI Status
+
+- Zenodo DOI has been assigned: `10.5281/zenodo.20506269`.
+- DOI URL: `https://doi.org/10.5281/zenodo.20506269`
+- `CITATION.cff` now contains the assigned DOI.
+- `.zenodo.json` remains schema-safe and does not add a nonstandard DOI field.
+- ORCID, affiliation, and `Independent Researcher` remain omitted.
 
 ## Confirmed Before Release
 
@@ -26,7 +34,7 @@ This checklist is for the manual GitHub Release and Zenodo archival steps for `v
 - GitHub Actions builds the Korean PDF and uploads it as a workflow artifact.
 - `paper/ko/main-ko.pdf` is a local or CI-generated release asset and is not tracked in Git.
 - `.zenodo.json` is the Zenodo metadata source of truth.
-- `.zenodo.json` and `CITATION.cff` do not contain a repository DOI.
+- Before DOI assignment, `.zenodo.json` and `CITATION.cff` did not contain a repository DOI.
 - `.zenodo.json` and `CITATION.cff` do not contain ORCID or affiliation fields.
 - `references/references.bib` has 19 verified entries according to `docs/reference-audit.md`.
 - `riemann1854` keeps the citation key and uses the 1868 Abhandlungen article as the main bibliographic record.
@@ -160,11 +168,13 @@ Only publish after:
 
 ## E-8. Post-DOI Follow-Up
 
-After Zenodo DOI assignment, update:
+After Zenodo DOI assignment, PR 16 updates:
 
 - `README.md`
 - `README.ko.md`
 - `CITATION.cff`
-- `.zenodo.json` if needed
 - `docs/release-notes/v0.1.0-ko.md`
-- `docs/citation.md` if created in PR 16
+- `docs/citation.md`
+- `CHANGELOG.md`
+
+`.zenodo.json` was left unchanged in PR 16 because it did not contain a DOI placeholder and adding a nonstandard DOI field would not be schema-safe.

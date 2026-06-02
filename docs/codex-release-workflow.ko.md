@@ -34,7 +34,7 @@ jaemin-cosmology/
 PR 00 범위에서는 `.gitignore`가 추가되었다. PR 01 범위에서는 원고와 참고문헌이 공개용 구조로 이동했고, README가 영어/한국어로 분리되었으며, Typst bibliography 경로가 새 구조에 맞게 갱신되었다.
 PR 02 범위에서는 `scripts/build.sh`와 `Makefile`이 추가되었고, README 양쪽의 빌드 명령이 새 경로 기준으로 갱신되었다. Typst 원고가 `paper/ko/` 아래에 있고 bibliography가 `references/` 아래에 있으므로 빌드 명령은 `--root .`를 사용해야 한다. PR 03 범위에서는 공개 범위와 비목표 문서가 한국어/영어로 추가되고 README 양쪽에 연결되었다.
 
-초기 커밋과 GitHub push는 완료되었다. PR 04 범위에서는 `CITATION.cff`, `LICENSE`, `docs/license-note.md`, `.zenodo.json`, `CHANGELOG.md`가 추가되었고 README 양쪽에 citation/license/changelog 링크가 연결되었다. PR 05 범위에서는 한국어 원고의 자동 날짜가 `Working Paper v0.1.0` 및 `2026-06-02`로 고정되었다. PR 06 범위에서는 `docs/reference-audit.md`가 추가되었고 모든 BibTeX entry가 수동 검증 필요 상태로 정리되었다. PR 07 범위에서는 README 영어/한국어 landing page 구조를 정리하고, 참고문헌 metadata가 아직 manual verification pending임을 양쪽 README에 명시했다. PR 08-10 범위에서는 영어/한국어 초록, 1페이지 요약, FAQ 문서가 추가되고 README 양쪽에 연결되었다. PR 11 범위에서는 직접 ChatGPT 공유 링크를 제거하고 `docs/ai-assistance-note.md`로 AI 사용 고지를 분리했다. PR 12 범위에서는 `.github/workflows/typst.yml` CI 빌드 workflow를 추가했다. PR 13 범위에서는 `docs/release-notes/v0.1.0-ko.md`를 추가하고 `CHANGELOG.md`에 `v0.1.0-ko` 섹션을 정리했다. PR 13.5 범위에서는 참고문헌 metadata를 검증해 `docs/reference-audit.md`를 verified 18개, partially verified 1개, unresolved 0개 상태로 갱신했고, `references.bib`의 URL 3개를 검증된 metadata URL로 정정했다. PR 14 범위에서는 `.zenodo.json`을 Zenodo metadata source of truth로 두고 `CITATION.cff`와 version을 `0.1.0-ko`로 정합화했으며, ORCID/affiliation은 비워 두고 `riemann1854`를 1868 Abhandlungen article record로 엄밀화했다. PR 15 범위에서는 `docs/release-checklist-v0.1.0-ko.md`를 추가하고 release notes, README 양쪽, CHANGELOG, 운영 문서를 릴리스 직전 상태로 정리했다. 다음 실제 작업은 **수동 작업 E - Git tag 생성, GitHub Release 작성, PDF asset 첨부**이다.
+초기 커밋과 GitHub push는 완료되었다. PR 04 범위에서는 `CITATION.cff`, `LICENSE`, `docs/license-note.md`, `.zenodo.json`, `CHANGELOG.md`가 추가되었고 README 양쪽에 citation/license/changelog 링크가 연결되었다. PR 05 범위에서는 한국어 원고의 자동 날짜가 `Working Paper v0.1.0` 및 `2026-06-02`로 고정되었다. PR 06 범위에서는 `docs/reference-audit.md`가 추가되었고 모든 BibTeX entry가 수동 검증 필요 상태로 정리되었다. PR 07 범위에서는 README 영어/한국어 landing page 구조를 정리하고, 참고문헌 metadata가 아직 manual verification pending임을 양쪽 README에 명시했다. PR 08-10 범위에서는 영어/한국어 초록, 1페이지 요약, FAQ 문서가 추가되고 README 양쪽에 연결되었다. PR 11 범위에서는 직접 ChatGPT 공유 링크를 제거하고 `docs/ai-assistance-note.md`로 AI 사용 고지를 분리했다. PR 12 범위에서는 `.github/workflows/typst.yml` CI 빌드 workflow를 추가했다. PR 13 범위에서는 `docs/release-notes/v0.1.0-ko.md`를 추가하고 `CHANGELOG.md`에 `v0.1.0-ko` 섹션을 정리했다. PR 13.5 범위에서는 참고문헌 metadata를 검증해 `docs/reference-audit.md`를 verified 18개, partially verified 1개, unresolved 0개 상태로 갱신했고, `references.bib`의 URL 3개를 검증된 metadata URL로 정정했다. PR 14 범위에서는 `.zenodo.json`을 Zenodo metadata source of truth로 두고 `CITATION.cff`와 version을 `0.1.0-ko`로 정합화했으며, ORCID/affiliation은 비워 두고 `riemann1854`를 1868 Abhandlungen article record로 엄밀화했다. PR 15 범위에서는 `docs/release-checklist-v0.1.0-ko.md`를 추가하고 release notes, README 양쪽, CHANGELOG, 운영 문서를 릴리스 직전 상태로 정리했다. 수동 작업 E/F 범위에서는 GitHub Release와 Zenodo archival release가 완료되었고 DOI `10.5281/zenodo.20506269`가 발급되었다. PR 16 범위에서는 README DOI badge, `CITATION.cff` DOI, release notes DOI, `docs/citation.md`, CHANGELOG를 갱신했다. 다음 실제 작업의 출발점은 **PR 17 - English Translation Scaffold**이다.
 
 ## 2. 모든 단계의 공통 원칙
 
@@ -147,7 +147,7 @@ jaemin-cosmology
 27. PR 23-24
 ```
 
-현재 당장 목표는 수동 작업 E로 넘어가는 것이다. 먼저 Zenodo GitHub integration이 `misosiruda/jaemin-cosmology`에 대해 ON인지 확인한 뒤, `docs/release-checklist-v0.1.0-ko.md`를 따라 Git tag와 GitHub Release를 만들고 `paper/ko/main-ko.pdf`를 asset으로 첨부한다.
+현재 당장 목표는 PR 17 영어 번역 scaffold로 넘어가는 것이다. DOI 반영은 완료되었으므로, DOI가 필요한 PR 16 단계로 되돌아가지 않는다.
 
 ## 7. PR 단계별 작업 요약
 
@@ -620,6 +620,16 @@ v0.1.0-ko — Korean Working Paper Release
 - DOI 발급 전에는 이 단계로 넘어가지 않는다.
 - 원고 내용은 바꾸지 않는다.
 
+현재 결과:
+
+- Zenodo DOI: `10.5281/zenodo.20506269`
+- DOI URL: `https://doi.org/10.5281/zenodo.20506269`
+- README 양쪽에 DOI badge/text와 `docs/citation.md` 링크를 추가했다.
+- `CITATION.cff`에 `doi: 10.5281/zenodo.20506269`를 추가했다.
+- `docs/release-notes/v0.1.0-ko.md`의 DOI placeholder를 실제 DOI와 recommended citation으로 교체했다.
+- `.zenodo.json`에는 DOI placeholder가 없었으므로 변경하지 않았다.
+- ORCID와 affiliation은 계속 비워 둔다.
+
 ### PR 17 - English Translation Scaffold
 
 목표: 영어 전체판 파일 구조만 생성.
@@ -820,7 +830,7 @@ reviewer guide focus:
 | PR 13.5 | `docs/reference-audit.md`가 verified/partially verified/unresolved 상태로 갱신됨 |
 | PR 14 | Zenodo metadata와 DOI placeholder 정합성 확인, `riemann1854` 엄밀화 |
 | PR 15 | `docs/release-checklist-v0.1.0-ko.md` 존재, release checklist와 최종 링크 정리 완료 |
-| PR 16 | 실제 DOI가 README, CITATION, release notes에 반영됨 |
+| PR 16 | 실제 DOI가 README, CITATION, release notes, `docs/citation.md`에 반영됨 |
 | PR 17 | `paper/en/main-en.typ`, `paper/en/translation-notes.md` scaffold 존재 |
 | PR 18-22 | 영어 원고 TODO가 단계별로 채워짐 |
 | PR 23 | 영어 copyedit 완료 |
@@ -843,9 +853,9 @@ Codex는 다음 상황에서 임의로 진행하지 말고 사용자에게 물�
 
 현재 상태에서는 아래 순서가 가장 안전하다.
 
-1. Zenodo GitHub integration이 ON인지 먼저 확인한다.
-2. `docs/release-checklist-v0.1.0-ko.md`를 따라 tag를 생성하고 GitHub Release draft를 만든다.
-3. PDF asset을 첨부한 뒤 GitHub Release를 publish한다.
-4. Zenodo DOI가 발급되면 DOI와 DOI URL을 제공하고 PR 16을 진행한다.
+1. PR 17 영어 번역 scaffold로 넘어간다.
+2. `paper/en/main-en.typ`와 `paper/en/translation-notes.md`를 생성한다.
+3. 원문 의미를 바꾸는 번역은 아직 하지 않는다.
+4. DOI, ORCID, affiliation은 PR 16 완료 상태를 유지한다.
 
-이 문서를 갱신한 현재 작업에서는 PR 15 릴리스 체크리스트, README 양쪽, CHANGELOG, 릴리스 노트, 운영 문서를 변경했다. 원고 본문, 참고문헌, PDF, LaTeX 원고는 변경하지 않았다.
+이 문서를 갱신한 현재 작업에서는 PR 16 DOI badge/citation 반영 상태, README 양쪽, `CITATION.cff`, `docs/release-notes/v0.1.0-ko.md`, `docs/citation.md`, CHANGELOG, 운영 문서를 변경했다. 원고 본문, 참고문헌, PDF, LaTeX 원고는 변경하지 않았다.

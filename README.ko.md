@@ -1,5 +1,7 @@
 # Jaemin Cosmology / 재민 우주론
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20506269.svg)](https://doi.org/10.5281/zenodo.20506269)
+
 이 프로젝트는 `The Brain as a Higher-Dimensional Interface: A Formal Framework for Consciousness, Intuition, Intelligence, and Subjective Time` 논문의 Typst 원고입니다.
 
 이 저장소는 한국어 working paper 원고를 포함합니다. 이 프로젝트는 상위차원 정보 인터페이스 가설을 통해 의식, 직관, 인지 효율성, AGI 효율성 격차, 주관적 시간을 형식화하려는 사변적 수학 프레임워크입니다. 이는 경험적으로 검증된 과학 이론이 아닙니다.
@@ -42,6 +44,7 @@ jaemin-cosmology/
     release-checklist-v0.1.0-ko.md
     release-notes/
       v0.1.0-ko.md
+    citation.md
     scope-and-nongoals.en.md
     scope-and-nongoals.ko.md
   legacy/
@@ -124,6 +127,7 @@ GitHub Actions는 pull request와 `main` push에서 한국어 Typst 원고를 �
 - AI 사용 고지: [docs/ai-assistance-note.md](docs/ai-assistance-note.md)
 - 릴리스 노트: [docs/release-notes/v0.1.0-ko.md](docs/release-notes/v0.1.0-ko.md)
 - 릴리스 체크리스트: [docs/release-checklist-v0.1.0-ko.md](docs/release-checklist-v0.1.0-ko.md)
+- 인용 안내: [docs/citation.md](docs/citation.md)
 
 ## 인용과 라이선스
 
@@ -133,7 +137,8 @@ GitHub Actions는 pull request와 `main` push에서 한국어 Typst 원고를 �
 - AI 사용 고지: [docs/ai-assistance-note.md](docs/ai-assistance-note.md)
 - 참고문헌 감사 문서: [docs/reference-audit.md](docs/reference-audit.md)
 - 릴리스 체크리스트: [docs/release-checklist-v0.1.0-ko.md](docs/release-checklist-v0.1.0-ko.md)
+- 인용 안내: [docs/citation.md](docs/citation.md)
 - 변경 기록: [CHANGELOG.md](CHANGELOG.md)
 - 영어 README: [README.md](README.md)
 
-아직 DOI는 발급되지 않았습니다. DOI는 Zenodo 또는 다른 보존 서비스에서 실제 발급된 뒤에만 추가합니다.
+Zenodo DOI: [10.5281/zenodo.20506269](https://doi.org/10.5281/zenodo.20506269)

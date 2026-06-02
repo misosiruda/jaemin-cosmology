@@ -1,5 +1,7 @@
 # Jaemin Cosmology
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20506269.svg)](https://doi.org/10.5281/zenodo.20506269)
+
 This repository contains a Korean working-paper manuscript for:
 
 **The Brain as a Higher-Dimensional Interface: A Formal Framework for Consciousness, Intuition, Intelligence, and Subjective Time**
@@ -46,6 +48,7 @@ jaemin-cosmology/
     release-checklist-v0.1.0-ko.md
     release-notes/
       v0.1.0-ko.md
+    citation.md
     scope-and-nongoals.en.md
     scope-and-nongoals.ko.md
   legacy/
@@ -112,6 +115,7 @@ See [docs/reference-audit.md](docs/reference-audit.md).
 - AI assistance note: [docs/ai-assistance-note.md](docs/ai-assistance-note.md)
 - Release notes: [docs/release-notes/v0.1.0-ko.md](docs/release-notes/v0.1.0-ko.md)
 - Release checklist: [docs/release-checklist-v0.1.0-ko.md](docs/release-checklist-v0.1.0-ko.md)
+- Citation guide: [docs/citation.md](docs/citation.md)
 
 ## Citation and License
 
@@ -121,7 +125,8 @@ See [docs/reference-audit.md](docs/reference-audit.md).
 - AI assistance note: [docs/ai-assistance-note.md](docs/ai-assistance-note.md)
 - Reference audit: [docs/reference-audit.md](docs/reference-audit.md)
 - Release checklist: [docs/release-checklist-v0.1.0-ko.md](docs/release-checklist-v0.1.0-ko.md)
+- Citation guide: [docs/citation.md](docs/citation.md)
 - Changelog: [CHANGELOG.md](CHANGELOG.md)
 - Korean README: [README.ko.md](README.ko.md)
 
-No DOI has been assigned yet. A DOI will be added only after release through Zenodo or another archival service.
+Zenodo DOI: [10.5281/zenodo.20506269](https://doi.org/10.5281/zenodo.20506269)

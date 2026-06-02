@@ -4,7 +4,7 @@ All notable repository and manuscript release changes will be documented in this
 
 ## Unreleased
 
-No post-release changes yet.
+- Added Zenodo DOI badge and citation guidance after v0.1.0-ko release.
 
 ## v0.1.0-ko - 2026-06-02
 
@@ -28,7 +28,7 @@ Known status:
 
 - This is a speculative formal framework and working-paper manuscript.
 - It is not an empirically confirmed theory of physics, neuroscience, or consciousness.
-- No DOI has been assigned yet.
+- Zenodo DOI has been assigned: `10.5281/zenodo.20506269`.
 - Bibliographic metadata completed the PR 14 consistency pass; all 19 entries are verified in `docs/reference-audit.md`.
 
 Repository preparation changes included:
