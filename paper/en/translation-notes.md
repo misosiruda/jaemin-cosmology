@@ -40,6 +40,30 @@
 - Confirm that `cal(I)` is visually acceptable in the rendered English PDF as the intuition signal.
 - Confirm whether future English sections should include formal bibliography citations, or keep citations deferred until the full translation pass.
 
+## PR 20 Status
+
+- Intelligence, cognitive-efficiency, AGI efficiency-gap, and physical-causality sections drafted.
+- Added a partial Candidate Predictions entry for the efficiency-gap candidate prediction.
+- Full translation still pending.
+- Claim-strength rules remain active.
+
+## PR 20 Terminology and Notation Decisions
+
+- `η` is retained as the computational-efficiency amplification factor.
+- `η_"human"` and `η_"AI"` are retained for the efficiency-gap model.
+- `η_"proxy"` is retained for cautious empirical proxy variables.
+- `Q_F` is rendered as an alignment/coupling component, not as external injection.
+- `Q_c(N_b, cal(F))` remains the coupled subconscious or non-conscious representation map.
+- `cal(F)` remains the higher-dimensional informational constraint structure.
+- `cal(I)` remains the intuition signal.
+- `K_"bio"`, `K_"AI"`, and `R_"task"` are retained for direct biological computation, direct AI hardware computation, and task requirement.
+
+## PR 20 Author-Review Questions
+
+- Confirm that the hardware-ratio equation should remain framed as a candidate modeling implication rather than a prediction by itself.
+- Confirm that `η_"proxy"` examples are acceptable as early operational proxies.
+- Confirm that the partial Candidate Predictions section should keep the remaining-section TODO until the full candidate-prediction translation pass.
+
 ## DOI Reference
 
 The authoritative released manuscript remains the Korean working-paper release `v0.1.0-ko`.
@@ -88,7 +112,20 @@ The authoritative released manuscript remains the Korean working-paper release `
 | 잠재의식 | subconscious representation or non-conscious representation |
 | 직관 | intuition as compressed access to latent structure |
 | 결합 강도 | coupling strength |
+| 지능 | intelligence |
+| 인지 효율성 | cognitive efficiency |
+| 계산 효율 | computational efficiency |
 | 계산 효율 증폭 | computational-efficiency amplification |
+| 기능적 일반지능 | functional general intelligence |
+| 자원 제약 | resource constraint |
+| 표본 효율성 | sample efficiency |
+| 데이터 효율성 | data efficiency |
+| 에너지 효율성 | energy efficiency |
+| 일반화 능력 | generalization capacity |
+| 물리적 인과성 | physical causality |
+| 보존 법칙 | conservation law |
+| 외부 주입 | external injection |
+| 정렬/결합 성분 | alignment/coupling component |
 | 정보 압축 | information compression |
 | 불확실성 감소 | uncertainty reduction |
 | 식별가능성 문제 | identifiability problem |

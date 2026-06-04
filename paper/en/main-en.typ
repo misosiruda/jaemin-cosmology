@@ -288,15 +288,69 @@ This toy model does not establish the existence of higher-dimensional informatio
 
 = Intelligence and Interface Efficiency
 
-#todo[
-  [TODO: Translate and adapt this section from `paper/ko/main-ko.typ`.]
-]
+In this framework, differences in intelligence are not reduced simply to differences in neuron count. Standard neuroscientific explanations emphasize factors such as connectivity structure, connection complexity, information flow, learning history, and brain plasticity. This framework preserves those factors while adding coupling strength $c$ and the computational-efficiency amplification factor $η$ as formal modeling terms.
+
+Geometric and topological analyses of neural representation provide important comparison baselines for interpreting $cal(N)$ and $Q_N(N_b)$ within ordinary neural-computation models. Therefore, the higher-dimensional informational-coupling term $Q_F(N_b, cal(F))$ must be separately tested for whether it can be absorbed by standard neural-representation geometry.
+
+Let the neural connectivity structure be $Γ$. Let cognitive performance, or an abstract intelligence score, be denoted by $cal(Z)$. A formal decomposition that separates ordinary neural-computation contribution from an additional higher-dimensional interface contribution is
+
+$ cal(Z) = φ(N_b, Γ) + ψ_N(Q_N(N_b)) + c(η - 1) ψ_F(Q_F(N_b, cal(F))). $
+
+Here $φ$ denotes ordinary neural computational capacity, $ψ_N(Q_N(N_b))$ denotes the contribution of standard subconscious or neural latent representation, and $c(η - 1) ψ_F(Q_F(N_b, cal(F)))$ denotes an additional efficiency term associated with higher-dimensional informational coupling. If $c = 0$, the additional higher-dimensional interface term disappears. If $η = 1$, then even with coupling, there is no efficiency amplification.
+
+This equation is not proposed as an actual IQ measurement formula. It is a formal model for separating ordinary neural computational capacity from the possible efficiency of higher-dimensional informational coupling.
+
+*Proposition: different cognitive performance with the same neural resources.* Even if two cognitive systems have the same $N_b$ and $Γ$, their values of $cal(Z)$ may differ if $c$ or $η$ differs in the expression above.
+
+*Proof sketch.* If $N_b$ and $Γ$ are the same, then the terms $φ(N_b, Γ)$ and $ψ_N(Q_N(N_b))$ are the same. However, if $ψ_F(Q_F(N_b, cal(F)))$ is nonzero and the value of $c(η - 1)$ differs, then the additional higher-dimensional interface term differs. Therefore, the total value of $cal(Z)$ may also differ.
 
 = AGI and the Efficiency Gap
 
-#todo[
-  [TODO: Translate and adapt this section from `paper/ko/main-ko.typ`.]
-]
+In this paper, AGI does not mean an artificial being with the same conscious experience as a human. AGI is used here to mean the functional capacity of an artificial system to generalize, adapt, reason, plan, and transfer learning across a distribution of tasks. The AGI discussion in this draft therefore concerns task performance and computational efficiency, not whether an artificial system has consciousness.
+
+The framework is not an AGI-impossibility argument. It does not deny that an AI system with sufficiently large physical hardware might reach AGI through low-dimensional internal computation alone. Within this framework, the AGI question is reframed not as a principled impossibility claim, but as an efficiency-gap problem: the human brain may be interpreted as achieving broad functional intelligence under severe energy, material, and hardware constraints through higher-dimensional information-interface efficiency.
+
+Let $R_"task"$ be the effective computation required to solve a target task. Let $K_"bio"$ be the direct computation provided by a biological brain, and let $K_"AI"$ be the direct computation provided by AI hardware. Effective computation can be represented as
+
+$ K_"eff,human" = η_"human" K_"bio", $
+
+$ K_"eff,AI" = η_"AI" K_"AI". $
+
+The task-satisfaction condition is
+
+$ K_"eff" >= R_"task". $
+
+For humans and AI systems to satisfy the same task level, one needs
+
+$ η_"human" K_"bio" >= R_"task", $
+
+$ η_"AI" K_"AI" >= R_"task". $
+
+Let the minimum direct hardware required for the same task requirement $R_"task"$ be $K_"bio"^"min"$ and $K_"AI"^"min"$. Then
+
+$ K_"bio"^"min" = R_"task" / η_"human", $
+
+$ K_"AI"^"min" = R_"task" / η_"AI". $
+
+The ratio of minimum direct hardware is therefore
+
+$ K_"AI"^"min" / K_"bio"^"min" = η_"human" / η_"AI". $
+
+Here $η$ does not denote every form of algorithmic efficiency. It is defined as an additional efficiency-amplification factor associated with the higher-dimensional information interface. If a current AI system is modeled as lacking this kind of coupling, then one may set $η_"AI" approx 1$ under a normalized baseline. Conversely, if one hypothesizes that $η_"human" >> η_"AI"$, then the same task level may require
+
+$ K_"AI"^"min" >> K_"bio"^"min". $
+
+Thus the framework does not say "AI cannot become AGI." It suggests the candidate implication that current AI systems may require much larger low-dimensional hardware resources to implement human-level functional general intelligence. This is not an established conclusion; it is a candidate modeling implication.
+
+Directly measuring $η$ in empirical research is difficult. Early work may therefore use indirect proxy variables. Let $K_"direct"$ denote direct computation, power usage, or another measurable resource-use quantity provided by the hardware:
+
+$ η_"proxy" = "Task Performance" / K_"direct". $
+
+Alternatively,
+
+$ η_"proxy" = "Generalization Score" / "Measured Energy". $
+
+For comparisons across tasks, "Task Performance" should be defined as a normalized score between 0 and 1, or as relative performance within the same benchmark. Otherwise, $η_"proxy"$ may reflect task difficulty or differences in scoring scale rather than efficiency. These proxy variables do not establish higher-dimensional coupling. They are only possible empirical starting points for comparing efficiency gaps among humans, animals, and AI systems.
 
 = Variable Internal Time
 
@@ -330,9 +384,11 @@ This toy model does not establish the existence of higher-dimensional informatio
 
 = Physical Causality and Conservation
 
-#todo[
-  [TODO: Translate and adapt this section from `paper/ko/main-ko.typ`.]
-]
+If the higher-dimensional informational constraint structure $cal(F)$ is interpreted as influencing brain state, then a physical-causality problem arises. The model must specify whether this influence is energy transfer, information transfer, hidden-variable structure, or merely reparameterization.
+
+This draft does not define $cal(F)$ as a separate energy field that injects external energy into the brain. The safer interpretation is that $cal(F)$ is a higher-dimensional informational constraint structure of the effective information state $X(T)$. Under this interpretation, the brain does not receive an external input that violates conservation of energy. Rather, it may be interpreted as coupling to part of the higher-dimensional informational constraint structure through its own high-dimensional neural state space.
+
+This interpretation is still not an established physical mechanism and requires future formalization. Any scientifically useful version of the framework must remain compatible with observable physical causality at the level of neural dynamics, behavior, and measurable energy use. In this draft, $Q_F$ is therefore best read as an alignment/coupling component, not as an external injection of energy or unmodeled causal force.
 
 = Identifiability Problem
 
@@ -351,8 +407,12 @@ To develop into an empirical research program, the framework therefore requires 
 
 = Candidate Predictions
 
+The following item is a partial PR 20 translation of the candidate predictions directly related to cognitive efficiency and the AGI efficiency gap. The full Candidate Predictions section remains pending for a later translation pass.
+
+- *Efficiency-gap candidate prediction.* Observable variables include performance across a shared task family, sample efficiency, adaptation speed, direct computation, and energy use. The comparison targets are humans, animals, and AI systems performing the same task requirements. If AI systems continue to require substantially larger direct computation or energy use than humans while matching the same level of generalization, adaptability, and sample efficiency, that pattern would be compatible with the hypothesis $η_"human" >> η_"AI"$. This would not establish the framework; it would only be an empirical interpretation of the efficiency-gap model.
+
 #todo[
-  [TODO: Translate and adapt this section from `paper/ko/main-ko.typ`.]
+  [TODO: Translate and adapt the remaining Candidate Predictions section from `paper/ko/main-ko.typ`.]
 ]
 
 = Discussion
@@ -371,7 +431,7 @@ The model faces an identifiability problem. Its proposed coupling and efficiency
 
 Candidate predictions require comparison against standard neuroscience, cognitive science, psychology, and AI baselines. Without such comparisons, the framework may remain an interpretive reformulation rather than an empirically constrained model.
 
-The current English draft is incomplete. Only the frontmatter, abstract, scope and non-goals, limitations, and conclusion have been drafted at this stage; the remaining sections still require translation and adaptation from the Korean release.
+The current English draft is incomplete. The frontmatter, framing sections, core mathematical framework, intelligence and AGI efficiency-gap sections, physical-causality section, and one efficiency-related candidate prediction have been drafted; the remaining sections still require translation and adaptation from the Korean release.
 
 Bibliographic metadata verification remains a separate audit track. This English draft does not newly verify reference metadata and should not silently treat bibliography metadata as complete beyond the existing repository audit status.
 

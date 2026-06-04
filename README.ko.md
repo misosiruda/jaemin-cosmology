@@ -8,7 +8,7 @@
 
 본문은 한국어로 작성되었고, 논문 제목과 핵심 수학 표기는 영문 원제와 표준 수식을 유지합니다.
 
-권위 있는 공개 원고는 한국어 working-paper release `v0.1.0-ko`입니다. `paper/en/` 아래의 영어 draft scaffold에는 현재 frontmatter, framing sections, core mathematical framework sections의 초기 문안만 들어 있으며, 아직 전체 영문판이나 권위 있는 영어 번역본은 아닙니다.
+권위 있는 공개 원고는 한국어 working-paper release `v0.1.0-ko`입니다. `paper/en/` 아래의 영어 draft scaffold에는 현재 frontmatter, framing sections, core mathematical framework sections, intelligence / AGI efficiency-gap sections의 초기 문안만 들어 있으며, 아직 전체 영문판이나 권위 있는 영어 번역본은 아닙니다.
 
 저자: Jaemin Seo
 
