@@ -12,7 +12,7 @@ The manuscript is currently written in Korean. See [README.ko.md](README.ko.md) 
 
 This repository contains a Korean working-paper manuscript. The project proposes a speculative formal framework for modeling consciousness, intuition, cognitive efficiency, AGI efficiency gaps, and subjective time through the hypothesis of a higher-dimensional information interface. It is not an empirically confirmed scientific theory.
 
-The authoritative released manuscript remains the Korean working-paper release `v0.1.0-ko`. An English draft scaffold exists under `paper/en/` and now contains initial frontmatter, framing sections, core mathematical framework sections, intelligence / AGI efficiency-gap sections, and subjective-time sections, but it is not yet a full English version and should not be cited as the authoritative English translation.
+English Draft v0.2.0 exists under `paper/en/` as a full draft structure. It is not separately released and should not be cited as the DOI-bearing release. The authoritative DOI-bearing manuscript remains the Korean working-paper release `v0.1.0-ko`.
 
 Author: Jaemin Seo
 
@@ -32,7 +32,7 @@ jaemin-cosmology/
   README.ko.md
   paper/
     en/
-      main-en.typ        # English translation scaffold
+      main-en.typ        # English draft v0.2.0
       translation-notes.md
     ko/
       main-ko.typ
@@ -76,7 +76,7 @@ Recommended build command:
 make build
 ```
 
-The default `build` target builds the Korean manuscript. Optional English scaffold targets are also available:
+The default `build` target builds the Korean manuscript. Optional English draft targets are also available:
 
 ```bash
 make build-en
@@ -90,7 +90,7 @@ Direct Typst command:
 typst compile --root . paper/ko/main-ko.typ paper/ko/main-ko.pdf
 ```
 
-Direct English scaffold command:
+Direct English draft command:
 
 ```bash
 typst compile --root . paper/en/main-en.typ paper/en/main-en.pdf
@@ -104,7 +104,7 @@ Watch mode:
 make watch
 ```
 
-Translation notes for future English work are in [paper/en/translation-notes.md](paper/en/translation-notes.md).
+Translation notes for English draft work are in [paper/en/translation-notes.md](paper/en/translation-notes.md).
 
 ## Continuous Integration
 
@@ -133,7 +133,7 @@ See [docs/reference-audit.md](docs/reference-audit.md).
 - Korean one-page summary: [docs/one-page-summary-ko.md](docs/one-page-summary-ko.md)
 - English FAQ: [docs/faq-en.md](docs/faq-en.md)
 - Korean FAQ: [docs/faq-ko.md](docs/faq-ko.md)
-- English translation scaffold notes: [paper/en/translation-notes.md](paper/en/translation-notes.md)
+- English translation notes: [paper/en/translation-notes.md](paper/en/translation-notes.md)
 - AI assistance note: [docs/ai-assistance-note.md](docs/ai-assistance-note.md)
 - Release notes: [docs/release-notes/v0.1.0-ko.md](docs/release-notes/v0.1.0-ko.md)
 - Release checklist: [docs/release-checklist-v0.1.0-ko.md](docs/release-checklist-v0.1.0-ko.md)

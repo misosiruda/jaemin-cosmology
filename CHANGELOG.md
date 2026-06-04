@@ -10,6 +10,7 @@ All notable repository and manuscript release changes will be documented in this
 - Drafted English core mathematical framework sections.
 - Drafted English intelligence, AGI efficiency-gap, and physical-causality sections.
 - Drafted English subjective-time and internal-time sections.
+- Completed English full draft v0.2 structure and remaining major sections.
 
 ## v0.1.0-ko - 2026-06-02
 

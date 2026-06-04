@@ -8,7 +8,7 @@
 
 본문은 한국어로 작성되었고, 논문 제목과 핵심 수학 표기는 영문 원제와 표준 수식을 유지합니다.
 
-권위 있는 공개 원고는 한국어 working-paper release `v0.1.0-ko`입니다. `paper/en/` 아래의 영어 draft scaffold에는 현재 frontmatter, framing sections, core mathematical framework sections, intelligence / AGI efficiency-gap sections, subjective-time sections의 초기 문안만 들어 있으며, 아직 전체 영문판이나 권위 있는 영어 번역본은 아닙니다.
+`paper/en/` 아래에 English Draft v0.2.0이 전체 draft 구조로 존재합니다. 이 영어 draft는 아직 별도로 release되지 않았고 DOI-bearing release로 인용하면 안 됩니다. 권위 있는 DOI-bearing 공개 원고는 한국어 working-paper release `v0.1.0-ko`입니다.
 
 저자: Jaemin Seo
 
@@ -28,7 +28,7 @@ jaemin-cosmology/
   README.ko.md
   paper/
     en/
-      main-en.typ        # 영어 번역 scaffold
+      main-en.typ        # English Draft v0.2.0
       translation-notes.md
     ko/
       main-ko.typ
@@ -76,7 +76,7 @@ jaemin-cosmology/
 make build
 ```
 
-기본 `build` target은 한국어 원고를 빌드합니다. 영어 scaffold용 선택 target은 다음과 같습니다.
+기본 `build` target은 한국어 원고를 빌드합니다. 영어 draft용 선택 target은 다음과 같습니다.
 
 ```bash
 make build-en
@@ -90,7 +90,7 @@ Typst를 직접 실행하려면:
 typst compile --root . paper/ko/main-ko.typ paper/ko/main-ko.pdf
 ```
 
-영어 scaffold를 직접 빌드하려면:
+영어 draft를 직접 빌드하려면:
 
 ```bash
 typst compile --root . paper/en/main-en.typ paper/en/main-en.pdf
@@ -102,7 +102,7 @@ typst compile --root . paper/en/main-en.typ paper/en/main-en.pdf
 make watch
 ```
 
-향후 영어 번역 기준은 [paper/en/translation-notes.md](paper/en/translation-notes.md)에 정리했습니다.
+영어 draft 작업 기준은 [paper/en/translation-notes.md](paper/en/translation-notes.md)에 정리했습니다.
 
 ## CI 빌드
 
@@ -145,7 +145,7 @@ GitHub Actions는 pull request와 `main` push에서 한국어 Typst 원고를 �
 - 한국어 1페이지 요약: [docs/one-page-summary-ko.md](docs/one-page-summary-ko.md)
 - 영문 FAQ: [docs/faq-en.md](docs/faq-en.md)
 - 한국어 FAQ: [docs/faq-ko.md](docs/faq-ko.md)
-- 영어 번역 scaffold 노트: [paper/en/translation-notes.md](paper/en/translation-notes.md)
+- 영어 번역 노트: [paper/en/translation-notes.md](paper/en/translation-notes.md)
 - AI 사용 고지: [docs/ai-assistance-note.md](docs/ai-assistance-note.md)
 - 릴리스 노트: [docs/release-notes/v0.1.0-ko.md](docs/release-notes/v0.1.0-ko.md)
 - 릴리스 체크리스트: [docs/release-checklist-v0.1.0-ko.md](docs/release-checklist-v0.1.0-ko.md)

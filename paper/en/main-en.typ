@@ -37,7 +37,7 @@
 #v(1em)
 
 #block(inset: 10pt, stroke: 0.7pt + luma(190), radius: 4pt)[
-  This English draft is derived from the Korean working-paper release v0.1.0-ko. It is not yet the authoritative full English translation.
+  This English draft is derived from the Korean working-paper release v0.1.0-ko. It is not yet a separately released English version.
 
   Source release DOI: #link("https://doi.org/10.5281/zenodo.20506269")[10.5281/zenodo.20506269]
 ]
@@ -52,9 +52,23 @@ The paper does not claim empirical confirmation. It does not claim that the brai
 
 = Introduction
 
-#todo[
-  [TODO: Translate and adapt this section from `paper/ko/main-ko.typ`.]
+Human conscious experience ordinarily takes a world of three-dimensional space and temporal flow as its basic form. It does not follow, however, that the dimensional form available to conscious experience exhausts every state variable that may be useful in a formal model of cognition. This manuscript asks whether conscious experience may be modeled as a low-dimensional interface to a higher-dimensional informational constraint structure.
+
+The starting motivation is a thought experiment about time acceleration. If every physical process inside a system were uniformly accelerated relative to an external reference time, an observer inside that system might not detect the change using only internal clocks. In this paper, that thought experiment is only a motivation, not the central conclusion. The broader question is how conscious experience, subconscious or non-conscious representation, intuition, cognitive efficiency, the AGI efficiency gap, and subjective or internal time might be organized within a shared formal vocabulary.
+
+#quote(block: true)[
+  The brain may be modeled as a transformer or interface between higher-dimensional informational constraint structures and the low-dimensional conscious interface.
 ]
+
+This is a speculative formal framework. It does not claim empirical confirmation, and it does not claim that the brain literally accesses extra physical dimensions. It also does not replace standard physics, general relativity, neuroscience, cognitive science, psychology, or AI research. The framework instead organizes a hypothesis space that may later be narrowed into operational submodels.
+
+Throughout the draft, three levels are kept distinct:
+
+- *Level A: mathematical possibility.* The framework can be defined using explicit maps, state spaces, time parameters, and information-theoretic constraints.
+- *Level B: interpretive framework.* Conscious experience, subconscious representation, intuition, cognitive efficiency, the AGI efficiency gap, and subjective-time experience can be interpreted within one formal structure.
+- *Level C: empirical science.* For the framework to become a scientific theory, it must generate observable candidate predictions, operational definitions, and conditions under which it could be falsified or absorbed by stronger baseline models.
+
+The manuscript should therefore be read as a formal research program for exploring the relation between higher-dimensional informational structure and cognitive projection, not as a verified theory.
 
 = Scope and Non-Goals
 
@@ -481,19 +495,41 @@ To develop into an empirical research program, the framework therefore requires 
 
 = Candidate Predictions
 
-The following item is a partial PR 20 translation of the candidate predictions directly related to cognitive efficiency and the AGI efficiency gap. The full Candidate Predictions section remains pending for a later translation pass.
+The following items are candidate predictions and candidate observation points. They are not confirmed results. Each item requires operational definitions, baseline comparison, and a distinction between prediction, measurement proxy, and modeling implication.
 
 - *Efficiency-gap candidate prediction.* Observable variables include performance across a shared task family, sample efficiency, adaptation speed, direct computation, and energy use. The comparison targets are humans, animals, and AI systems performing the same task requirements. If AI systems continue to require substantially larger direct computation or energy use than humans while matching the same level of generalization, adaptability, and sample efficiency, that pattern would be compatible with the hypothesis $η_"human" >> η_"AI"$. This would not establish the framework; it would only be an empirical interpretation of the efficiency-gap model.
 
-#todo[
-  [TODO: Translate and adapt the remaining Candidate Predictions section from `paper/ko/main-ko.typ`.]
-]
+  The associated modeling implication is
+
+  $ K_"AI"^"min" / K_"bio"^"min" = η_"human" / η_"AI". $
+
+  This equation is not an established empirical law. It is a candidate implication of the model under the definitions of $K_"bio"^"min"$, $K_"AI"^"min"$, $η_"human"$, and $η_"AI"$. Early empirical work may use $η_"proxy"$, such as task performance divided by direct computation or generalization score divided by measured energy, but $η_"proxy"$ is only a candidate operational proxy. It should not be treated as a direct measurement of true intelligence or of $η$ itself.
+
+- *Intuition and latent-structure candidate prediction.* Observable variables include intuition-task success rate, reaction time, conscious explainability, neural latent-space dimensionality, compression structure, and information-bottleneck indicators. The comparison targets are tasks that can be explained by deliberate conscious reasoning and fast judgment tasks that are difficult for the subject to explain. If statistically above-baseline success in fast, hard-to-explain tasks correlates with high-dimensional latent structure, compression measures, or information-bottleneck indicators, that pattern may be modeled as compatible with $cal(I) = G(S)$ and with the uncertainty-reduction relation $H(Y | S) <= H(Y | C)$.
+
+  This would remain a weak candidate prediction because standard neuroscience, predictive-processing, and latent-variable models may explain similar observations. The framework would gain independent value only if the proposed coupling term $c Q_F$ yields operational differences that are not simply absorbed by a richer ordinary neural-computation model $Q_N$.
+
+- *Coupling-strength candidate operationalization.* The coupling strength $c$ is not directly measurable in the present draft. A future operationalization would need to specify observable proxy variables, such as residual latent-structure information, task performance under controlled uncertainty, neural dynamics not captured by baseline representation models, or efficiency differences after controlling for ordinary learning history and architecture. Such proxies would be candidate operationalizations, not direct measurements of higher-dimensional coupling.
+
+- *Subjective-time candidate prediction.* Observable variables include biological age $a$, memory density or novelty density $μ(a)$, routine level, attention, subjective-duration ratings, and other behavioral measures of felt duration. The comparison target is a standard psychological time-perception model versus an extended model that includes the sensitivity parameter $λ$:
+
+  $ D_"felt"(a,T) = μ(a) [α(T)]^(-λ) Δ τ. $
+
+  If residual subjective-duration effects remain after controlling for memory density, novelty, routine, and attention, those residuals may be modeled as candidate constraints on $λ$ or $α(T)$. This is a weak candidate prediction. It requires strict experimental design and should not be read as evidence that physical time accelerates with age.
+
+- *Identifiability-related candidate test.* A scientifically useful version of the framework must generate observations that cannot be matched by increasing the complexity of $Q_N$ or by using ordinary latent-variable, representation-learning, predictive-processing, or cognitive-efficiency models. If every candidate proxy can be absorbed by stronger baseline models, then $c$, $η$, and $α$ function as interpretive or reparameterization terms rather than independent explanatory variables.
 
 = Discussion
 
-#todo[
-  [TODO: Translate and adapt this section from `paper/ko/main-ko.typ`.]
-]
+The main contribution of this draft is integrative rather than evidential. It connects conscious experience, subconscious representation, intuition, cognitive efficiency, the AGI efficiency gap, and subjective-time experience within one formal structure. In that structure, $cal(F)$ denotes a higher-dimensional informational constraint structure, $C = P(X)$ denotes conscious projection, $S = Q_c(N_b, cal(F))$ denotes subconscious or non-conscious representation, and $cal(I) = G(S)$ denotes an intuition signal compressed from that representation.
+
+The same structure introduces $c$ as coupling strength, $η$ as computational-efficiency amplification, and $τ$ with $α(X,T)$ as internal-time variables. These components allow the draft to express several questions in one notation: whether conscious experience is a compressed interface, whether intuition can be understood as lossy access to latent structure, whether human and AI competence may differ by efficiency rather than only by scale, and whether subjective-time experience can be modeled through internal-time-rate sensitivity.
+
+This unity does not imply empirical validity. The most serious problem is identifiability. A higher-dimensional informational-coupling term $c Q_F$ may be observationally indistinguishable from a more expressive ordinary neural model $Q_N$. Similarly, the efficiency parameter $η$ may collapse into ordinary algorithmic, architectural, training-data, or hardware efficiency unless it is given distinct operational constraints. Uniform internal-time scaling may also be a reparameterization unless it produces measurable residuals not already explained by standard psychological models of time perception.
+
+For this reason, the framework should be compared with ordinary latent-variable models, predictive-processing models, representation-learning models, information-theoretic accounts, cognitive-efficiency models, and standard AI baselines. It does not replace those approaches. Its possible value lies in whether it can generate distinct operational predictions that survive comparison with them.
+
+The AGI discussion should therefore be read as an efficiency-gap lens, not as a claim that AGI is impossible. Likewise, the subjective-time model is about internal or felt time, not about literal acceleration of physical time or relativistic time dilation. The framework remains a working-paper hypothesis space until its parameters and predictions are made operational.
 
 = Limitations
 
@@ -505,15 +541,24 @@ The model faces an identifiability problem. Its proposed coupling and efficiency
 
 Candidate predictions require comparison against standard neuroscience, cognitive science, psychology, and AI baselines. Without such comparisons, the framework may remain an interpretive reformulation rather than an empirically constrained model.
 
-The current English draft is incomplete. The frontmatter, framing sections, core mathematical framework, intelligence and AGI efficiency-gap sections, physical-causality section, subjective-time sections, and one efficiency-related candidate prediction have been drafted; the remaining sections still require translation and adaptation from the Korean release.
+The current English draft v0.2.0 is structurally complete but remains a draft. It still requires author review, copyediting, bibliography citation placement, reference metadata verification in a separate audit track, and external review before it can be considered for any separate English release.
 
 Bibliographic metadata verification remains a separate audit track. This English draft does not newly verify reference metadata and should not silently treat bibliography metadata as complete beyond the existing repository audit status.
 
 = Future Work
 
-#todo[
-  [TODO: Translate and adapt this section from `paper/ko/main-ko.typ`.]
-]
+Future work should narrow the framework into testable submodels rather than expanding its claim scope.
+
+- Formalize concrete forms of $P$, $Q_c$, $R$, and $G$, and compare them with neural latent-space models, representation-learning models, and predictive-processing models.
+- Define operational proxies for $c$, $η$, $α$, $λ$, $S$, $η_"proxy"$, and $μ(a)$, while distinguishing proxy variables from direct measurements.
+- Design controlled intuition and uncertainty-reduction tasks that compare conscious reasoning, fast hard-to-explain judgment, latent-space measures, and information-bottleneck indicators.
+- Develop efficiency-gap benchmarks that compare humans, animals, and AI systems under shared task definitions and under explicit energy, data, hardware, latency, and adaptation constraints.
+- Test whether the modeling implication $K_"AI"^"min" / K_"bio"^"min" = η_"human" / η_"AI"$ has any empirically useful proxy form, without treating it as an established law.
+- Formalize subjective-time candidate predictions using behavioral measures, memory-density or novelty-density measures, attention controls, information-rate measures, and strict comparison against standard psychological models.
+- Clarify which mechanisms can generate changes in $α(X,T)$, and keep rotational mechanisms as optional special-case parameterizations rather than core assumptions.
+- Expand the toy model and simulation models to examine whether weak latent-coordinate traces can produce measurable uncertainty reduction without implying perfect prediction.
+- Continue bibliography citation placement and reference metadata verification in a separate reference-audit track. This PR does not newly verify bibliography metadata.
+- Prepare any later English release only after author review, copyediting, external review, bibliography integration, and explicit release preparation.
 
 = Conclusion
 

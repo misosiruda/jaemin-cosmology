@@ -2,25 +2,25 @@
 
 ## Translation Status
 
-- Status: partial English draft.
+- Status: English full draft v0.2.0.
 - Source manuscript: `paper/ko/main-ko.typ`.
 - Source release: Korean working-paper release `v0.1.0-ko`.
-- English scaffold: `paper/en/main-en.typ`.
-- Full English translation: still pending.
-- This scaffold is not yet the authoritative English translation.
+- English draft: `paper/en/main-en.typ`.
+- Full English translation: structurally drafted, pending author review and copyediting.
+- This draft is not yet a separately released English version.
 
 ## PR 18 Status
 
 - Frontmatter, abstract, scope/non-goals, limitations, and conclusion drafted.
-- Full translation still pending.
+- Superseded by PR 22 full-draft integration; author review and copyediting remain.
 - Claim-strength rules remain active.
 
 ## PR 19 Status
 
 - Core mathematical framework sections drafted.
 - Filled sections: Core Hypothesis; Motivating Analogy; Mathematical Setup; Core Postulates; Consciousness and Subconscious Representation; Intuition and Information Theory; Toy Model; Identifiability Problem.
-- Full translation still pending.
-- Sections outside PR 19 remain TODO unless previously drafted in PR 18.
+- Superseded by PR 22 full-draft integration; author review and copyediting remain.
+- Sections outside PR 19 were deferred at the time and later filled or integrated in PR 22.
 - Claim-strength rules remain active.
 
 ## PR 19 Terminology and Notation Decisions
@@ -44,7 +44,7 @@
 
 - Intelligence, cognitive-efficiency, AGI efficiency-gap, and physical-causality sections drafted.
 - Added a partial Candidate Predictions entry for the efficiency-gap candidate prediction.
-- Full translation still pending.
+- Superseded by PR 22 full-draft integration; author review and copyediting remain.
 - Claim-strength rules remain active.
 
 ## PR 20 Terminology and Notation Decisions
@@ -62,14 +62,14 @@
 
 - Confirm that the hardware-ratio equation should remain framed as a candidate modeling implication rather than a prediction by itself.
 - Confirm that `η_"proxy"` examples are acceptable as early operational proxies.
-- Confirm that the partial Candidate Predictions section should keep the remaining-section TODO until the full candidate-prediction translation pass.
+- Superseded by PR 22: the Candidate Predictions section is now integrated, while author review remains pending.
 
 ## PR 21 Status
 
 - Subjective-time and internal-time sections drafted.
 - Filled sections: Variable Internal Time; Subjective Time Acceleration with Aging; Life Expectancy and Civilizational Acceleration; Generalized Model Without Mandatory Rotation; Optional Rotational Mechanism as a Special Case.
-- Full translation still pending.
-- Candidate Predictions, Discussion, and Future Work remain pending.
+- Superseded by PR 22 full-draft integration; author review and copyediting remain.
+- Candidate Predictions, Discussion, and Future Work were filled in PR 22.
 - Claim-strength rules remain active.
 
 ## PR 21 Terminology and Notation Decisions
@@ -94,6 +94,30 @@
 - Confirm that life-expectancy and civilizational-acceleration material should remain a speculative heuristic extension.
 - Confirm that the optional rotational mechanism should remain an illustrative special case rather than a required mechanism.
 
+## PR 22 Status
+
+- English full draft v0.2.0 completed as a structurally readable draft.
+- Filled sections: Introduction; Candidate Predictions; Discussion; Future Work.
+- Remaining work: author review, copyediting, bibliography citation placement, reference metadata verification, and external review.
+- The English draft is not yet a separately released version and has no separate DOI.
+- No bibliography citation insertion, bibliography metadata cleanup, ORCID addition, or affiliation addition was performed in this PR.
+- Claim-strength rules remain active.
+
+## PR 22 Terminology and Notation Decisions
+
+- `D_"felt"(a,T)` is retained in Typst source because it renders as a clear `D_felt`-style text subscript and avoids renaming the variable.
+- `cal(F)` and `cal(I)` are retained because Typst renders them as calligraphic symbols and they avoid ambiguity with entropy or mutual-information notation.
+- `η_"proxy"` remains an early operational proxy, not a direct measurement of intelligence or of true `η`.
+- `λ` remains a sensitivity parameter for internal-time-rate effects on felt duration, not a universal decay constant.
+- Candidate predictions are framed as candidate observations, proxy definitions, or modeling implications, not confirmed predictions.
+
+## PR 22 Author-Review Questions
+
+- Confirm that the integrated Candidate Predictions section is acceptable for v0.2.0 even though bibliography citation placement remains deferred.
+- Confirm that the Introduction and Discussion flow is suitable for the next English copyedit pass.
+- Confirm that `D_"felt"(a,T)` should remain the Typst source notation as long as the rendered PDF shows a clear `D_felt`-style subscript.
+- Confirm that bibliography citation placement and reference metadata verification should remain a separate reference-audit track.
+
 ## DOI Reference
 
 The authoritative released manuscript remains the Korean working-paper release `v0.1.0-ko`.
@@ -103,7 +127,7 @@ The authoritative released manuscript remains the Korean working-paper release `
 
 ## Source Mapping to Korean v0.1.0-ko
 
-| English scaffold section | Korean source section in `paper/ko/main-ko.typ` |
+| English draft section | Korean source section in `paper/ko/main-ko.typ` |
 | --- | --- |
 | Introduction | `서론 (Introduction)` |
 | Scope and Non-Goals | `범위와 비목표 (Scope and Non-Goals)` |
