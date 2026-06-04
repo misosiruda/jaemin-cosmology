@@ -52,6 +52,14 @@ jaemin-cosmology/
     review-checklist-en.md
     review-checklist-ko.md
     review-response-template.md
+    review-email-template-en.md
+    review-email-template-ko.md
+    google-form-questionnaire-en.md
+    google-form-questionnaire-ko.md
+    reviewer-shortlist-template.md
+    review-tracking-template.md
+    review-distribution-checklist.md
+    review-packet-manifest.md
     ai-assistance-note.md
     license-note.md
     one-page-summary-en.md
@@ -147,6 +155,14 @@ See [docs/reference-audit.md](docs/reference-audit.md).
 - Review checklist (English): [docs/review-checklist-en.md](docs/review-checklist-en.md)
 - Review checklist (Korean): [docs/review-checklist-ko.md](docs/review-checklist-ko.md)
 - Review response template: [docs/review-response-template.md](docs/review-response-template.md)
+- Review email template (English): [docs/review-email-template-en.md](docs/review-email-template-en.md)
+- Review email template (Korean): [docs/review-email-template-ko.md](docs/review-email-template-ko.md)
+- Google Form questionnaire draft (English): [docs/google-form-questionnaire-en.md](docs/google-form-questionnaire-en.md)
+- Google Form questionnaire draft (Korean): [docs/google-form-questionnaire-ko.md](docs/google-form-questionnaire-ko.md)
+- Reviewer shortlist template: [docs/reviewer-shortlist-template.md](docs/reviewer-shortlist-template.md)
+- Review tracking template: [docs/review-tracking-template.md](docs/review-tracking-template.md)
+- Review distribution checklist: [docs/review-distribution-checklist.md](docs/review-distribution-checklist.md)
+- Review packet manifest: [docs/review-packet-manifest.md](docs/review-packet-manifest.md)
 - English translation notes: [paper/en/translation-notes.md](paper/en/translation-notes.md)
 - AI assistance note: [docs/ai-assistance-note.md](docs/ai-assistance-note.md)
 - Release notes: [docs/release-notes/v0.1.0-ko.md](docs/release-notes/v0.1.0-ko.md)

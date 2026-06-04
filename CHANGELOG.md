@@ -15,6 +15,7 @@ All notable repository and manuscript release changes will be documented in this
 - Added external review request, reviewer guide, and review checklist documents.
 - Clarified reference-audit documentation after Zenodo DOI assignment.
 - Added bibliography citation placement to English Draft v0.2.0 using verified existing references.
+- Added review distribution templates, questionnaire drafts, shortlist template, tracking template, and distribution checklist.
 
 ## v0.1.0-ko - 2026-06-02
 

@@ -48,6 +48,14 @@ jaemin-cosmology/
     review-checklist-en.md
     review-checklist-ko.md
     review-response-template.md
+    review-email-template-en.md
+    review-email-template-ko.md
+    google-form-questionnaire-en.md
+    google-form-questionnaire-ko.md
+    reviewer-shortlist-template.md
+    review-tracking-template.md
+    review-distribution-checklist.md
+    review-packet-manifest.md
     ai-assistance-note.md
     license-note.md
     one-page-summary-en.md
@@ -159,6 +167,14 @@ GitHub Actions는 pull request와 `main` push에서 한국어 Typst 원고를 �
 - Review checklist 영문: [docs/review-checklist-en.md](docs/review-checklist-en.md)
 - Review checklist 한국어: [docs/review-checklist-ko.md](docs/review-checklist-ko.md)
 - Review response template: [docs/review-response-template.md](docs/review-response-template.md)
+- Review email template 영문: [docs/review-email-template-en.md](docs/review-email-template-en.md)
+- Review email template 한국어: [docs/review-email-template-ko.md](docs/review-email-template-ko.md)
+- Google Form 질문지 초안 영문: [docs/google-form-questionnaire-en.md](docs/google-form-questionnaire-en.md)
+- Google Form 질문지 초안 한국어: [docs/google-form-questionnaire-ko.md](docs/google-form-questionnaire-ko.md)
+- Reviewer shortlist template: [docs/reviewer-shortlist-template.md](docs/reviewer-shortlist-template.md)
+- Review tracking template: [docs/review-tracking-template.md](docs/review-tracking-template.md)
+- Review distribution checklist: [docs/review-distribution-checklist.md](docs/review-distribution-checklist.md)
+- Review packet manifest: [docs/review-packet-manifest.md](docs/review-packet-manifest.md)
 - 영어 번역 노트: [paper/en/translation-notes.md](paper/en/translation-notes.md)
 - AI 사용 고지: [docs/ai-assistance-note.md](docs/ai-assistance-note.md)
 - 릴리스 노트: [docs/release-notes/v0.1.0-ko.md](docs/release-notes/v0.1.0-ko.md)
