@@ -150,5 +150,6 @@ arXiv entries
 - `riemann1854` uses the 1868 Abhandlungen article as the main citation while preserving the 1854 lecture and 1867 separate printing in `note`.
 - Published-version DOIs listed by arXiv for `chang2019informationclosure`, `lin2023topologygeometry`, and `kurshan2023heterogeneousagi` were not substituted into `references.bib`.
 - The arXiv entries remain scoped as arXiv preprint records for this release.
-- No repository DOI has been assigned yet.
+- The repository release DOI for the Korean v0.1.0-ko working-paper release is 10.5281/zenodo.20506269. This repository-level DOI is distinct from bibliography item DOIs and does not alter references/references.bib.
+- A post-release consistency check confirmed that the bibliography metadata remains unchanged after DOI badge/citation updates.
 - ORCID and affiliation remain absent from `CITATION.cff` and `.zenodo.json` until the author provides verified values.
