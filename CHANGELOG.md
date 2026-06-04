@@ -14,6 +14,7 @@ All notable repository and manuscript release changes will be documented in this
 - Performed English copyedit and tone-control pass for draft v0.2.0.
 - Added external review request, reviewer guide, and review checklist documents.
 - Clarified reference-audit documentation after Zenodo DOI assignment.
+- Added bibliography citation placement to English Draft v0.2.0 using verified existing references.
 
 ## v0.1.0-ko - 2026-06-02
 

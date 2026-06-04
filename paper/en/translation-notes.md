@@ -6,7 +6,7 @@
 - Source manuscript: `paper/ko/main-ko.typ`.
 - Source release: Korean working-paper release `v0.1.0-ko`.
 - English draft: `paper/en/main-en.typ`.
-- Full English translation: structurally drafted and copyedited, pending author review.
+- Full English translation: structurally drafted, copyedited, and citation-linked, pending author review and external review.
 - This draft is not yet a separately released English version.
 
 ## PR 18 Status
@@ -98,7 +98,7 @@
 
 - English full draft v0.2.0 completed as a structurally readable draft.
 - Filled sections: Introduction; Candidate Predictions; Discussion; Future Work.
-- Remaining work: author review, copyediting, bibliography citation placement, reference metadata verification, and external review.
+- Superseded by PR R2 for bibliography citation placement; remaining work is author review, reference-audit continuity checks, and external review.
 - The English draft is not yet a separately released version and has no separate DOI.
 - No bibliography citation insertion, bibliography metadata cleanup, ORCID addition, or affiliation addition was performed in this PR.
 - Claim-strength rules remain active.
@@ -113,16 +113,16 @@
 
 ## PR 22 Author-Review Questions
 
-- Confirm that the integrated Candidate Predictions section is acceptable for v0.2.0 even though bibliography citation placement remains deferred.
+- Superseded by PR R2: bibliography citation placement has been added while Candidate Predictions remain intentionally lightly cited.
 - Confirm that the Introduction and Discussion flow is suitable for the next English copyedit pass.
 - Superseded by PR 23: the source now uses `D_"felt" (a,T)` after visual PDF review.
-- Confirm that bibliography citation placement and reference metadata verification should remain a separate reference-audit track.
+- Superseded by PR R2: citation placement is now added; metadata verification remains a separate reference-audit track.
 
 ## PR 23 Status
 
 - English copyedit and tone-control pass completed for draft v0.2.0.
 - Copyedit scope: grammar, readability, transitions, terminology consistency, and claim-strength control.
-- Remaining work: author review, bibliography citation placement, reference metadata verification, and external review.
+- Superseded by PR R2 for bibliography citation placement; remaining work is author review, reference-audit continuity checks, and external review.
 - English Draft v0.2.0 is not a separately released version and has no separate DOI.
 - No bibliography citation insertion, bibliography metadata cleanup, ORCID addition, or affiliation addition was performed in this PR.
 - Claim-strength rules remain active.
@@ -139,7 +139,29 @@
 
 - Confirm that the copyedited Introduction and Discussion flow should be kept for the external-review package.
 - Confirm that the PR 23 notation `D_"felt" (a,T)` should remain after visual PDF review.
-- Confirm whether bibliography citation placement should be handled before or after the external-review package.
+- Superseded by PR R2: bibliography citation placement was handled after the external-review package.
+
+## PR R2 Status
+
+- Bibliography citation placement added to English Draft v0.2.0.
+- `references/references.bib` was not modified.
+- The reference metadata audit remains verified at 19 verified, 0 partially verified, and 0 unresolved entries.
+- English Draft v0.2.0 now includes a `References` bibliography section using `../../references/references.bib`.
+- No bibliography metadata, DOI, ISBN, URL, publisher, journal, page, volume, issue, arXiv, ORCID, or affiliation metadata was added in this PR.
+- Claim-strength rules remain active.
+
+## PR R2 Citation Placement Decisions
+
+- Citations were concentrated in background, related-work, baseline-model, and historical-context passages.
+- Core Hypothesis and Candidate Predictions remain intentionally lightly cited so that the speculative framework does not appear empirically confirmed by citation placement.
+- All citation keys used already exist in `references/references.bib`: `abbott1884`, `amari2016`, `bengio2017consciousnessprior`, `bergson1889`, `chang2019informationclosure`, `coverthomas2006`, `einstein1916`, `friston2010`, `hebb1949`, `jura2020synapticclock`, `kahneman2011`, `kurshan2023heterogeneousagi`, `lecun2015`, `lin2023topologygeometry`, `lu2024riemannianintelligence`, `riemann1854`, `shannon1948`, `sporns2011`, and `tschantz2022hybridpredictive`.
+- arXiv records are cited as the existing arXiv-scoped bibliography entries; this PR does not switch them to related published versions.
+
+## PR R2 Author-Review Questions
+
+- Confirm that citation placement does not over-authorize the speculative core claims.
+- Confirm that Candidate Predictions should remain lightly cited until operational submodels are narrower.
+- Confirm whether any citation should be moved from body prose to a future related-work section.
 
 ## DOI Reference
 

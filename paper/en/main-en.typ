@@ -60,7 +60,7 @@ The starting motivation is a thought experiment about time acceleration. If ever
   The brain may be modeled as a transformer or interface between higher-dimensional informational constraint structures and the low-dimensional conscious interface.
 ]
 
-This is a speculative formal framework. It does not claim empirical confirmation, and it does not claim that the brain literally accesses extra physical dimensions. It also does not replace standard physics, general relativity, neuroscience, cognitive science, psychology, or AI research. The framework instead organizes a hypothesis space that may later be narrowed into operational submodels.
+This is a speculative formal framework. It does not claim empirical confirmation, and it does not claim that the brain literally accesses extra physical dimensions. It also does not replace standard physics, general relativity, neuroscience, cognitive science, psychology, or AI research @einstein1916. The framework instead organizes a hypothesis space that may later be narrowed into operational submodels.
 
 Throughout the draft, three levels are kept distinct:
 
@@ -107,13 +107,13 @@ Several derivative modeling hypotheses follow from this central statement:
 
 Consider an ant that moves and senses only on a two-dimensional plane. The ant may perceive distances, directions, and boundaries within the plane, but it does not directly experience a third axis outside that plane. A three-dimensional observer could bend the plane, observe the ant's position from outside the plane, or create changes that appear sudden from the ant's restricted perspective.
 
-This thought experiment is a heuristic analogy for the limits of dimensional perception. It does not claim that humans are literally like two-dimensional ants. Its point is more modest: the dimensions available to perception need not be identical to the full dimensional structure used in a formal model. Human three-dimensional conscious experience may be modeled as a cognitive projection of a richer information state.
+This thought experiment is a heuristic analogy for the limits of dimensional perception and is adjacent to the dimensional-perspective tradition associated with _Flatland_ @abbott1884. It does not claim that humans are literally like two-dimensional ants. Its point is more modest: the dimensions available to perception need not be identical to the full dimensional structure used in a formal model. Human three-dimensional conscious experience may be modeled as a cognitive projection of a richer information state.
 
 The analogy is not evidence for higher-dimensional informational coupling. It is only a motivating device for separating the structure of experience from the structure of a proposed state space.
 
 = Mathematical Setup
 
-*Higher-dimensional information manifold.* In this framework, the relevant information state space for the modeled relation between reality and cognition is represented as an effective information manifold $(M^n, g)$ with $n > 3$. Rather than specifying a complete physical state space, $M^n$ is used here as a coarse-grained higher-dimensional information state space for cognitive and informational modeling. The metric $g$ is included so that distance, curvature, and later special cases involving rotation can be discussed. At higher-dimensional reference time $T$, the effective state is
+*Higher-dimensional information manifold.* In this framework, the relevant information state space for the modeled relation between reality and cognition is represented as an effective information manifold $(M^n, g)$ with $n > 3$. Rather than specifying a complete physical state space, $M^n$ is used here as a coarse-grained higher-dimensional information state space for cognitive and informational modeling. The information-manifold framing is adjacent to information geometry @amari2016, while the use of metric structure is historically related to Riemannian geometry @riemann1854. The metric $g$ is included so that distance, curvature, and later special cases involving rotation can be discussed. At higher-dimensional reference time $T$, the effective state is
 
 $ X(T) in M^n. $
 
@@ -138,6 +138,8 @@ Here $N_b$ denotes the internal neural state of the brain, and $cal(F)$ denotes 
 $ cal(J) = (M^n, g, X, π_b, π_F, c, η, P, Q_c, R, G, α). $
 
 Here $c in [0,1]$ is the coupling strength with the higher-dimensional informational constraint structure; $η >= 1$ is the effective computational-efficiency amplification factor; $P$ is the conscious projection; $Q_c$ is the subconscious representation map including coupling strength $c$; $R$ is the compression map from subconscious representation to conscious representation; $G$ is the intuition-compression map; and $α$ is the internal-time-rate function.
+
+Geometric approaches to intelligence and cognition provide relevant comparison points, but they should not be read as direct support for this draft's higher-dimensional information-interface hypothesis @lu2024riemannianintelligence.
 
 #table(
   columns: (1fr, 3fr),
@@ -216,11 +218,13 @@ Here $P$ is a map that extracts from the effective information state only the st
 
 Under this interpretation, conscious experience does not directly access the whole higher-dimensional informational structure. The equations $C = P(X)$ and $C = R(S)$ frame low-dimensionality and compression within the higher-dimensional information-interface hypothesis.
 
+This low-dimensional conscious-interface framing is adjacent to work on consciousness as a constrained or low-dimensional representation @bengio2017consciousnessprior and to information-closure approaches that study levels of coarse-grained information @chang2019informationclosure. These citations provide comparison background, not empirical confirmation of the present framework.
+
 Subconscious or non-conscious representation may have a higher-dimensional form:
 
 $ S = Q_c(N_b, cal(F)). $
 
-This expression does not imply a supernatural capacity. Contemporary cognitive science and neuroscience already use high-dimensional state representations in discussions of neural state spaces, latent variables, representation learning, and predictive processing. The additional interpretive assumption here is that such high-dimensional neural representations may be partially coupled to a higher-dimensional informational constraint structure.
+This expression does not imply a supernatural capacity. Contemporary cognitive science and neuroscience already use high-dimensional state representations in discussions of neural state spaces, latent variables, representation learning, and predictive processing @friston2010. The additional interpretive assumption here is that such high-dimensional neural representations may be partially coupled to a higher-dimensional informational constraint structure.
 
 *Interpretive assumption: ontological status of high-dimensional neural representation.* This draft does not treat the existence of high-dimensional neural state spaces as evidence for a physical higher dimension. It only introduces the interpretive assumption that such state spaces may be partially coupled to an effective higher-dimensional information manifold.
 
@@ -248,9 +252,9 @@ Intuition is defined as
 
 $ cal(I) = G(S), quad G: ℝ^m -> ℝ^k. $
 
-Here $cal(I)$ is the intuition signal, while $I(Y;S)$ denotes mutual information. The two notations are kept distinct to avoid confusing intuition with information-theoretic mutual information. Intuition is not modeled as perfect prediction or error-free judgment. It is modeled as a compressed and lossy summary formed when a higher-dimensional subconscious representation is compressed into conscious-level form.
+Here $cal(I)$ is the intuition signal, while $I(Y;S)$ denotes mutual information. The two notations are kept distinct to avoid confusing intuition with information-theoretic mutual information. Intuition is not modeled as perfect prediction or error-free judgment. It is modeled as a compressed and lossy summary formed when a higher-dimensional subconscious representation is compressed into conscious-level form. This cautious framing is compatible with treating fast judgment as heuristic or compressed cognition rather than as certainty @kahneman2011.
 
-To interpret intuition as uncertainty reduction, this draft uses entropy and mutual information. If conscious representation can be written as $C = R(S)$, then under suitable conditions the data-processing inequality gives
+To interpret intuition as uncertainty reduction, this draft uses entropy and mutual information as background tools from information theory @shannon1948 @coverthomas2006. If conscious representation can be written as $C = R(S)$, then under suitable conditions the data-processing inequality gives
 
 $ I(Y;S) >= I(Y;C). $
 
@@ -271,6 +275,8 @@ Thus intuition may reduce uncertainty, but it does not remove uncertainty. It re
 The two-dimensional-ant analogy can also be read in this information-theoretic way. Suppose an ant with two-dimensional conscious experience lives in three-dimensional space. Its conscious representation is limited to $C = (x,y)$, so it cannot directly perceive the $z$-direction approach of a water droplet from above. If some sensory system forms a latent representation $S = (x,y,ε z + ξ)$ that weakly includes $z$-direction information, the ant may detect possible danger earlier even without predicting the exact landing point or time of the droplet.
 
 In this analogy, intuition is not a complete future prediction. It is uncertainty reduction of the form $H(Y | S) <= H(Y | C)$. Higher-dimensional cues may assist decision-making, but in nontrivial judgment contexts $H(Y | S) > 0$, so they do not provide prophetic certainty. The thought experiment is a conceptual illustration of the information-theoretic meaning of intuition, not empirical evidence for higher-dimensional informational coupling.
+
+This compression-oriented view of intuition is also adjacent to predictive-processing and amortized-inference interpretations, which should be treated as baseline comparison models rather than as confirmation of the present hypothesis @tschantz2022hybridpredictive.
 
 *Proposition: uncertainty reduction by latent representation.* If $C = R(S)$, if $R$ compresses the information in $S$, and if $S$ preserves information relevant to $Y$, then subconscious representation can reduce conditional uncertainty relative to conscious representation:
 
@@ -304,9 +310,9 @@ This toy model does not establish the existence of higher-dimensional informatio
 
 = Intelligence and Interface Efficiency
 
-In this framework, differences in intelligence are not reduced simply to differences in neuron count. Standard neuroscientific explanations emphasize factors such as connectivity structure, connection complexity, information flow, learning history, and brain plasticity. This framework preserves those factors while adding coupling strength $c$ and the computational-efficiency amplification factor $η$ as formal modeling terms.
+In this framework, differences in intelligence are not reduced simply to differences in neuron count. Standard neuroscientific explanations emphasize factors such as connectivity structure, connection complexity, information flow, learning history, and brain plasticity. Learning and network-organization baselines are therefore important comparison points @hebb1949 @sporns2011. This framework preserves those factors while adding coupling strength $c$ and the computational-efficiency amplification factor $η$ as formal modeling terms.
 
-Geometric and topological analyses of neural representation provide important comparison baselines for interpreting $cal(N)$ and $Q_N(N_b)$ within ordinary neural-computation models. The higher-dimensional informational-coupling term $Q_F(N_b, cal(F))$ would therefore need to be tested against the possibility that it can be absorbed by standard neural-representation geometry.
+Geometric and topological analyses of neural representation provide important comparison baselines for interpreting $cal(N)$ and $Q_N(N_b)$ within ordinary neural-computation models @lin2023topologygeometry. The higher-dimensional informational-coupling term $Q_F(N_b, cal(F))$ would therefore need to be tested against the possibility that it can be absorbed by standard neural-representation geometry.
 
 Let the neural connectivity structure be $Γ$. Let cognitive performance, or an abstract intelligence score, be denoted by $cal(Z)$. A formal decomposition that separates ordinary neural-computation contribution from an additional higher-dimensional interface contribution is
 
@@ -324,7 +330,7 @@ This equation is not proposed as an actual IQ measurement formula. It is a forma
 
 In this paper, AGI does not mean an artificial being with the same conscious experience as a human. AGI is used here to mean the functional capacity of an artificial system to generalize, adapt, reason, plan, and transfer learning across a distribution of tasks. The AGI discussion in this draft therefore concerns task performance and computational efficiency, not whether an artificial system has consciousness.
 
-The framework is not an AGI-impossibility argument. It does not deny that an AI system with sufficiently large physical hardware might reach AGI through low-dimensional internal computation alone. Within this framework, the AGI question is reframed not as a principled impossibility claim, but as an efficiency-gap problem: the human brain may be interpreted as achieving broad functional intelligence under severe energy, material, and hardware constraints through higher-dimensional information-interface efficiency.
+The framework is not an AGI-impossibility argument. It does not deny that an AI system with sufficiently large physical hardware might reach AGI through low-dimensional internal computation alone. Modern deep learning already uses high-dimensional representation learning and should be included among the comparison baselines @lecun2015. Within this framework, the AGI question is reframed not as a principled impossibility claim, but as an efficiency-gap problem: the human brain may be interpreted as achieving broad functional intelligence under severe energy, material, and hardware constraints through higher-dimensional information-interface efficiency.
 
 Let $R_"task"$ be the effective computation required to solve a target task. Let $K_"bio"$ be the direct computation provided by a biological brain, and let $K_"AI"$ be the direct computation provided by AI hardware. Effective computation can be represented as
 
@@ -356,7 +362,7 @@ Here $η$ does not denote every form of algorithmic efficiency. It is defined as
 
 $ K_"AI"^"min" >> K_"bio"^"min". $
 
-Thus the framework does not say "AI cannot become AGI." It suggests the candidate implication that current AI systems may require much larger direct hardware resources to implement human-level functional general intelligence. This is not an established conclusion; it is a candidate modeling implication.
+Thus the framework does not say "AI cannot become AGI." It suggests the candidate implication that current AI systems may require much larger direct hardware resources to implement human-level functional general intelligence. This is not an established conclusion; it is a candidate modeling implication. System-level discussions of AGI and efficiency provide relevant baseline comparisons for this framing @kurshan2023heterogeneousagi.
 
 Directly measuring $η$ in empirical research is difficult. Early work may therefore use indirect proxy variables. Let $K_"direct"$ denote direct computation, power usage, or another measurable resource-use quantity provided by the hardware:
 
@@ -396,13 +402,13 @@ This does not imply that physical time literally accelerates. The function $α(X
 
 = Subjective Time Acceleration with Aging
 
-The experience that time seems to pass more quickly with age is commonly discussed in terms of memory density, reduced novelty, repeated experience, and changes in attentional resources. This framework does not reject or replace such psychological explanations. Instead, it models subjective time experience by adding a weak sensitivity term for the internal-time rate.
+The experience that time seems to pass more quickly with age is commonly discussed in terms of memory density, reduced novelty, repeated experience, and changes in attentional resources. The distinction between lived duration and physical time has a long philosophical background @bergson1889. This framework does not reject or replace psychological explanations. Instead, it models subjective time experience by adding a weak sensitivity term for the internal-time rate.
 
 Let the felt duration for an internal time interval $Δ τ$ be
 
 $ D_"felt" (a,T) = μ(a) [α(T)]^(-λ) Δ τ. $
 
-Here $a$ is biological age, $μ(a)$ is a memory-density or novelty-density function, and $λ >= 0$ is the sensitivity parameter governing how strongly internal-time-rate changes affect felt duration in the candidate model.
+Here $a$ is biological age, $μ(a)$ is a memory-density or novelty-density function, and $λ >= 0$ is the sensitivity parameter governing how strongly internal-time-rate changes affect felt duration in the candidate model. Neural-time hypotheses such as the synaptic-clock proposal provide comparison background, not direct evidence for the present model @jura2020synapticclock.
 
 *Assumption: decreasing memory density.* As biological age increases, average novelty or memory density decreases:
 
@@ -486,7 +492,7 @@ The central identifiability problem is whether the higher-dimensional informatio
 
 If two models make the same predictions for all relevant observations, then $c$ and $η$ do not function as independent explanatory variables. They remain reparameterization terms rather than scientifically useful quantities.
 
-This problem is especially important because ordinary latent-variable models, predictive-processing models, representational learning models, and information-theoretic models may explain similar observations without invoking a distinct higher-dimensional informational-coupling term.
+This problem is especially important because ordinary latent-variable models, predictive-processing models, representational learning models, and information-theoretic models may explain similar observations without invoking a distinct higher-dimensional informational-coupling term @friston2010 @lecun2015 @coverthomas2006.
 
 To develop into an empirical research program, the framework therefore requires the following:
 
@@ -543,15 +549,15 @@ The model faces an identifiability problem. Its proposed coupling and efficiency
 
 Candidate predictions require comparison against standard neuroscience, cognitive science, psychology, and AI baselines. Without such comparisons, the framework may remain an interpretive reformulation rather than an empirically constrained model.
 
-The current English draft v0.2.0 is structurally complete but remains a draft. It still requires author review, copyediting, bibliography citation placement, reference metadata verification in a separate audit track, and external review before it can be considered for any separate English release.
+The current English draft v0.2.0 is structurally complete but remains a draft. It still requires author review, reference-audit continuity checks, and external review before it can be considered for any separate English release.
 
-Bibliographic metadata verification remains a separate audit track. This English draft does not newly verify reference metadata and should not silently treat bibliography metadata as complete beyond the existing repository audit status.
+Bibliographic metadata verification remains a separate audit track. This English draft uses the existing verified bibliography source but does not newly verify reference metadata.
 
 = Future Work
 
 Future work should narrow the framework into testable submodels rather than expanding its claim scope.
 
-- Formalize concrete forms of $P$, $Q_c$, $R$, and $G$, and compare them with neural latent-space models, representation-learning models, and predictive-processing models.
+- Formalize concrete forms of $P$, $Q_c$, $R$, and $G$, and compare them with neural latent-space models, representation-learning models, and predictive-processing models @friston2010 @lecun2015 @lin2023topologygeometry.
 - Define operational proxies for $c$, $η$, $α$, $λ$, $S$, $η_"proxy"$, and $μ(a)$, while distinguishing proxy variables from direct measurements.
 - Design controlled intuition and uncertainty-reduction tasks that compare conscious reasoning, fast hard-to-explain judgment, latent-space measures, and information-bottleneck indicators.
 - Develop efficiency-gap benchmarks that compare humans, animals, and AI systems under shared task definitions and under explicit energy, data, hardware, latency, and adaptation constraints.
@@ -559,8 +565,8 @@ Future work should narrow the framework into testable submodels rather than expa
 - Formalize subjective-time candidate predictions using behavioral measures, memory-density or novelty-density measures, attention controls, information-rate measures, and strict comparison against standard psychological models.
 - Clarify which mechanisms can generate changes in $α(X,T)$, and keep rotational mechanisms as optional special-case parameterizations rather than core assumptions.
 - Expand the toy model and simulation models to examine whether weak latent-coordinate traces can produce measurable uncertainty reduction without implying perfect prediction.
-- Continue bibliography citation placement and reference metadata verification in a separate reference-audit track. This PR does not newly verify bibliography metadata.
-- Prepare any later English release only after author review, copyediting, external review, bibliography integration, and explicit release preparation.
+- Keep bibliography metadata verification in a separate reference-audit track and re-check it if future bibliography entries or metadata fields are changed.
+- Prepare any later English release only after author review, external review, citation review, and explicit release preparation.
 
 = Conclusion
 
@@ -569,3 +575,5 @@ This English draft frames the project as a speculative formal framework in which
 The most promising development paths are narrower than the full framework. Future work should refine intuition as compressed access to latent structure, specify measurable forms of cognitive efficiency and the AGI efficiency gap, formalize subjective internal-time modeling, and operationalize parameters such as $c$, $η$, $λ$, and $α$.
 
 The next stage should narrow the framework into testable submodels. Those submodels should make candidate predictions that can be compared against standard neuroscience, cognitive science, psychology, and AI explanations. The framework should be judged by whether it can produce operational definitions and empirically distinguishable predictions, not by the appeal of higher-dimensional language alone.
+
+#bibliography("../../references/references.bib", title: [References], full: true)
