@@ -64,6 +64,36 @@
 - Confirm that `η_"proxy"` examples are acceptable as early operational proxies.
 - Confirm that the partial Candidate Predictions section should keep the remaining-section TODO until the full candidate-prediction translation pass.
 
+## PR 21 Status
+
+- Subjective-time and internal-time sections drafted.
+- Filled sections: Variable Internal Time; Subjective Time Acceleration with Aging; Life Expectancy and Civilizational Acceleration; Generalized Model Without Mandatory Rotation; Optional Rotational Mechanism as a Special Case.
+- Full translation still pending.
+- Candidate Predictions, Discussion, and Future Work remain pending.
+- Claim-strength rules remain active.
+
+## PR 21 Terminology and Notation Decisions
+
+- `T` is retained as higher-dimensional reference time or external reference time.
+- `τ` is retained as internal time.
+- `d τ / d T = α(X,T)` is retained as the internal-time-rate equation.
+- `α(T) := α(X(T),T)` is retained as the trajectory-level abbreviation.
+- `α` is described as a candidate internal-time modulation function requiring operationalization.
+- `D_"felt"(a,T)` is retained for felt duration.
+- `a` is retained for biological age.
+- `μ(a)` is retained for memory-density or novelty-density.
+- `λ` is retained as the sensitivity parameter for internal-time-rate effects on felt duration.
+- `B(τ)` is retained for biomedical technology level in internal time.
+- `L_τ` is retained for life expectancy measured in internal time.
+- The rotational mechanism is treated as optional, not mandatory.
+
+## PR 21 Author-Review Questions
+
+- Confirm that `λ` should remain defined as sensitivity to internal-time-rate changes rather than as a decay parameter.
+- Confirm that `D_"felt"(a,T)` is acceptable as the English notation for felt duration.
+- Confirm that life-expectancy and civilizational-acceleration material should remain a speculative heuristic extension.
+- Confirm that the optional rotational mechanism should remain an illustrative special case rather than a required mechanism.
+
 ## DOI Reference
 
 The authoritative released manuscript remains the Korean working-paper release `v0.1.0-ko`.
@@ -131,6 +161,19 @@ The authoritative released manuscript remains the Korean working-paper release `
 | 식별가능성 문제 | identifiability problem |
 | AGI 효율성 격차 | AGI efficiency gap |
 | 주관적 시간 | subjective time or internal time |
+| 내부 시간 | internal time |
+| 외부 기준 시간 | reference time or external reference time |
+| 시간 체감 | subjective time experience |
+| 시간 가속 | subjective time acceleration |
+| 노화에 따른 시간 가속 | subjective time acceleration with aging |
+| 기대수명 | life expectancy |
+| 문명 가속 | civilizational acceleration |
+| 정보율 | information rate |
+| 사건 밀도 | event density |
+| 기억 밀도 | memory density |
+| 회전 메커니즘 | rotational mechanism |
+| 필수 회전 없음 | without mandatory rotation |
+| 선택적 회전 메커니즘 | optional rotational mechanism |
 
 ## Claim-Strength Rules
 

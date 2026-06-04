@@ -354,33 +354,107 @@ For comparisons across tasks, "Task Performance" should be defined as a normaliz
 
 = Variable Internal Time
 
-#todo[
-  [TODO: Translate and adapt this section from `paper/ko/main-ko.typ`.]
-]
+The framework distinguishes higher-dimensional reference time $T$ from internal time $τ$. These two time variables are connected by
+
+$ d τ / d T = α(X,T), quad α(X,T) > 0. $
+
+When only the time rate along the actual trajectory $X(T)$ is being discussed, the following abbreviation is used:
+
+$ α(T) := α(X(T),T). $
+
+If $d α / d T > 0$ over some interval, a higher-dimensional observer could describe the internal universe as proceeding increasingly quickly. However, an internal observer measures physical laws with respect to $τ$, not directly with respect to $T$.
+
+If an internal physical state $x$ follows
+
+$ d x / d τ = f(x), $
+
+then, with respect to higher-dimensional reference time, the chain rule gives
+
+$ d x / d T = (d τ / d T)(d x / d τ) = α(X,T) f(x). $
+
+*Proposition: uniform internal-time rate cannot be directly detected by internal clocks alone.* If all internal physical processes evolve with respect to $τ$ and $d τ / d T = α(T)$, then an internal observer cannot directly detect $α$ using only internal clocks.
+
+*Proof sketch.* Internal clocks, neural processes, chemical processes, and measurement standards all evolve with respect to $τ$. From the standpoint of reference time $T$, each process receives the same time-rate factor $α$. What an internal observer measures are ratios and correlations among internal processes. If all relevant processes are mediated by the same internal time $τ$, those internal ratios are preserved. Therefore, a uniform $α$ scaling is not directly detected by internal clocks alone.
+
+This does not imply that physical time literally accelerates. The function $α(X,T)$ is a candidate internal-time modulation function and requires operationalization before it can be connected to measurable data.
 
 = Subjective Time Acceleration with Aging
 
-#todo[
-  [TODO: Translate and adapt this section from `paper/ko/main-ko.typ`.]
-]
+The experience that time seems to pass more quickly with age is commonly discussed in terms of memory density, reduced novelty, repeated experience, and changes in attentional resources. This framework does not reject such psychological explanations. Instead, it models subjective time experience by adding a weak sensitivity term for the internal-time rate.
+
+Let the felt duration for an internal time interval $Δ τ$ be
+
+$ D_"felt"(a,T) = μ(a) [α(T)]^(-λ) Δ τ. $
+
+Here $a$ is biological age, $μ(a)$ is a memory-density or novelty-density function, and $λ >= 0$ is the sensitivity of subconscious or non-conscious representation to changes in the higher-dimensional internal-time rate.
+
+*Assumption: decreasing memory density.* As biological age increases, average novelty or memory density decreases:
+
+$ d μ / d a < 0. $
+
+In the special case $λ = 0$, the felt-duration equation represents only a standard psychological model based on memory density or novelty density. If $λ > 0$ and $α(T)$ increases, the framework can be interpreted as adding a weak internal-time-rate sensitivity that may further reduce felt duration.
+
+This is a candidate model of subjective time experience. It does not claim that aging directly changes physical time, and it does not claim that the feeling of time acceleration has a single cause.
 
 = Life Expectancy and Civilizational Acceleration
 
-#todo[
-  [TODO: Translate and adapt this section from `paper/ko/main-ko.typ`.]
-]
+This framework does not claim that acceleration of internal time directly increases human lifespan. Life expectancy is treated as the result of biological, medical, and social variables measured in internal time $τ$. A possible indirect path is the development of civilization and biomedical technology.
+
+Let the level of biomedical technology be $B(τ)$. Life expectancy measured in internal time can be modeled as
+
+$ L_τ = L_0 + β B(τ), quad β > 0. $
+
+Technological development may partially depend on the efficiency of higher-dimensional latent-information processing:
+
+$ d B / d τ = ρ E(S,c,η) B, quad ρ > 0. $
+
+For example, one may set
+
+$ E(S,c,η) = E_0 + γ c η log(1 + α(T)), quad γ >= 0, $
+
+or, more generally,
+
+$ E(S,T,c,η) = E_0 + γ Φ(S,α,c,η). $
+
+Under this interpretation, higher-dimensional information processing may indirectly contribute to creativity, intuition, scientific discovery, and the pace of medical progress. This is only a possible mathematical path. It is not presented as an empirically established causal relationship, and it should not be read as a sociological or historical theory of civilizational acceleration.
 
 = Generalized Model Without Mandatory Rotation
 
-#todo[
-  [TODO: Translate and adapt this section from `paper/ko/main-ko.typ`.]
-]
+The basic time-rate equation of the framework is
+
+$ d τ / d T = α(X,T). $
+
+This equation does not include an axiom requiring the universe to rotate in a higher-dimensional space. Possible mechanisms that could increase $α$ include higher-dimensional scale expansion, curvature change, information-density change, brane-like motion within a higher-dimensional manifold, or rotation in a higher-dimensional embedding space.
+
+Therefore, rotation is only one possible generative mechanism. It is not a necessary premise of the framework as a whole.
 
 = Optional Rotational Mechanism as a Special Case
 
-#todo[
-  [TODO: Translate and adapt this section from `paper/ko/main-ko.typ`.]
-]
+If a rotational mechanism is selected as a special case, the metric $g$ can be used to define a higher-dimensional center $O$ and a radius:
+
+$ r(T) = d_g(X(T),O). $
+
+If the angular velocity is set as
+
+$ d θ / d T = Ω, $
+
+then the tangential velocity is
+
+$ v(T) = Ω r(T). $
+
+The time-rate function can then be written as
+
+$ α(T) = F(v(T)), quad F'(v) > 0. $
+
+For example, a simple model in which the internal-time rate increases as velocity increases is
+
+$ α(T) = 1 + κ v(T)^2, quad κ > 0. $
+
+*Proposition: rotation is sufficient but not necessary.* A rotational model of the form above can generate increasing $α(T)$ and therefore gives an example of a sufficient condition. However, because the basic equation of the framework does not require rotation, rotation is not a necessary condition.
+
+*Proof sketch.* If $F'(v) > 0$, then over an interval where $v(T)$ increases, $α(T) = F(v(T))$ also increases. Thus a rotational model with increasing radius or increasing tangential velocity can generate an increasing time rate. By contrast, the basic equation $d τ / d T = α(X,T)$ does not specify the cause of $α$, so other causes such as curvature change or information-density change are formally allowed. Therefore, rotation is sufficient but not necessary.
+
+This section should be read as an optional model-dependent special case. It does not claim literal physical rotation unless a later, separately specified model provides the required empirical and mathematical constraints.
 
 = Physical Causality and Conservation
 
@@ -431,7 +505,7 @@ The model faces an identifiability problem. Its proposed coupling and efficiency
 
 Candidate predictions require comparison against standard neuroscience, cognitive science, psychology, and AI baselines. Without such comparisons, the framework may remain an interpretive reformulation rather than an empirically constrained model.
 
-The current English draft is incomplete. The frontmatter, framing sections, core mathematical framework, intelligence and AGI efficiency-gap sections, physical-causality section, and one efficiency-related candidate prediction have been drafted; the remaining sections still require translation and adaptation from the Korean release.
+The current English draft is incomplete. The frontmatter, framing sections, core mathematical framework, intelligence and AGI efficiency-gap sections, physical-causality section, subjective-time sections, and one efficiency-related candidate prediction have been drafted; the remaining sections still require translation and adaptation from the Korean release.
 
 Bibliographic metadata verification remains a separate audit track. This English draft does not newly verify reference metadata and should not silently treat bibliography metadata as complete beyond the existing repository audit status.
 
