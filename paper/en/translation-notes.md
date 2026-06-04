@@ -6,7 +6,7 @@
 - Source manuscript: `paper/ko/main-ko.typ`.
 - Source release: Korean working-paper release `v0.1.0-ko`.
 - English draft: `paper/en/main-en.typ`.
-- Full English translation: structurally drafted, pending author review and copyediting.
+- Full English translation: structurally drafted and copyedited, pending author review.
 - This draft is not yet a separately released English version.
 
 ## PR 18 Status
@@ -79,7 +79,7 @@
 - `d τ / d T = α(X,T)` is retained as the internal-time-rate equation.
 - `α(T) := α(X(T),T)` is retained as the trajectory-level abbreviation.
 - `α` is described as a candidate internal-time modulation function requiring operationalization.
-- `D_"felt"(a,T)` is retained for felt duration.
+- `D_"felt" (a,T)` is retained for felt duration.
 - `a` is retained for biological age.
 - `μ(a)` is retained for memory-density or novelty-density.
 - `λ` is retained as the sensitivity parameter for internal-time-rate effects on felt duration.
@@ -90,7 +90,7 @@
 ## PR 21 Author-Review Questions
 
 - Confirm that `λ` should remain defined as sensitivity to internal-time-rate changes rather than as a decay parameter.
-- Confirm that `D_"felt"(a,T)` is acceptable as the English notation for felt duration.
+- Superseded by PR 23: `D_"felt" (a,T)` is used to keep the argument visually separate from the text subscript.
 - Confirm that life-expectancy and civilizational-acceleration material should remain a speculative heuristic extension.
 - Confirm that the optional rotational mechanism should remain an illustrative special case rather than a required mechanism.
 
@@ -105,7 +105,7 @@
 
 ## PR 22 Terminology and Notation Decisions
 
-- `D_"felt"(a,T)` is retained in Typst source because it renders as a clear `D_felt`-style text subscript and avoids renaming the variable.
+- Superseded by PR 23: `D_"felt" (a,T)` is used in Typst source to keep the argument visually separate from the text subscript.
 - `cal(F)` and `cal(I)` are retained because Typst renders them as calligraphic symbols and they avoid ambiguity with entropy or mutual-information notation.
 - `η_"proxy"` remains an early operational proxy, not a direct measurement of intelligence or of true `η`.
 - `λ` remains a sensitivity parameter for internal-time-rate effects on felt duration, not a universal decay constant.
@@ -115,8 +115,31 @@
 
 - Confirm that the integrated Candidate Predictions section is acceptable for v0.2.0 even though bibliography citation placement remains deferred.
 - Confirm that the Introduction and Discussion flow is suitable for the next English copyedit pass.
-- Confirm that `D_"felt"(a,T)` should remain the Typst source notation as long as the rendered PDF shows a clear `D_felt`-style subscript.
+- Superseded by PR 23: the source now uses `D_"felt" (a,T)` after visual PDF review.
 - Confirm that bibliography citation placement and reference metadata verification should remain a separate reference-audit track.
+
+## PR 23 Status
+
+- English copyedit and tone-control pass completed for draft v0.2.0.
+- Copyedit scope: grammar, readability, transitions, terminology consistency, and claim-strength control.
+- Remaining work: author review, bibliography citation placement, reference metadata verification, and external review.
+- English Draft v0.2.0 is not a separately released version and has no separate DOI.
+- No bibliography citation insertion, bibliography metadata cleanup, ORCID addition, or affiliation addition was performed in this PR.
+- Claim-strength rules remain active.
+
+## PR 23 Terminology and Notation Decisions
+
+- `D_"felt" (a,T)` is used in Typst source so the rendered PDF shows `D_felt` with `(a,T)` as the argument rather than folding the argument into the subscript.
+- `cal(F)` and `cal(I)` are retained as calligraphic notation.
+- Derivative expressions were normalized from `d τ / d T`-style Typst source to `(dif τ) / (dif T)`-style source so the rendered PDF displays clear differential fractions.
+- `λ` wording was tightened to describe sensitivity to internal-time-rate effects on felt duration.
+- `η_"proxy"` remains an early operational proxy, not a direct measure of intelligence or true `η`.
+
+## PR 23 Author-Review Questions
+
+- Confirm that the copyedited Introduction and Discussion flow should be kept for the external-review package.
+- Confirm that the PR 23 notation `D_"felt" (a,T)` should remain after visual PDF review.
+- Confirm whether bibliography citation placement should be handled before or after the external-review package.
 
 ## DOI Reference
 

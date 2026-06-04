@@ -44,7 +44,7 @@
 
 = Abstract
 
-This paper proposes a speculative formal framework in which the brain is modeled as an interface between higher-dimensional informational constraint structures and low-dimensional conscious experience. Conscious experience is represented as a projection $C = P(X)$, subconscious processing as a high-dimensional representation $S = Q_c(N_b, cal(F))$, and intuition as a compressed signal $cal(I) = G(S)$. The framework further interprets the gap between human intelligence and artificial general intelligence not as a principled impossibility, but as a difference in computational efficiency. It also sketches a variable internal-time model for subjective time experience.
+This paper proposes a speculative formal framework in which the brain is modeled as an interface between higher-dimensional informational constraint structures and low-dimensional conscious experience. Conscious experience is represented as a projection $C = P(X)$, subconscious processing as a high-dimensional representation $S = Q_c(N_b, cal(F))$, and intuition as a compressed signal $cal(I) = G(S)$. The framework further interprets the gap between human intelligence and artificial general intelligence not as a principled impossibility, but as a difference in computational efficiency. It also introduces a variable internal-time model for subjective time experience.
 
 The paper does not claim empirical confirmation. It does not claim that the brain literally accesses extra physical dimensions, and it does not claim to replace standard physics, neuroscience, cognitive science, psychology, or AI research. Instead, it aims to define a structured hypothesis space from which testable candidate predictions may later be derived.
 
@@ -52,7 +52,7 @@ The paper does not claim empirical confirmation. It does not claim that the brai
 
 = Introduction
 
-Human conscious experience ordinarily takes a world of three-dimensional space and temporal flow as its basic form. It does not follow, however, that the dimensional form available to conscious experience exhausts every state variable that may be useful in a formal model of cognition. This manuscript asks whether conscious experience may be modeled as a low-dimensional interface to a higher-dimensional informational constraint structure.
+Human conscious experience ordinarily takes a world of three-dimensional space and temporal flow as its basic form. It does not follow, however, that the dimensional form available to conscious experience exhausts every state variable that may be useful in a formal model of cognition. This manuscript asks whether conscious experience may be modeled as a low-dimensional interface to higher-dimensional informational constraint structures.
 
 The starting motivation is a thought experiment about time acceleration. If every physical process inside a system were uniformly accelerated relative to an external reference time, an observer inside that system might not detect the change using only internal clocks. In this paper, that thought experiment is only a motivation, not the central conclusion. The broader question is how conscious experience, subconscious or non-conscious representation, intuition, cognitive efficiency, the AGI efficiency gap, and subjective or internal time might be organized within a shared formal vocabulary.
 
@@ -68,7 +68,7 @@ Throughout the draft, three levels are kept distinct:
 - *Level B: interpretive framework.* Conscious experience, subconscious representation, intuition, cognitive efficiency, the AGI efficiency gap, and subjective-time experience can be interpreted within one formal structure.
 - *Level C: empirical science.* For the framework to become a scientific theory, it must generate observable candidate predictions, operational definitions, and conditions under which it could be falsified or absorbed by stronger baseline models.
 
-The manuscript should therefore be read as a formal research program for exploring the relation between higher-dimensional informational structure and cognitive projection, not as a verified theory.
+The manuscript should therefore be read as a formal research program for exploring the relation between higher-dimensional informational structure and cognitive projection, not as an empirically established theory.
 
 = Scope and Non-Goals
 
@@ -76,7 +76,7 @@ This working-paper manuscript is a speculative formal framework. It is not an em
 
 The framework asks whether conscious experience may be modeled as a low-dimensional interface to higher-dimensional informational constraint structures. This is a formal and conceptual modeling proposal. It does not claim that the brain literally accesses extra physical dimensions, and it does not turn higher-dimensional language into an ontological claim about reality.
 
-The manuscript is not a replacement for standard physics, neuroscience, cognitive science, psychology, or AI research. It is intended to organize candidate hypotheses that would need to be compared against ordinary latent-variable models, predictive-processing models, information-theoretic models, representational models, and standard AI baselines.
+The manuscript is not a replacement for standard physics, neuroscience, cognitive science, psychology, or AI research. It is intended to organize candidate hypotheses that would need to be compared against ordinary latent-variable models, predictive-processing models, information-theoretic models, representation-learning models, and standard AI baselines.
 
 The framework does not claim that intuition is supernatural. Intuition can be interpreted as compressed, lossy access to latent structure or subconscious representation, not as prophecy or certain knowledge.
 
@@ -113,7 +113,7 @@ The analogy is not evidence for higher-dimensional informational coupling. It is
 
 = Mathematical Setup
 
-*Higher-dimensional information manifold.* In this framework, the relevant information state space for reality and cognition is modeled as an effective information manifold $(M^n, g)$ with $n > 3$. Rather than specifying a complete physical state space, $M^n$ is used here as a coarse-grained higher-dimensional information state space for cognitive and informational modeling. The metric $g$ is included so that distance, curvature, and later special cases involving rotation can be discussed. At higher-dimensional reference time $T$, the effective state is
+*Higher-dimensional information manifold.* In this framework, the relevant information state space for the modeled relation between reality and cognition is represented as an effective information manifold $(M^n, g)$ with $n > 3$. Rather than specifying a complete physical state space, $M^n$ is used here as a coarse-grained higher-dimensional information state space for cognitive and informational modeling. The metric $g$ is included so that distance, curvature, and later special cases involving rotation can be discussed. At higher-dimensional reference time $T$, the effective state is
 
 $ X(T) in M^n. $
 
@@ -200,7 +200,7 @@ $ cal(I) = G(S), quad G: ℝ^m -> ℝ^k. $
 
 *Postulate 6: Variable internal time.* Internal time $τ$ and higher-dimensional reference time $T$ are connected by
 
-$ d τ / d T = α(X,T), quad α(X,T) > 0. $
+$ (dif τ) / (dif T) = α(X,T), quad α(X,T) > 0. $
 
 *Postulate 7: Internal invariance.* Since internal measuring devices and internal physical processes are described in terms of $τ$, an internal observer cannot directly detect a uniform scaling factor $α$ using only internal clocks if all relevant internal processes scale by the same ratio.
 
@@ -214,7 +214,7 @@ $ C = P(X), quad P: M^n -> ℝ^3. $
 
 Here $P$ is a map that extracts from the effective information state only the structures needed for action, perception, and spatial navigation. The map $P$ need not be linear. Nonlinear maps, stochastic maps, and maps involving information bottlenecks are also allowed.
 
-Under this interpretation, conscious experience does not directly access the whole higher-dimensional informational structure. The equations $C = P(X)$ and $C = R(S)$ reinterpret low-dimensionality and compression within the higher-dimensional information-interface hypothesis.
+Under this interpretation, conscious experience does not directly access the whole higher-dimensional informational structure. The equations $C = P(X)$ and $C = R(S)$ frame low-dimensionality and compression within the higher-dimensional information-interface hypothesis.
 
 Subconscious or non-conscious representation may have a higher-dimensional form:
 
@@ -238,7 +238,9 @@ The mixture model is therefore
 
 $ Q_c(N_b, cal(F)) := (1 - c) Q_N(N_b) + c Q_F(N_b, cal(F)) + ξ. $
 
-Here $Q_N$ is the ordinary neural-computation component, $Q_F$ is the higher-dimensional informational-coupling component, and $ξ$ is noise or distortion. The term $Q_F$ does not mean that the brain reads out the entire effective information state $X$. It denotes only a component in which brain state $N_b$ is partially coupled to the higher-dimensional informational constraint structure $cal(F)$. It also does not imply that $cal(F)$ injects external energy or information into the brain; rather, it represents a possible alignment between some degrees of freedom in brain state space and the informational constraint structure. If $c = 0$, the model approaches a standard neural-computation model. If $c > 0$, the higher-dimensional informational-coupling term contributes to the subconscious representation.
+Here $Q_N$ is the ordinary neural-computation component, $Q_F$ is the higher-dimensional informational-coupling component, and $ξ$ is noise or distortion. The term $Q_F$ does not mean that the brain reads out the entire effective information state $X$. It denotes only a component in which brain state $N_b$ is partially coupled to the higher-dimensional informational constraint structure $cal(F)$.
+
+This coupling term also does not imply that $cal(F)$ injects external energy or information into the brain. It represents a possible alignment between some degrees of freedom in brain state space and the informational constraint structure. If $c = 0$, the model approaches a standard neural-computation model. If $c > 0$, the higher-dimensional informational-coupling term contributes to the subconscious representation.
 
 = Intuition and Information Theory
 
@@ -246,7 +248,7 @@ Intuition is defined as
 
 $ cal(I) = G(S), quad G: ℝ^m -> ℝ^k. $
 
-Here $cal(I)$ is the intuition signal, while $I(Y;S)$ denotes mutual information. The two notations are kept distinct to avoid confusing intuition with information-theoretic mutual information. Intuition is not modeled as perfect prediction or error-free judgment. It is a compressed and lossy summary that appears when a higher-dimensional subconscious representation is compressed into conscious-level form.
+Here $cal(I)$ is the intuition signal, while $I(Y;S)$ denotes mutual information. The two notations are kept distinct to avoid confusing intuition with information-theoretic mutual information. Intuition is not modeled as perfect prediction or error-free judgment. It is modeled as a compressed and lossy summary formed when a higher-dimensional subconscious representation is compressed into conscious-level form.
 
 To interpret intuition as uncertainty reduction, this draft uses entropy and mutual information. If conscious representation can be written as $C = R(S)$, then under suitable conditions the data-processing inequality gives
 
@@ -266,7 +268,7 @@ $ H(Y | S) > 0. $
 
 Thus intuition may reduce uncertainty, but it does not remove uncertainty. It remains fallible.
 
-The two-dimensional-ant analogy can also be read in this information-theoretic way. Suppose an ant with two-dimensional conscious experience lives in three-dimensional space. Its conscious representation is limited to $C = (x,y)$, so it cannot directly perceive the $z$-direction approach of a water droplet from above. If some sensory system forms a latent representation $S = (x,y,ε z + ξ)$ that weakly includes $z$-direction information, the ant may detect a danger possibility earlier even without predicting the exact landing point or time of the droplet.
+The two-dimensional-ant analogy can also be read in this information-theoretic way. Suppose an ant with two-dimensional conscious experience lives in three-dimensional space. Its conscious representation is limited to $C = (x,y)$, so it cannot directly perceive the $z$-direction approach of a water droplet from above. If some sensory system forms a latent representation $S = (x,y,ε z + ξ)$ that weakly includes $z$-direction information, the ant may detect possible danger earlier even without predicting the exact landing point or time of the droplet.
 
 In this analogy, intuition is not a complete future prediction. It is uncertainty reduction of the form $H(Y | S) <= H(Y | C)$. Higher-dimensional cues may assist decision-making, but in nontrivial judgment contexts $H(Y | S) > 0$, so they do not provide prophetic certainty. The thought experiment is a conceptual illustration of the information-theoretic meaning of intuition, not empirical evidence for higher-dimensional informational coupling.
 
@@ -304,7 +306,7 @@ This toy model does not establish the existence of higher-dimensional informatio
 
 In this framework, differences in intelligence are not reduced simply to differences in neuron count. Standard neuroscientific explanations emphasize factors such as connectivity structure, connection complexity, information flow, learning history, and brain plasticity. This framework preserves those factors while adding coupling strength $c$ and the computational-efficiency amplification factor $η$ as formal modeling terms.
 
-Geometric and topological analyses of neural representation provide important comparison baselines for interpreting $cal(N)$ and $Q_N(N_b)$ within ordinary neural-computation models. Therefore, the higher-dimensional informational-coupling term $Q_F(N_b, cal(F))$ must be separately tested for whether it can be absorbed by standard neural-representation geometry.
+Geometric and topological analyses of neural representation provide important comparison baselines for interpreting $cal(N)$ and $Q_N(N_b)$ within ordinary neural-computation models. The higher-dimensional informational-coupling term $Q_F(N_b, cal(F))$ would therefore need to be tested against the possibility that it can be absorbed by standard neural-representation geometry.
 
 Let the neural connectivity structure be $Γ$. Let cognitive performance, or an abstract intelligence score, be denoted by $cal(Z)$. A formal decomposition that separates ordinary neural-computation contribution from an additional higher-dimensional interface contribution is
 
@@ -354,7 +356,7 @@ Here $η$ does not denote every form of algorithmic efficiency. It is defined as
 
 $ K_"AI"^"min" >> K_"bio"^"min". $
 
-Thus the framework does not say "AI cannot become AGI." It suggests the candidate implication that current AI systems may require much larger low-dimensional hardware resources to implement human-level functional general intelligence. This is not an established conclusion; it is a candidate modeling implication.
+Thus the framework does not say "AI cannot become AGI." It suggests the candidate implication that current AI systems may require much larger direct hardware resources to implement human-level functional general intelligence. This is not an established conclusion; it is a candidate modeling implication.
 
 Directly measuring $η$ in empirical research is difficult. Early work may therefore use indirect proxy variables. Let $K_"direct"$ denote direct computation, power usage, or another measurable resource-use quantity provided by the hardware:
 
@@ -370,23 +372,23 @@ For comparisons across tasks, "Task Performance" should be defined as a normaliz
 
 The framework distinguishes higher-dimensional reference time $T$ from internal time $τ$. These two time variables are connected by
 
-$ d τ / d T = α(X,T), quad α(X,T) > 0. $
+$ (dif τ) / (dif T) = α(X,T), quad α(X,T) > 0. $
 
 When only the time rate along the actual trajectory $X(T)$ is being discussed, the following abbreviation is used:
 
 $ α(T) := α(X(T),T). $
 
-If $d α / d T > 0$ over some interval, a higher-dimensional observer could describe the internal universe as proceeding increasingly quickly. However, an internal observer measures physical laws with respect to $τ$, not directly with respect to $T$.
+If $(dif α) / (dif T) > 0$ over some interval, a higher-dimensional observer could describe the internal system as proceeding faster relative to $T$. However, an internal observer measures physical laws with respect to $τ$, not directly with respect to $T$.
 
 If an internal physical state $x$ follows
 
-$ d x / d τ = f(x), $
+$ (dif x) / (dif τ) = f(x), $
 
 then, with respect to higher-dimensional reference time, the chain rule gives
 
-$ d x / d T = (d τ / d T)(d x / d τ) = α(X,T) f(x). $
+$ (dif x) / (dif T) = ((dif τ) / (dif T)) ((dif x) / (dif τ)) = α(X,T) f(x). $
 
-*Proposition: uniform internal-time rate cannot be directly detected by internal clocks alone.* If all internal physical processes evolve with respect to $τ$ and $d τ / d T = α(T)$, then an internal observer cannot directly detect $α$ using only internal clocks.
+*Proposition: uniform internal-time rate cannot be directly detected by internal clocks alone.* If all internal physical processes evolve with respect to $τ$ and $(dif τ) / (dif T) = α(T)$, then an internal observer cannot directly detect $α$ using only internal clocks.
 
 *Proof sketch.* Internal clocks, neural processes, chemical processes, and measurement standards all evolve with respect to $τ$. From the standpoint of reference time $T$, each process receives the same time-rate factor $α$. What an internal observer measures are ratios and correlations among internal processes. If all relevant processes are mediated by the same internal time $τ$, those internal ratios are preserved. Therefore, a uniform $α$ scaling is not directly detected by internal clocks alone.
 
@@ -394,17 +396,17 @@ This does not imply that physical time literally accelerates. The function $α(X
 
 = Subjective Time Acceleration with Aging
 
-The experience that time seems to pass more quickly with age is commonly discussed in terms of memory density, reduced novelty, repeated experience, and changes in attentional resources. This framework does not reject such psychological explanations. Instead, it models subjective time experience by adding a weak sensitivity term for the internal-time rate.
+The experience that time seems to pass more quickly with age is commonly discussed in terms of memory density, reduced novelty, repeated experience, and changes in attentional resources. This framework does not reject or replace such psychological explanations. Instead, it models subjective time experience by adding a weak sensitivity term for the internal-time rate.
 
 Let the felt duration for an internal time interval $Δ τ$ be
 
-$ D_"felt"(a,T) = μ(a) [α(T)]^(-λ) Δ τ. $
+$ D_"felt" (a,T) = μ(a) [α(T)]^(-λ) Δ τ. $
 
-Here $a$ is biological age, $μ(a)$ is a memory-density or novelty-density function, and $λ >= 0$ is the sensitivity of subconscious or non-conscious representation to changes in the higher-dimensional internal-time rate.
+Here $a$ is biological age, $μ(a)$ is a memory-density or novelty-density function, and $λ >= 0$ is the sensitivity parameter governing how strongly internal-time-rate changes affect felt duration in the candidate model.
 
 *Assumption: decreasing memory density.* As biological age increases, average novelty or memory density decreases:
 
-$ d μ / d a < 0. $
+$ (dif μ) / (dif a) < 0. $
 
 In the special case $λ = 0$, the felt-duration equation represents only a standard psychological model based on memory density or novelty density. If $λ > 0$ and $α(T)$ increases, the framework can be interpreted as adding a weak internal-time-rate sensitivity that may further reduce felt duration.
 
@@ -420,7 +422,7 @@ $ L_τ = L_0 + β B(τ), quad β > 0. $
 
 Technological development may partially depend on the efficiency of higher-dimensional latent-information processing:
 
-$ d B / d τ = ρ E(S,c,η) B, quad ρ > 0. $
+$ (dif B) / (dif τ) = ρ E(S,c,η) B, quad ρ > 0. $
 
 For example, one may set
 
@@ -430,15 +432,15 @@ or, more generally,
 
 $ E(S,T,c,η) = E_0 + γ Φ(S,α,c,η). $
 
-Under this interpretation, higher-dimensional information processing may indirectly contribute to creativity, intuition, scientific discovery, and the pace of medical progress. This is only a possible mathematical path. It is not presented as an empirically established causal relationship, and it should not be read as a sociological or historical theory of civilizational acceleration.
+Under this interpretation, higher-dimensional information processing may be modeled as indirectly contributing to creativity, intuition, scientific discovery, and the pace of medical progress. This is only a possible mathematical path. It is not presented as an empirically established causal relationship, and it should not be read as a sociological or historical theory of civilizational acceleration.
 
 = Generalized Model Without Mandatory Rotation
 
 The basic time-rate equation of the framework is
 
-$ d τ / d T = α(X,T). $
+$ (dif τ) / (dif T) = α(X,T). $
 
-This equation does not include an axiom requiring the universe to rotate in a higher-dimensional space. Possible mechanisms that could increase $α$ include higher-dimensional scale expansion, curvature change, information-density change, brane-like motion within a higher-dimensional manifold, or rotation in a higher-dimensional embedding space.
+This equation does not include an axiom requiring the universe to rotate in a higher-dimensional space. Possible model-dependent mechanisms that could increase $α$ include higher-dimensional scale expansion, curvature change, information-density change, brane-like motion within a higher-dimensional manifold, or rotation in a higher-dimensional embedding space.
 
 Therefore, rotation is only one possible generative mechanism. It is not a necessary premise of the framework as a whole.
 
@@ -450,7 +452,7 @@ $ r(T) = d_g(X(T),O). $
 
 If the angular velocity is set as
 
-$ d θ / d T = Ω, $
+$ (dif θ) / (dif T) = Ω, $
 
 then the tangential velocity is
 
@@ -466,7 +468,7 @@ $ α(T) = 1 + κ v(T)^2, quad κ > 0. $
 
 *Proposition: rotation is sufficient but not necessary.* A rotational model of the form above can generate increasing $α(T)$ and therefore gives an example of a sufficient condition. However, because the basic equation of the framework does not require rotation, rotation is not a necessary condition.
 
-*Proof sketch.* If $F'(v) > 0$, then over an interval where $v(T)$ increases, $α(T) = F(v(T))$ also increases. Thus a rotational model with increasing radius or increasing tangential velocity can generate an increasing time rate. By contrast, the basic equation $d τ / d T = α(X,T)$ does not specify the cause of $α$, so other causes such as curvature change or information-density change are formally allowed. Therefore, rotation is sufficient but not necessary.
+*Proof sketch.* If $F'(v) > 0$, then over an interval where $v(T)$ increases, $α(T) = F(v(T))$ also increases. Thus a rotational model with increasing radius or increasing tangential velocity can generate an increasing time rate. By contrast, the basic equation $(dif τ) / (dif T) = α(X,T)$ does not specify the cause of $α$, so other causes such as curvature change or information-density change are formally allowed. Therefore, rotation is sufficient but not necessary.
 
 This section should be read as an optional model-dependent special case. It does not claim literal physical rotation unless a later, separately specified model provides the required empirical and mathematical constraints.
 
@@ -474,7 +476,7 @@ This section should be read as an optional model-dependent special case. It does
 
 If the higher-dimensional informational constraint structure $cal(F)$ is interpreted as influencing brain state, then a physical-causality problem arises. The model must specify whether this influence is energy transfer, information transfer, hidden-variable structure, or merely reparameterization.
 
-This draft does not define $cal(F)$ as a separate energy field that injects external energy into the brain. The safer interpretation is that $cal(F)$ is a higher-dimensional informational constraint structure of the effective information state $X(T)$. Under this interpretation, the brain does not receive an external input that violates conservation of energy. Rather, it may be interpreted as coupling to part of the higher-dimensional informational constraint structure through its own high-dimensional neural state space.
+This draft does not define $cal(F)$ as a separate energy field that injects external energy into the brain. A more cautious interpretation is that $cal(F)$ is a higher-dimensional informational constraint structure of the effective information state $X(T)$. Under this interpretation, the brain does not receive an external input that violates conservation of energy. Rather, it may be interpreted as coupling to part of the higher-dimensional informational constraint structure through its own high-dimensional neural state space.
 
 This interpretation is still not an established physical mechanism and requires future formalization. Any scientifically useful version of the framework must remain compatible with observable physical causality at the level of neural dynamics, behavior, and measurable energy use. In this draft, $Q_F$ is therefore best read as an alignment/coupling component, not as an external injection of energy or unmodeled causal force.
 
@@ -488,16 +490,16 @@ This problem is especially important because ordinary latent-variable models, pr
 
 To develop into an empirical research program, the framework therefore requires the following:
 
-- A model with $c > 0$ or $η > 1$ must produce predictions that differ from standard neural-computation models.
-- Such predictions must be testable using at least one class of observable data, such as behavioral data, neural dynamics, information-bottleneck measures, energy efficiency, learning curves, or subjective-time data.
-- The framework must produce predictions that cannot simply be absorbed by adding a more complex $Q_N$ to a standard neural-computation model.
+- A model with $c > 0$ or $η > 1$ would need to produce predictions that differ from standard neural-computation models.
+- Such predictions would need to be testable using at least one class of observable data, such as behavioral data, neural dynamics, information-bottleneck measures, energy efficiency, learning curves, or subjective-time data.
+- The framework would need to produce predictions that cannot simply be absorbed by adding a more complex $Q_N$ to a standard neural-computation model.
 - If every difference can be absorbed after the fact by increasing the complexity of $Q_N$, then the framework risks remaining an interpretive restatement rather than an independent theory.
 
 = Candidate Predictions
 
-The following items are candidate predictions and candidate observation points. They are not confirmed results. Each item requires operational definitions, baseline comparison, and a distinction between prediction, measurement proxy, and modeling implication.
+The following items are candidate predictions and candidate observation points. They are not confirmed results. Each item requires operational definitions, baseline comparison, and a clear distinction among prediction, measurement proxy, and modeling implication.
 
-- *Efficiency-gap candidate prediction.* Observable variables include performance across a shared task family, sample efficiency, adaptation speed, direct computation, and energy use. The comparison targets are humans, animals, and AI systems performing the same task requirements. If AI systems continue to require substantially larger direct computation or energy use than humans while matching the same level of generalization, adaptability, and sample efficiency, that pattern would be compatible with the hypothesis $η_"human" >> η_"AI"$. This would not establish the framework; it would only be an empirical interpretation of the efficiency-gap model.
+- *Efficiency-gap candidate prediction.* Observable variables include performance across a shared task family, sample efficiency, adaptation speed, direct computation, and energy use. The comparison targets are humans, animals, and AI systems performing the same task requirements. If AI systems continue to require substantially larger direct computation or energy use than humans while matching the same level of generalization, adaptability, and sample efficiency, that pattern would be compatible with the hypothesis $η_"human" >> η_"AI"$. This would not establish the framework; it would only provide a candidate empirical interpretation of the efficiency-gap model.
 
   The associated modeling implication is
 
@@ -513,7 +515,7 @@ The following items are candidate predictions and candidate observation points. 
 
 - *Subjective-time candidate prediction.* Observable variables include biological age $a$, memory density or novelty density $μ(a)$, routine level, attention, subjective-duration ratings, and other behavioral measures of felt duration. The comparison target is a standard psychological time-perception model versus an extended model that includes the sensitivity parameter $λ$:
 
-  $ D_"felt"(a,T) = μ(a) [α(T)]^(-λ) Δ τ. $
+  $ D_"felt" (a,T) = μ(a) [α(T)]^(-λ) Δ τ. $
 
   If residual subjective-duration effects remain after controlling for memory density, novelty, routine, and attention, those residuals may be modeled as candidate constraints on $λ$ or $α(T)$. This is a weak candidate prediction. It requires strict experimental design and should not be read as evidence that physical time accelerates with age.
 
@@ -525,7 +527,7 @@ The main contribution of this draft is integrative rather than evidential. It co
 
 The same structure introduces $c$ as coupling strength, $η$ as computational-efficiency amplification, and $τ$ with $α(X,T)$ as internal-time variables. These components allow the draft to express several questions in one notation: whether conscious experience is a compressed interface, whether intuition can be understood as lossy access to latent structure, whether human and AI competence may differ by efficiency rather than only by scale, and whether subjective-time experience can be modeled through internal-time-rate sensitivity.
 
-This unity does not imply empirical validity. The most serious problem is identifiability. A higher-dimensional informational-coupling term $c Q_F$ may be observationally indistinguishable from a more expressive ordinary neural model $Q_N$. Similarly, the efficiency parameter $η$ may collapse into ordinary algorithmic, architectural, training-data, or hardware efficiency unless it is given distinct operational constraints. Uniform internal-time scaling may also be a reparameterization unless it produces measurable residuals not already explained by standard psychological models of time perception.
+This unity does not imply empirical validity. The central problem is identifiability. A higher-dimensional informational-coupling term $c Q_F$ may be observationally indistinguishable from a more expressive ordinary neural model $Q_N$. Similarly, the efficiency parameter $η$ may collapse into ordinary algorithmic, architectural, training-data, or hardware efficiency unless it is given distinct operational constraints. Uniform internal-time scaling may also be a reparameterization unless it produces measurable residuals not already explained by standard psychological models of time perception.
 
 For this reason, the framework should be compared with ordinary latent-variable models, predictive-processing models, representation-learning models, information-theoretic accounts, cognitive-efficiency models, and standard AI baselines. It does not replace those approaches. Its possible value lies in whether it can generate distinct operational predictions that survive comparison with them.
 
