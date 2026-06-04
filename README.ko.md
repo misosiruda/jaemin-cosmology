@@ -41,6 +41,13 @@ jaemin-cosmology/
     abstract-ko.md
     faq-en.md
     faq-ko.md
+    external-review-request-en.md
+    external-review-request-ko.md
+    reviewer-guide-en.md
+    reviewer-guide-ko.md
+    review-checklist-en.md
+    review-checklist-ko.md
+    review-response-template.md
     ai-assistance-note.md
     license-note.md
     one-page-summary-en.md
@@ -145,6 +152,13 @@ GitHub Actions는 pull request와 `main` push에서 한국어 Typst 원고를 �
 - 한국어 1페이지 요약: [docs/one-page-summary-ko.md](docs/one-page-summary-ko.md)
 - 영문 FAQ: [docs/faq-en.md](docs/faq-en.md)
 - 한국어 FAQ: [docs/faq-ko.md](docs/faq-ko.md)
+- 외부 리뷰 요청서 영문: [docs/external-review-request-en.md](docs/external-review-request-en.md)
+- 외부 리뷰 요청서 한국어: [docs/external-review-request-ko.md](docs/external-review-request-ko.md)
+- Reviewer guide 영문: [docs/reviewer-guide-en.md](docs/reviewer-guide-en.md)
+- Reviewer guide 한국어: [docs/reviewer-guide-ko.md](docs/reviewer-guide-ko.md)
+- Review checklist 영문: [docs/review-checklist-en.md](docs/review-checklist-en.md)
+- Review checklist 한국어: [docs/review-checklist-ko.md](docs/review-checklist-ko.md)
+- Review response template: [docs/review-response-template.md](docs/review-response-template.md)
 - 영어 번역 노트: [paper/en/translation-notes.md](paper/en/translation-notes.md)
 - AI 사용 고지: [docs/ai-assistance-note.md](docs/ai-assistance-note.md)
 - 릴리스 노트: [docs/release-notes/v0.1.0-ko.md](docs/release-notes/v0.1.0-ko.md)

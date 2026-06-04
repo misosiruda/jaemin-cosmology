@@ -45,6 +45,13 @@ jaemin-cosmology/
     abstract-ko.md
     faq-en.md
     faq-ko.md
+    external-review-request-en.md
+    external-review-request-ko.md
+    reviewer-guide-en.md
+    reviewer-guide-ko.md
+    review-checklist-en.md
+    review-checklist-ko.md
+    review-response-template.md
     ai-assistance-note.md
     license-note.md
     one-page-summary-en.md
@@ -133,6 +140,13 @@ See [docs/reference-audit.md](docs/reference-audit.md).
 - Korean one-page summary: [docs/one-page-summary-ko.md](docs/one-page-summary-ko.md)
 - English FAQ: [docs/faq-en.md](docs/faq-en.md)
 - Korean FAQ: [docs/faq-ko.md](docs/faq-ko.md)
+- External review request (English): [docs/external-review-request-en.md](docs/external-review-request-en.md)
+- External review request (Korean): [docs/external-review-request-ko.md](docs/external-review-request-ko.md)
+- Reviewer guide (English): [docs/reviewer-guide-en.md](docs/reviewer-guide-en.md)
+- Reviewer guide (Korean): [docs/reviewer-guide-ko.md](docs/reviewer-guide-ko.md)
+- Review checklist (English): [docs/review-checklist-en.md](docs/review-checklist-en.md)
+- Review checklist (Korean): [docs/review-checklist-ko.md](docs/review-checklist-ko.md)
+- Review response template: [docs/review-response-template.md](docs/review-response-template.md)
 - English translation notes: [paper/en/translation-notes.md](paper/en/translation-notes.md)
 - AI assistance note: [docs/ai-assistance-note.md](docs/ai-assistance-note.md)
 - Release notes: [docs/release-notes/v0.1.0-ko.md](docs/release-notes/v0.1.0-ko.md)
